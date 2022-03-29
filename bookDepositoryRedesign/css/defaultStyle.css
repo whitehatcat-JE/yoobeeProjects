@@ -14,6 +14,7 @@ body {
 }
 
 header {
+    user-select: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,21 +25,21 @@ header {
     background-color: #403042;
     text-align: center;
     padding: 0.5%;
-    padding-bottom: 5%;
     list-style-type: none;
-    font-size:100%;
+    padding-bottom:3%;
 }
 
 #mainHeader > li > a > p {
     float: left;
-    padding-top: 2.5%;
+    padding-top: 5%;
+    font-size:100%;
 }
 
 .headerIcons {
-    padding-left:20%;
+    padding-left:10%;
     padding-right:5%;
+    width:2vw;
     float: left;
-    width:15%;
 }
 
 #headerLogo {
@@ -46,31 +47,135 @@ header {
     float:left;
 }
 
+#contactHeader {
+    min-width:9vw;
+}
+
+#helpHeader {
+    min-width:10vw;
+}
+
+#orderHeader {
+    min-width:10vw;
+}
+
+#wishlistHeader {
+    min-width:8vw;
+}
+
+#loginHeader {
+    min-width:10vw;
+}
+
 .headerLeftArticles {
     float:left;
-    width:10%;
-    padding-top:0.5%;
+    margin-top:0.2%;
 }
 
 .headerRightArticles {
     float:right;
-    width:10%;
-    padding-top:0.5%;
+    margin-top:0.2%;
 }
 
 .headerDivLine{
-    width: 1px;
+    width: 2px;
     height: 30px;
     background-color: #4C394E;
     float:left;
     margin-left:5%;
 }
 
+@media only screen and (max-width: 1548px) {
+    #headerLogo {
+        width:100px;
+    }
+
+    .headerIcons {
+        width:25px;
+        padding-left:10px;
+    }
+
+    .headerLeftArticles {
+        margin-top:5px;
+    }
+
+    .headerRightArticles {
+        margin-top:2px;
+    }
+
+    #mainHeader {
+        padding: 5px;
+        padding-bottom:40px;
+    }
+
+    #mainHeader > li > a > p{
+        display: none;
+    }
+    
+    #mainHeader > li{
+        min-width:50px;
+    }
+}
+
 #subHeader {
-    background-color: #403042;
-    text-align: center;
-    padding-left: 0.5%;
-    padding-bottom: 5%;
+    background-color: #4C394E;
     list-style-type: none;
+    width:100%;
     font-size:15px;
+    position:absolute;
+}
+
+#subHeader > li {
+    padding-top:0.25%;
+    padding-bottom:0.25%;
+}
+
+#cart {
+    background-color: #108DD6;
+    height:20px;
+    min-width:130px;
+}
+
+#cartText {
+    padding-top:1px;
+    padding-right:5px;
+    float:left;
+}
+
+#cart > img {
+    float:right;
+}
+
+.subHeaderLeftArticles {
+    float:left;
+    padding-right:2%;
+    padding-left:0.5%;
+}
+
+.subHeaderRightArticles {
+    float:right;
+    padding-right:0.5%;
+    padding-left:1%;
+}
+
+.headerCategories {
+    padding-top:0.2%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerCategories {
+        display: none;
+    }
+
+    #cart {
+        min-width:100px;
+    }
+
+    #cartText {
+        padding-right:2px;
+    }
+
+    #cart > img {
+        display: none;
+    }
 }
