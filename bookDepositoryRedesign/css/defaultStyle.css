@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #F0F0F0;
+    list-style-type: none;
 }
 
 body {
@@ -25,7 +26,6 @@ header {
     background-color: #403042;
     text-align: center;
     padding: 0.5%;
-    list-style-type: none;
     padding-bottom:3%;
 }
 
@@ -146,6 +146,10 @@ header {
     float:right;
 }
 
+#categoryMenu {
+    cursor: pointer;
+}
+
 .subHeaderLeftArticles {
     float:left;
     padding-right:2%;
@@ -162,6 +166,71 @@ header {
     padding-top:0.2%;
 }
 
+#categoryDropdown {
+    display:none;
+    width:920px;
+}
+
+.categoryColumn {
+    background-color: #4C394E;
+    padding-top:32px;
+    padding-left:10px;
+    height:182px;
+    float:left;
+}
+
+.categoryGroup {
+    font-size:15px;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-weight:bold;
+}
+
+.categoryItem {
+    font-size:12px;
+    padding-bottom:2px;
+}
+
+#categoryVerticalDivider{
+    width: 2px;
+    height: 80%;
+    background-color: #403042;
+    padding-top:32px;
+    margin-left:5%;
+}
+
+#categoryHorizontalDivider{
+    width: 99%;
+    height: 2px;
+    background-color: #403042;
+}
+
+#categoryAgeRange {
+    padding-top:220px;
+    padding-left:10px;
+    padding-bottom:35px;
+    width:920px;
+    background-color: #4C394E;
+}
+
+.smallButton {
+    background-color: #108DD6;
+    border-width: 5px;
+    border-color: #108DD6;
+    border-radius: 10px;
+	border-style: solid;
+    float:left;
+    margin-right:10px;
+}
+
+#categoryRightList {
+    display:none;
+}
+
+#categoryLeftList {
+    display:none;
+}
+
 @media only screen and (max-width: 1000px) {
     .headerCategories {
         display: none;
@@ -176,6 +245,58 @@ header {
     }
 
     #cart > img {
-        display: none;
+        display:none;
     }
+
+    #topAuthors {
+        display:none;
+    }
+
+    #bestSelling {
+        display:none;
+    }
+
+    #categoryRightList {
+        display:unset;
+    }
+
+    #categoryAgeRange {
+        width:820px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    #nonFiction {
+        display:none;
+    }
+
+    #fiction {
+        display:none;
+    }
+
+    #education {
+        display:none;
+    }
+
+    #personalDevelopment {
+        display:none;
+    }
+
+    #other {
+        display:none;
+    }
+
+    #categoryLeftList {
+        display:unset;
+    }
+
+    #categoryAgeRange {
+        width:450px;
+    }
+}
+
+#languageDropdown {
+    float:right;
+    margin-top:5px;
+    position:absolute;
 }

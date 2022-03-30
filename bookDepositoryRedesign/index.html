@@ -5,6 +5,7 @@
     <title>Home</title>
     <meta name="description" content="Book Depository">
     <link href="css/defaultStyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -25,8 +26,136 @@
             <li class="subHeaderLeftArticles"><div class="headerCategories">New Releases</div></li>
             <li id="cart" class="subHeaderRightArticles"><div id="cartText">NZ $492.82 &nbsp|&nbsp 28 </div><img src="images/svgs/cartIcon.svg"/></li>
             <li id="currenyMenu" class="subHeaderRightArticles">$ NZD &nbsp&nbsp⯆</li>
-            <li id="languageMenu" class="subHeaderRightArticles">English &nbsp&nbsp⯆</li>
+            <li id="languageMenu" class="subHeaderRightArticles">English &nbsp&nbsp⯆
+                <!--Language Dropdown-->
+                <div id="languageDropdown">
+                    <ul id="languageDropdownList">
+                        <li id="languageTitle">Languages</li>
+                        <li class="languageItem"><a href="index.html">English</a></li>
+                        <li class="languageItem"><a href="index.html">Spanish</a></li>
+                        <li class="languageItem"><a href="index.html">Polish</a></li>
+                        <li class="languageItem"><a href="index.html">German</a></li>
+                        <li class="languageItem"><a href="index.html">French</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
+        <!--Category Dropdown-->
+        <div id="categoryDropdown">
+            <ul class="categoryColumn" id="nonFiction">
+                <li class="categoryGroup"><a href="index.html">Non-Fiction</a></li>
+                <li class="categoryItem"><a href="index.html">Art and Photography</a></li>
+                <li class="categoryItem"><a href="index.html">Biography</a></li>
+                <li class="categoryItem"><a href="index.html">Business, Finance, and Law</a></li>
+                <li class="categoryItem"><a href="index.html">Comedy</a></li>
+                <li class="categoryItem"><a href="index.html">Crafts and Hobbies</a></li>
+                <li class="categoryItem"><a href="index.html">Entertainment</a></li>
+                <li class="categoryItem"><a href="index.html">Poetry and Drama</a></li>
+                <li class="categoryItem"><a href="index.html">Romance</a></li>
+                <li class="categoryItem"><a href="index.html">Sport</a></li>
+            </ul>
+            <ul class="categoryColumn" id="fiction">
+                <li class="categoryItem"><a href="index.html">Travel and Holiday Guides</a></li>
+                <li class="categoryGroup"><a href="index.html">Fiction</a></li>
+                <li class="categoryItem"><a href="index.html">Children's Books</a></li>
+                <li class="categoryItem"><a href="index.html">Crime and Thriller</a></li>
+                <li class="categoryItem"><a href="index.html">Graphic Novels, Anime<br>and Manga</a></li>
+                <li class="categoryItem"><a href="index.html">Science Fiction, Fantasy<br>and Horror</a></li>
+                <li class="categoryItem"><a href="index.html">Teen and Young Adult</a></li>
+            </ul>
+            <ul class="categoryColumn" id="education">
+                <li class="categoryGroup"><a href="index.html">Education</a></li>
+                <li class="categoryItem"><a href="index.html">Computing</a></li>
+                <li class="categoryItem"><a href="index.html">Dictionaries and Languages</a></li>
+                <li class="categoryItem"><a href="index.html">History and Archeology</a></li>
+                <li class="categoryItem"><a href="index.html">Natural History</a></li>
+                <li class="categoryItem"><a href="index.html">Science and Geography</a></li>
+                <li class="categoryItem"><a href="index.html">Teaching Resources</a></li>
+                <li class="categoryItem"><a href="index.html">Technology and Engineering</a></li>
+                <li class="categoryItem"><a href="index.html">Transport</a></li>
+                <li class="categoryItem"><a href="index.html">Medical</a></li>
+            </ul>
+            <ul class="categoryColumn" id="personalDevelopment">
+                <li class="categoryGroup"><a href="index.html">Personal<br>Development</a></li>
+                <li class="categoryItem"><a href="index.html">Food and Drink</a></li>
+                <li class="categoryItem"><a href="index.html">Health</a></li>
+                <li class="categoryItem"><a href="index.html">Home and Garden</a></li>
+                <li class="categoryItem"><a href="index.html">Mind, Body, and Spirit</a></li>
+                <li class="categoryItem"><a href="index.html">Religion</a></li>
+                <li class="categoryGroup"><a href="index.html">Other</a></li>
+                <li class="categoryItem"><a href="index.html">Audio Books</a></li>
+            </ul>
+            <ul class="categoryColumn" id="other">
+                <li class="categoryItem"><a href="index.html">Reference</a></li>
+                <li class="categoryItem"><a href="index.html">Stationary</a></li>
+            </ul>
+            <ul class="categoryColumn" id="categoryLeftList">
+                <li class="categoryGroup"><a href="index.html">Non-Fiction</a></li>
+                <li class="categoryGroup"><a href="index.html">Fiction</a></li>
+                <li class="categoryGroup"><a href="index.html">Education</a></li>
+                <li class="categoryGroup"><a href="index.html">Personal Development</a></li>
+                <li class="categoryGroup"><a href="index.html">Other</a></li>
+            </ul>
+            <ul class="categoryColumn">
+                <div id="categoryVerticalDivider"></div>
+            </ul>
+            <ul class="categoryColumn" id="topAuthors">
+                <li class="categoryGroup"><a href="index.html">Top Authors</a></li>
+                <li class="categoryItem"><a href="index.html">J.K Rowling</a></li>
+                <li class="categoryItem"><a href="index.html">Ronald Dahl</a></li>
+                <li class="categoryItem"><a href="index.html">Julia Donaldson</a></li>
+                <li class="categoryItem"><a href="index.html">Stephan King</a></li>
+                <li class="categoryItem"><a href="index.html">David Walliams</a></li>
+                <li class="categoryItem"><a href="index.html">Dr. Suess</a></li>
+                <li class="categoryItem"><a href="index.html">Andy Griffiths</a></li>
+                <li class="categoryItem"><a href="index.html">James Patterson</a></li>
+                <li class="categoryItem"><a href="index.html">Enid Blyton</a></li>
+            </ul>
+            <ul class="categoryColumn" id="bestSelling">
+                <li class="categoryGroup"><a href="index.html">Bestselling Series</a></li>
+                <li class="categoryItem"><a href="index.html">Harry Potter</a></li>
+                <li class="categoryItem"><a href="index.html">Game Of Thrones</a></li>
+                <li class="categoryItem"><a href="index.html">Lego</a></li>
+                <li class="categoryGroup"><a href="index.html">Books By Language</a></li>
+                <li class="categoryItem"><a href="index.html">Books in Spanish</a></li>
+                <li class="categoryItem"><a href="index.html">Books in Polish</a></li>
+                <li class="categoryItem"><a href="index.html">Books in German</a></li>
+                <li class="categoryItem"><a href="index.html">Books in French</a></li>
+            </ul>
+            <ul class="categoryColumn" id="categoryRightList">
+                <li class="categoryGroup"><a href="index.html">Top Authors</a></li>
+                <li class="categoryGroup"><a href="index.html">Bestselling Series</a></li>
+                <li class="categoryGroup"><a href="index.html">Books By Language</a></li>
+            </ul>
+            <ul id="categoryAgeRange">
+                <div id="categoryHorizontalDivider"></div>
+                <li class="categoryGroup">Children's books by age range</li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 0-2</button></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 3-5</button></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 6-8</button></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 9-11</button></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Teen and Young Adult</button></li>
+            </ul>
+        </div>
     </header>
 </body>
 </html>
+
+<script>
+    var categoryMenuOpen = false;
+    $("#categoryMenu").on( "click", function() {
+        categoryMenuOpen = !categoryMenuOpen;
+        $("#categoryDropdown").show();
+        if (categoryMenuOpen) {
+            $("#categoryMenu").text("Shop by category\xa0\xa0\xa0▲");
+        } else {
+            $("#categoryMenu").text("Shop by category\xa0\xa0\xa0▼");
+            $("#categoryDropdown").hide();
+        }
+    });
+    $("#categoryDropdown").on( "mouseleave", function() {
+        categoryMenuOpen = false;
+        $("#categoryDropdown").hide();
+        $("#categoryMenu").text("Shop by category\xa0\xa0\xa0▼");
+    });
+</script>
