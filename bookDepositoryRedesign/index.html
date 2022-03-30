@@ -31,7 +31,8 @@
                 <div id="languageDropdown">
                     <ul id="languageDropdownList">
                         <li id="languageTitle">Languages</li>
-                        <li class="languageItem"><a href="index.html">English</a></li>
+                        <li><div id="languageHorizontalDivider"></div></li>
+                        <li class="languageItem" id="selectedLanguage">English</li>
                         <li class="languageItem"><a href="index.html">Spanish</a></li>
                         <li class="languageItem"><a href="index.html">Polish</a></li>
                         <li class="languageItem"><a href="index.html">German</a></li>
@@ -157,5 +158,20 @@
         categoryMenuOpen = false;
         $("#categoryDropdown").hide();
         $("#categoryMenu").text("Shop by category\xa0\xa0\xa0▼");
+    });
+
+    var languageMenuOpen = false;
+    $("#languageMenu").on( "click", function() {
+        languageMenuOpen = !languageMenuOpen;
+        if (languageMenuOpen) {
+            $("#languageDropdown").show();
+        } else {
+            $("#languageDropdown").hide();
+        }
+    });
+    $("#languageDropdown").on( "mouseleave", function(event) {
+        event.stopPropagation();
+        languageMenuOpen = false;
+        $("#languageDropdown").hide();
     });
 </script>
