@@ -309,6 +309,28 @@ header {
     font-weight:bold;
 }
 
+.leftShelf {
+    height:250px;
+    background-color:#F0F0F0;
+    color:#403042;
+}
+
+.productPrice {
+    padding:5px;
+    border-radius:10px 0px 0px 10px;
+    background-color:#FF0072;
+    border-style: solid;
+    border-color:#FF0072;
+}
+
+.productBasket {
+    padding:5px;
+    border-radius:0px 10px 10px 0px;
+    background-color:#108DD6;
+    border-style: solid;
+    border-color:#108DD6;
+}
+
 @media only screen and (max-width: 1548px) {
     #headerLogo {
         width:100px;
@@ -386,11 +408,12 @@ header {
         height:50px;
     }
 
-    #landingImg {
-        display:none;
-    }
+    #landingImg { display:none; }
     
-    #homeSearchBar {
+    #homeSearchBar { width:95%; }
+
+    #landingLogo {
+        padding-top:0vh;
         width:95%;
     }
 
