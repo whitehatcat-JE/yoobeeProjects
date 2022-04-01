@@ -58,6 +58,10 @@ footer > ul {
     display:none;
 }
 
+#footerCompressedMenu > .footerTitle {
+    cursor: pointer;
+}
+
 #footerCompressedCategories {
     display:none;
 }
@@ -72,7 +76,7 @@ footer > ul {
 
     #footerCompressedMenu {
         display:unset;
-        width:200px;
+        width:180px;
         margin-top:25px;
         float:left;
     }

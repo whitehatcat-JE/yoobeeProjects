@@ -59,41 +59,6 @@ header {
     margin-left:5%;
 }
 
-@media only screen and (max-width: 1548px) {
-    #headerLogo {
-        width:100px;
-    }
-
-    .headerIcons {
-        width:25px;
-        padding-left:10px;
-    }
-
-    .headerLeftArticles {
-        margin-top:5px;
-    }
-
-    .headerRightArticles {
-        margin-top:2px;
-    }
-
-    #mainHeader {
-        padding: 5px;
-        padding-bottom:40px;
-    }
-
-    #mainHeader > li > a > p{
-        display: none;
-    }
-    
-    #mainHeader > li{
-        min-width:50px;
-    }
-
-    #footerPayments {
-        display:none;
-    }
-}
 
 #subHeader {
     background-color: #4C394E;
@@ -193,79 +158,12 @@ header {
 	border-style: solid;
     float:left;
     margin-right:10px;
+    cursor: pointer;
 }
 
 #categoryRightList {display:none;}
 
 #categoryLeftList {display:none;}
-
-@media only screen and (max-width: 1000px) {
-    .headerCategories {
-        display: none;
-    }
-
-    #cart {
-        min-width:100px;
-    }
-
-    #cartText {
-        padding-right:2px;
-    }
-
-    #cart > img {
-        display:none;
-    }
-
-    #topAuthors {
-        display:none;
-    }
-
-    #bestSelling {
-        display:none;
-    }
-
-    #categoryRightList {
-        display:unset;
-    }
-
-    #categoryAgeRange {
-        width:820px;
-    }
-}
-
-@media only screen and (max-width: 830px) {
-    #nonFiction {
-        display:none;
-    }
-
-    #fiction {
-        display:none;
-    }
-
-    #education {
-        display:none;
-    }
-
-    #personalDevelopment {
-        display:none;
-    }
-
-    #other {
-        display:none;
-    }
-
-    #categoryLeftList {
-        display:unset;
-    }
-
-    #categoryAgeRange {
-        width:450px;
-    }
-
-    #languageHeaderIcon {
-        display:none;
-    }
-}
 
 #languageMenu {cursor: pointer;}
 
@@ -342,4 +240,199 @@ header {
     height: 2px;
     background-color: #403042;
     margin-bottom:5px;
+}
+
+#landingArticle {
+    height:80vh;
+    padding-top:20vh;
+    padding-left:5vw;
+}
+
+#landingLogo {
+    padding-top:10vh;
+    width:45%;
+}
+
+#landingImg {
+    float:right;
+    width:25%;
+    padding-right:5%;
+}
+
+#homeSearchBar {
+    width:45%;
+}
+
+.homeSearchInput {
+    background-color: #F0F0F0;
+    color:#403042;
+    font-size:25px;
+    border-width:0px;
+    width:90%;
+    padding-left:10%;
+    height:50px;
+}
+
+#homeSearchInputShorter {
+    display:none;
+}
+
+#homeSearchInputShortest {
+    display:none;
+}
+
+#homeSearchIcon {
+    position: absolute;
+    left: 5vw;
+    width:50px;
+}
+
+#landingAdvancedButton {
+    border-radius:0px 0px 10px 10px;
+    background-color: #4C394E;
+    border-color: #4C394E;
+	border-style: solid;
+    padding:5px;
+    float:right;
+}
+
+.homeSearchInput::placeholder {
+    color:#4C394E;
+    font-style: italic;
+}
+
+#exploreText {
+    position: absolute; 
+    bottom: 0;
+    margin-bottom:20px;
+    font-size:15px;
+    font-weight:bold;
+}
+
+@media only screen and (max-width: 1548px) {
+    #headerLogo {
+        width:100px;
+    }
+
+    .headerIcons {
+        width:25px;
+        padding-left:10px;
+    }
+
+    .headerLeftArticles {
+        margin-top:5px;
+    }
+
+    .headerRightArticles {
+        margin-top:2px;
+    }
+
+    #mainHeader {
+        padding: 5px;
+        padding-bottom:40px;
+    }
+
+    #mainHeader > li > a > p{
+        display: none;
+    }
+    
+    #mainHeader > li{
+        min-width:50px;
+    }
+
+    #footerPayments {
+        display:none;
+    }
+
+    #homeSearchInputFull {
+        display:none;
+    }
+
+    #homeSearchInputShorter {
+        display:unset;
+    }
+
+    #homeSearchInputShortest {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .headerCategories { display: none; }
+
+    #cart { min-width:100px; }
+
+    #cartText { padding-right:2px; }
+
+    #cart > img { display:none;}
+
+    #topAuthors { display:none; }
+
+    #bestSelling { display:none; }
+
+    #categoryRightList { display:unset; }
+
+    #categoryAgeRange { width:820px; }
+
+    #homeSearchInputFull { display:none; }
+
+    #homeSearchInputShorter { display:none; }
+
+    #homeSearchInputShortest { display:unset; }
+
+    .homeSearchInput {
+        width:99%;
+        padding-left:1%;
+        height:50px;
+    }
+
+    #landingImg {
+        display:none;
+    }
+    
+    #homeSearchBar {
+        width:95%;
+    }
+
+    #homeSearchIcon { display:none; }
+}
+
+@media only screen and (max-width: 830px) {
+    #nonFiction {
+        display:none;
+    }
+
+    #fiction {
+        display:none;
+    }
+
+    #education {
+        display:none;
+    }
+
+    #personalDevelopment {
+        display:none;
+    }
+
+    #other {
+        display:none;
+    }
+
+    #categoryLeftList {
+        display:unset;
+    }
+
+    #categoryAgeRange {
+        width:450px;
+    }
+
+    #languageHeaderIcon {
+        display:none;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    #landingArticle {
+        padding-top:100px;
+    }
 }

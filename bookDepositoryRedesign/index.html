@@ -154,17 +154,27 @@
             <ul id="categoryAgeRange">
                 <div id="categoryHorizontalDivider"></div>
                 <li class="categoryGroup">Children's books by age range</li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 0-2</button></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 3-5</button></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 6-8</button></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 9-11</button></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Teen and Young Adult</button></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 0-2</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 3-5</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 6-8</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 9-11</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Teen and Young Adult</button></a></li>
             </ul>
         </div>
     </header>
-</a>
     <main>
-
+        <article id="landingArticle">
+            <img src="images/svgs/bookDepositoryIcon.svg" id="landingImg">
+            <img src="images/svgs/bookDepositoryLogo.svg" id="landingLogo">
+            <div id="homeSearchBar">
+                <input type="text" class="homeSearchInput" id="homeSearchInputFull" name="searchInput" placeholder="Search for books by keyword / title / author / ISBN">
+                <input type="text" class="homeSearchInput" id="homeSearchInputShorter" name="searchInput" placeholder="Search for books...">
+                <input type="text" class="homeSearchInput" id="homeSearchInputShortest" name="searchInput" placeholder="Search...">
+                <img src="images/svgs/searchIcon.svg" id="homeSearchIcon">
+                <a href="index.html"><button type="button" onclick="window.location.href='index.html'" id="landingAdvancedButton">Advanced Search</button></a>
+            </div>
+            <p id="exploreText">Explore <br>▼</p>
+        </article>
     </main>
     <footer>
         <ul id="footerCompressedMenu">
@@ -229,15 +239,50 @@
 <script src="javascript/headerDropdowns.js"></script>
 <script>
 $("#footerCompressedExplore").on( "click", function() {
-    $("#footerCompressedCategories").text(`
-    <li class="footerLink"><a href="index.html">About us</a></li>
-    <li class="footerDivider"></li>
-    <li class="footerLink"><a href="index.html">Sitemap</a></li>
-    <li class="footerDivider"></li>
-    <li class="footerLink"><a href="index.html">Bookmarks</a></li>
-    <li class="footerDivider"></li>
-    <li class="footerLink"><a href="index.html">Sign in/Join</a></li>
-    <li class="footerDivider"></li>
-    `);
+    document.getElementById("footerCompressedCategories").innerHTML = `
+        <li class="footerLink"><a href="index.html">About us</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Sitemap</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Bookmarks</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Sign in/Join</a></li>
+        <li class="footerDivider"></li>
+    `;
+});
+
+$("#footerCompressedHelp").on( "click", function() {
+    document.getElementById("footerCompressedCategories").innerHTML = `
+        <li class="footerLink"><a href="index.html">Help</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Contact us</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Where's my stuff?</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Where do you deliver?</a></li>
+        <li class="footerDivider"></li>
+    `;
+});
+
+$("#footerCompressedJoin").on( "click", function() {
+    document.getElementById("footerCompressedCategories").innerHTML = `
+        <li class="footerLink"><a href="index.html">Affiliates</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Jobs</a></li>
+        <li class="footerDivider"></li>
+    `;
+});
+
+$("#footerCompressedImportant").on( "click", function() {
+    document.getElementById("footerCompressedCategories").innerHTML = `
+        <li class="footerLink"><a href="index.html">Cookies</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Privacy policy</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">Terms & Conditions</a></li>
+        <li class="footerDivider"></li>
+        <li class="footerLink"><a href="index.html">UK Modern Slavery Statement</a></li>
+        <li class="footerDivider"></li>
+    `;
 });
 </script>
