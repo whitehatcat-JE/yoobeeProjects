@@ -4,6 +4,7 @@ header {
     top: 0;
     width: 100%;
     color: #F0F0F0;
+    z-index:1;
 }
 
 #mainHeader {
@@ -310,13 +311,88 @@ header {
 }
 
 .leftShelf {
-    height:250px;
+    height:375px;
+    padding-left:5vw;
+    padding-top:50px;
     background-color:#F0F0F0;
     color:#403042;
 }
 
+.shelfFloor {
+    background-color:#403042;
+    height:5px;
+    width:80%;
+    margin-top:16vw;
+    left:0;
+    position:absolute;
+}
+
+.shelfEdge {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left:79%;
+    margin-top:15.4vw;
+    background-color:#403042;
+    left:0;
+    position:absolute;
+}
+
+.shelfEdgeInner {
+    height:19px;
+    width:19px;
+    border-radius: 50%;
+    background-color:#F0F0F0;
+    margin-left:3px;
+    margin-top:3px;
+}
+
+.shelfCategoryName {
+    color:#403042;
+    font-weight:bold;
+    font-size:25px;
+    position:absolute;
+    margin-left:77%;
+    margin-top:15.2vw;
+}
+
+.shelfIcon {
+    width:10%;
+    margin-left:5%;
+    transform: rotate(30deg);
+    z-index:0;
+}
+
+.shelfArrow {
+    width:5%;
+    padding-bottom:4%;
+}
+
+.product {
+    width:10%;
+    padding-right:2%;
+    float:left;
+}
+
+.extraProducts {
+    float:left;
+}
+
+.product > a > img { 
+    width:100%;
+}
+
+.productAuthor {
+    color:#403042;
+    font-size:12px;
+    text-align: center;
+    padding-bottom:20px;
+}
+
 .productPrice {
     padding:5px;
+    margin-left:10%;
     border-radius:10px 0px 0px 10px;
     background-color:#FF0072;
     border-style: solid;
@@ -329,6 +405,23 @@ header {
     background-color:#108DD6;
     border-style: solid;
     border-color:#108DD6;
+}
+
+@media only screen and (max-width:1750px) {
+    .productPrice {
+        margin-left:0%;
+    }
+}
+
+@media only screen and (max-width:1650px) {
+    .productPrice { 
+        display:none;
+    }
+
+    .productBasket {
+        border-radius:10px;
+        width:100%;
+    }
 }
 
 @media only screen and (max-width: 1548px) {
@@ -418,6 +511,42 @@ header {
     }
 
     #homeSearchIcon { display:none; }
+
+    .leftShelf {
+        padding-top:25px;
+    }
+
+    .extraProduct {
+        display:none;
+    }
+
+    .shelfIcon {
+        display:none;
+    }
+
+    .shelfArrow {
+        margin-top:70px;
+        width:50px;
+    }
+
+    .shelfFloor {
+        margin-top:290px;
+        width:85%;
+    }
+
+    .shelfEdge {
+        margin-left:83%;
+        margin-top:280px;
+    }
+
+    .shelfCategoryName {
+        margin-top:255px;
+        margin-left:0px;
+    }
+
+    .product {
+        width:120px;
+    }
 }
 
 @media only screen and (max-width: 830px) {
@@ -450,6 +579,10 @@ header {
     }
 
     #languageHeaderIcon {
+        display:none;
+    }
+
+    .edgeProduct {
         display:none;
     }
 }
