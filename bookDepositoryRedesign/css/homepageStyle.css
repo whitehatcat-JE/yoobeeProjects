@@ -257,6 +257,7 @@ header {
 #landingImg {
     float:right;
     width:25%;
+    max-height: 75vh;
     padding-right:5%;
 }
 
@@ -318,6 +319,15 @@ header {
     color:#403042;
 }
 
+.rightShelf {
+    height:375px;
+    padding-left:5vw;
+    padding-top:50px;
+    background-color:#F0F0F0;
+    color:#403042;
+    transform: scaleX(-1);
+}
+
 .shelfFloor {
     background-color:#403042;
     height:5px;
@@ -357,6 +367,11 @@ header {
     margin-top:15.2vw;
 }
 
+.rightShelf > .shelfCategoryName {
+    transform: scaleX(-1);
+    text-align: right;
+}
+
 .shelfIcon {
     width:10%;
     margin-left:5%;
@@ -373,6 +388,10 @@ header {
     width:10%;
     padding-right:2%;
     float:left;
+}
+
+.rightShelf > .product {
+    transform: scaleX(-1);
 }
 
 .extraProducts {
@@ -590,5 +609,14 @@ header {
 @media only screen and (max-height: 500px) {
     #landingArticle {
         padding-top:100px;
+        height:400px;
+    }
+
+    #landingImg {
+        max-height:375px;
+    }
+
+    #exploreText {
+        display:none;
     }
 }
