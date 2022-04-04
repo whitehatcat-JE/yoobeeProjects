@@ -163,6 +163,15 @@
         </div>
     </header>
     <main>
+        <div class="itemPopupBackdrop"></div>
+        <article class="itemPopup">
+            <img src="images/svgs/minimizeIcon.svg" class="itemMinimize"/>
+            <h1>Item added to cart</h1>
+            <div class="itemPopupDivider"></div>
+            <p>You have <span class="itemCountPopup">1 item</span> in your cart<br>Total cost: <span class="itemPricePopup">NZ $00.00</span></p>
+            <button type="button" onclick="" class="itemContinuePopup">Continue Shopping</button>
+            <button type="button" onclick="window.location.href='cart.html'" class="itemBasketPopup">Basket / Checkout</button>
+        </article>
         <article id="landingArticle">
             <img src="images/svgs/bookDepositoryIcon.svg" id="landingImg">
             <img src="images/svgs/bookDepositoryLogo.svg" id="landingLogo">
@@ -410,51 +419,75 @@
 
 <script src="javascript/headerDropdowns.js"></script>
 <script>
-$("#footerCompressedExplore").on( "click", function() {
-    document.getElementById("footerCompressedCategories").innerHTML = `
-        <li class="footerLink"><a href="index.html">About us</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Sitemap</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Bookmarks</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Sign in/Join</a></li>
-        <li class="footerDivider"></li>
-    `;
-});
+    $(".itemPopupBackdrop").on( "click", function() {
+        $(".itemPopupBackdrop").css("display", "none");
+        $(".itemPopup").css("display", "none");
+    });
 
-$("#footerCompressedHelp").on( "click", function() {
-    document.getElementById("footerCompressedCategories").innerHTML = `
-        <li class="footerLink"><a href="index.html">Help</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Contact us</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Where's my stuff?</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Where do you deliver?</a></li>
-        <li class="footerDivider"></li>
-    `;
-});
+    $(".itemMinimize").on( "click", function() {
+        $(".itemPopupBackdrop").css("display", "none");
+        $(".itemPopup").css("display", "none");
+    });
 
-$("#footerCompressedJoin").on( "click", function() {
-    document.getElementById("footerCompressedCategories").innerHTML = `
-        <li class="footerLink"><a href="index.html">Affiliates</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Jobs</a></li>
-        <li class="footerDivider"></li>
-    `;
-});
+    $(".itemContinuePopup").on( "click", function() {
+        $(".itemPopupBackdrop").css("display", "none");
+        $(".itemPopup").css("display", "none");
+    });
 
-$("#footerCompressedImportant").on( "click", function() {
-    document.getElementById("footerCompressedCategories").innerHTML = `
-        <li class="footerLink"><a href="index.html">Cookies</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Privacy policy</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">Terms & Conditions</a></li>
-        <li class="footerDivider"></li>
-        <li class="footerLink"><a href="index.html">UK Modern Slavery Statement</a></li>
-        <li class="footerDivider"></li>
-    `;
-});
+    $(".productPrice").on( "click", function() {
+        $(".itemPopupBackdrop").css("display", "unset");
+        $(".itemPopup").css("display", "unset");
+    });
+
+    $(".productBasket").on( "click", function() {
+        $(".itemPopupBackdrop").css("display", "unset");
+        $(".itemPopup").css("display", "unset");
+    });
+    $("#footerCompressedExplore").on( "click", function() {
+        document.getElementById("footerCompressedCategories").innerHTML = `
+            <li class="footerLink"><a href="index.html">About us</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Sitemap</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Bookmarks</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Sign in/Join</a></li>
+            <li class="footerDivider"></li>
+        `;
+    });
+
+    $("#footerCompressedHelp").on( "click", function() {
+        document.getElementById("footerCompressedCategories").innerHTML = `
+            <li class="footerLink"><a href="index.html">Help</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Contact us</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Where's my stuff?</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Where do you deliver?</a></li>
+            <li class="footerDivider"></li>
+        `;
+    });
+
+    $("#footerCompressedJoin").on( "click", function() {
+        document.getElementById("footerCompressedCategories").innerHTML = `
+            <li class="footerLink"><a href="index.html">Affiliates</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Jobs</a></li>
+            <li class="footerDivider"></li>
+        `;
+    });
+
+    $("#footerCompressedImportant").on( "click", function() {
+        document.getElementById("footerCompressedCategories").innerHTML = `
+            <li class="footerLink"><a href="index.html">Cookies</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Privacy policy</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Terms & Conditions</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">UK Modern Slavery Statement</a></li>
+            <li class="footerDivider"></li>
+        `;
+    });
 </script>

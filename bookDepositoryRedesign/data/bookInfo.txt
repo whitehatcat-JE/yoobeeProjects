@@ -1,0 +1,2 @@
+/*BookID: Name, Author, Price, fiveStarCount, fourStarCount, threeStarCount, twoStarCount, oneStarCount, Blurb, OriginalPrice, Format, Dimensions, Publication Date, Publisher, Imprint, Publication City/Country, Language, Illustrations note, ISBN13, Bestseller Rank, Related Books*/
+0:"Dune", "Frank Herbert", 21.33, 532627, 313143, 136037, 39056, 20361, 

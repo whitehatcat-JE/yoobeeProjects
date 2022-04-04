@@ -416,6 +416,7 @@ header {
     background-color:#FF0072;
     border-style: solid;
     border-color:#FF0072;
+    cursor: pointer;
 }
 
 .productBasket {
@@ -424,6 +425,7 @@ header {
     background-color:#108DD6;
     border-style: solid;
     border-color:#108DD6;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:1750px) {

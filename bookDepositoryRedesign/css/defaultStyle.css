@@ -66,7 +66,122 @@ footer > ul {
     display:none;
 }
 
+.itemPopup {
+    background-color:#F0F0F0;
+    border-color:#403042;
+    border-radius: 5px;
+    border-style: solid;
+    position:fixed;
+    margin-left:30%;
+    margin-top:100px;
+    width:40%;
+    height:200px;
+    z-index:4;
+    display:none;
+}
+
+.itemPopupBackdrop {
+    width:100vw;
+    height:100vh;
+    background-color:#312533;
+    opacity: 0.3;
+    z-index:3;
+    position:fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display:none;
+}
+
+.itemPopup > h1 {
+    color:#403042;
+    font-size:25px;
+    font-weight:bold;
+    padding-left:2%;
+    padding-top:5px;
+}
+
+.itemPopup > p {
+    color:#403042;
+    padding-left:2%;
+    padding-top:5px;
+    line-height: 25px;
+}
+
+.itemCountPopup {
+    color:#403042;
+    font-weight: bold;
+}
+
+.itemPricePopup {
+    color:#FF0072;
+    font-weight:bold;
+}
+
+.itemPopupDivider {
+    background-color:#403042;
+    height:2px;
+    width:96%;
+    margin-left:2%;
+}
+
+.itemPopup > button {
+    margin-top:10px;
+    font-weight: bold;
+    font-size: 25px;
+    padding:10px;
+    border-radius: 15px;
+    border-style: solid;
+}
+
+.itemContinuePopup {
+    float:left;
+    margin-left:2%;
+    background-color:#312533;
+    border-color: #312533;
+    cursor: pointer;
+}
+
+.itemBasketPopup {
+    float:right;
+    margin-right:2%;
+    background-color:#108DD6;
+    border-color: #108DD6;
+    cursor: pointer;
+}
+
+.itemPopup > img {
+    margin-top:8px;
+    margin-right:2%;
+    width:20px;
+    float:right;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1210px) {
+    .itemPopup { 
+        height:250px;
+    }
+
+    .itemBasketPopup { 
+        float:left;
+        margin-left:2%;
+        margin-right:0%;
+    }
+}
 @media only screen and (max-width: 900px) {
+    .itemPopup { 
+        width:50%;
+        margin-left:25%;
+    }
+
+    .itemBasketPopup { 
+        margin-left:2.5%;
+    }
+
+    .itemContinuePopup { 
+        margin-left:1.5%;
+    }
     footer {
         padding-left:25px;
     }
