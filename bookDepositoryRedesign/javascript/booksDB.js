@@ -39,7 +39,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781471156267",
-		"bestsellerRank":"1",
+		"bestsellerRank":"3",
 		"relatedBooks":[2, 0, 6, 7, 8],
 		"categories":["Contemporay Fiction", "Romance", "Romance Books", "Adult & Contemporary Romance", "Poverty & Unemployment", "Safety In The Home", "Family & Relationships"]
 	},
@@ -61,7 +61,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781398515697",
-		"bestsellerRank":"3",
+		"bestsellerRank":"4",
 		"relatedBooks":[1, 0, 6, 7, 8],
 		"categories":["Contemporay Fiction", "Romance", "Romance Books", "Adult & Contemporary Romance", "Historical Romance", "Historical Fiction", "Seperation & Divorce"]
 	},
@@ -83,7 +83,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781974709939",
-		"bestsellerRank":"4",
+		"bestsellerRank":"5",
 		"relatedBooks":[4, 5, 9, 10, 11, 12, 13, 14, 15, 16],
 		"categories":["Graphic Novels, Anime & Manga"]
 	},
@@ -105,7 +105,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781974709946",
-		"bestsellerRank":"5",
+		"bestsellerRank":"10",
 		"relatedBooks":[3, 5],
 		"categories":["Graphic Novels, Anime & Manga"]
 	},
@@ -127,7 +127,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781974709953",
-		"bestsellerRank":"6",
+		"bestsellerRank":"9",
 		"relatedBooks":[3, 4],
 		"categories":["Graphic Novels, Anime & Manga"]
 	},
@@ -149,7 +149,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781847941831",
-		"bestsellerRank":"7",
+		"bestsellerRank":"6",
 		"relatedBooks":[0, 1, 2, 7, 8],
 		"categories":["Social, Group Or Collective Psychology", "Cognition & Cognitive Psychology", "Finace & Accounting", "Dating, Relationships, Living Together & Marriage", "Personal Development", "Advice On Careers & Achieving Success", "Popular Psychology", "Assertiveness, Motivation & Self-esteem"]
 	},
@@ -171,7 +171,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781847941831",
-		"bestsellerRank":"7",
+		"bestsellerRank":"8",
 		"relatedBooks":[0, 1, 2, 6, 8],
 		"categories":["Social, Group Or Collective Psychology", "Cognition & Cognitive Psychology", "Finace & Accounting", "Dating, Relationships, Living Together & Marriage", "Personal Development", "Advice On Careers & Achieving Success", "Popular Psychology", "Assertiveness, Motivation & Self-esteem"]
 	},
@@ -193,7 +193,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9780857197689",
-		"bestsellerRank":"8",
+		"bestsellerRank":"7",
 		"relatedBooks":[0, 1, 2, 6, 7],
 		"categories":["Investment & Securities", "Business Communication & Presentation", "Personal Finance"]
 	},
@@ -215,7 +215,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrated throughout",
 		"isbn":"9780316259361",
-		"bestsellerRank":"9",
+		"bestsellerRank":"1",
 		"relatedBooks":[10, 11, 12, 13, 14, 15, 16, 3],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	},
@@ -237,7 +237,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrations throughout",
 		"isbn":"9780316342179",
-		"bestsellerRank":"10",
+		"bestsellerRank":"11",
 		"relatedBooks":[9, 11, 12, 13, 14, 15, 16],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	},
@@ -259,7 +259,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrated throughout",
 		"isbn":"9780316545426",
-		"bestsellerRank":"11",
+		"bestsellerRank":"12",
 		"relatedBooks":[9, 10, 12, 13, 14, 15, 16],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	},
@@ -281,7 +281,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrated throughout",
 		"isbn":"9781975328146",
-		"bestsellerRank":"12",
+		"bestsellerRank":"13",
 		"relatedBooks":[9, 10, 11, 13, 14, 15, 16],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	},
@@ -303,7 +303,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrated throughout",
 		"isbn":"9781975383336",
-		"bestsellerRank":"13",
+		"bestsellerRank":"14",
 		"relatedBooks":[9, 10, 11, 12, 14, 15, 16],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	},
@@ -325,7 +325,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrated throughout",
 		"isbn":"9781975339913",
-		"bestsellerRank":"14",
+		"bestsellerRank":"15",
 		"relatedBooks":[9, 10, 11, 12, 13, 15, 16],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	},
@@ -347,7 +347,7 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrated throughout",
 		"isbn":"9781975343385",
-		"bestsellerRank":"15",
+		"bestsellerRank":"16",
 		"relatedBooks":[9, 10, 11, 12, 13, 14, 16],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	},
@@ -369,8 +369,49 @@ var books = {
 		"language":"English",
 		"illustrationNote":"Illustrated throughout",
 		"isbn":"9781975318550",
-		"bestsellerRank":"16",
+		"bestsellerRank":"17",
 		"relatedBooks":[9, 10, 11, 12, 13, 14, 15],
 		"categories":["Graphic Novels, Anime & Manga", "Sword Art Online", "Fantasy", "Adventure Books", "Science Fiction", "Alternative Reality"]
 	}
 };
+
+var gamingCollection = [9, 10, 11, 12, 13, 14, 15, 16];
+var youtubeCollection = [6, 7, 8, 2, 1, 0];
+var foodCollection = [1, 2, 3, 4, 16, 6];
+
+function getBestsellingOrder() {
+	var bestsellingBooks = [];
+	for (var bookCount = 0; bookCount < Object.keys(books).length; bookCount++) {
+		bestsellingBooks.push(0);
+	}
+	for (var bookID = 0; bookID < Object.keys(books).length; bookID++) {
+		bestsellingBooks[books[bookID]["bestsellerRank"]-1] = bookID;
+	}
+
+	return bestsellingBooks;
+}
+
+function findResults(search) {
+	var resultIDs = [];
+	for (var bookID = 0; bookID < Object.keys(books).length; bookID++) {
+		var regEXQueries = [
+			books[bookID]["name"],
+			books[bookID]["author"],
+			books[bookID]["isbn"],
+			books[bookID]["location"],
+			books[bookID]["language"]
+		];
+
+		/*books[bookID]["categories"].forEach(function (category, index) {
+			regEXQueries.push("/" + category + "/g");
+		});*/
+		var newInverseQuery = new RegExp(search, "g");
+		regEXQueries.forEach(function (regQuery, index) {
+			var newQuery = new RegExp(regQuery, "g");
+			if ((search.match(newQuery)||[]).length + (regQuery.match(newInverseQuery)||[]).length > 0 && !(resultIDs.includes(bookID)) ) {
+				resultIDs.push(bookID);
+			}
+		});
+	}
+	return resultIDs;
+}

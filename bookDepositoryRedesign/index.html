@@ -176,11 +176,78 @@
             <img src="images/svgs/bookDepositoryIcon.svg" id="landingImg">
             <img src="images/svgs/bookDepositoryLogo.svg" id="landingLogo">
             <div id="homeSearchBar">
-                <input type="text" class="homeSearchInput" id="homeSearchInputFull" name="searchInput" placeholder="Search for books by keyword / title / author / ISBN">
-                <input type="text" class="homeSearchInput" id="homeSearchInputShorter" name="searchInput" placeholder="Search for books...">
-                <input type="text" class="homeSearchInput" id="homeSearchInputShortest" name="searchInput" placeholder="Search...">
+                <input type="text" class="homeSearchInput" id="homeSearchInputFull" name="searchInput" placeholder="Search for books by keyword / title / author / ISBN" maxLength="35">
+                <input type="text" class="homeSearchInput" id="homeSearchInputShorter" name="searchInput" placeholder="Search for books..." maxLength="35">
+                <input type="text" class="homeSearchInput" id="homeSearchInputShortest" name="searchInput" placeholder="Search..." maxLength="35">
                 <img src="images/svgs/searchIcon.svg" id="homeSearchIcon">
                 <a href="index.html"><button type="button" onclick="window.location.href='index.html'" id="landingAdvancedButton">Advanced Search</button></a>
+            </div>
+            <div id="searchResults">
+                <h1></h1>
+                <div class="searchResultDivider"></div>
+                <h2 id="textResult1">SEARCH QUERY</h2>
+                <div class="searchResultDivider"></div>
+                <h2 id="textResult2">SEARCH QUERY</h2>
+                <div class="searchResultDivider"></div>
+                <h2 id="textResult3">SEARCH QUERY</h2>
+                <div class="searchResultDivider"></div>
+                <h2 id="textResult4">SEARCH QUERY</h2>
+                <div class="searchResultDivider"></div>
+                <h2 id="textResult5">SEARCH QUERY</h2>
+                <div class="searchResultDivider"></div>
+                <h2 id="textResult6">SEARCH QUERY</h2>
+                <div class="searchResultDivider"></div>
+                <div class="imgResult" id="imgResult1">
+                    <img src="images/bookcovers/0.jpg">
+                    <h1>SEARCH QUERY</h1>
+                    <p>SEARCH QUERY</p>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchPaperbackOption">Paperback</button>
+                </div>
+                <div class="searchResultDivider" id="imgDiv2"></div>
+                <div class="imgResult" id="imgResult2">
+                    <img src="images/bookcovers/0.jpg">
+                    <h1>SEARCH QUERY</h1>
+                    <p>SEARCH QUERY</p>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchPaperbackOption">Paperback</button>
+                </div>
+                <div class="searchResultDivider" id="imgDiv3"></div>
+                <div class="imgResult" id="imgResult3">
+                    <img src="images/bookcovers/0.jpg">
+                    <h1>SEARCH QUERY</h1>
+                    <p>SEARCH QUERY</p>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchPaperbackOption">Paperback</button>
+                </div>
+                <div class="searchResultDivider" id="imgDiv4"></div>
+                <div class="imgResult" id="imgResult4">
+                    <img src="images/bookcovers/0.jpg">
+                    <h1>SEARCH QUERY</h1>
+                    <p>SEARCH QUERY</p>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchPaperbackOption">Paperback</button>
+                </div>
+                <div class="searchResultDivider"></div>
+                <div id="searchTypes">
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton firstTypeButton" id="searchPaperbackOption">Paperbacks</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchHardcoverOption">Hardcovers</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchBundleOption">Bundles</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton" id="searchAudioOption">Audiobooks</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton lastTypeButton" id="searchStationaryOption">Stationary</button>
+                </div>
             </div>
             <p id="exploreText">Explore <br>▼</p>
         </article>
@@ -190,37 +257,37 @@
             <p class="shelfCategoryName">Bestselling Books</p>
             <a href="searchQuery.html"><img src="images/svgs/arrowIcon.svg" class="shelfArrow"></a>
             <img src="images/svgs/bookDepositoryIcon.svg" class="shelfIcon">
-            <div class="product">
+            <div class="product" id="topShelf1">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="topShelf2">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="topShelf3">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product edgeProduct">
+            <div class="product edgeProduct" id="topShelf4">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="topShelf5">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="topShelf6">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
@@ -230,40 +297,40 @@
         <article class="rightShelf">
             <div class="shelfFloor"></div>
             <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
-            <p class="shelfCategoryName">Bestselling Books</p>
+            <p class="shelfCategoryName">Gaming</p>
             <a href="searchQuery.html"><img src="images/svgs/arrowIcon.svg" class="shelfArrow"></a>
             <img src="images/svgs/bookDepositoryIcon.svg" class="shelfIcon">
-            <div class="product">
+            <div class="product" id="secondShelf1">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="secondShelf2">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="secondShelf3">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product edgeProduct">
+            <div class="product edgeProduct" id="secondShelf4">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="secondShelf5">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="secondShelf6">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
@@ -273,40 +340,40 @@
         <article class="leftShelf">
             <div class="shelfFloor"></div>
             <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
-            <p class="shelfCategoryName">Bestselling Books</p>
+            <p class="shelfCategoryName">Youtube</p>
             <a href="searchQuery.html"><img src="images/svgs/arrowIcon.svg" class="shelfArrow"></a>
             <img src="images/svgs/bookDepositoryIcon.svg" class="shelfIcon">
-            <div class="product">
+            <div class="product" id="thirdShelf1">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="thirdShelf2">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="thirdShelf3">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product edgeProduct">
+            <div class="product edgeProduct" id="thirdShelf4">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="thirdShelf5">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="thirdShelf6">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
@@ -316,40 +383,40 @@
         <article class="rightShelf">
             <div class="shelfFloor"></div>
             <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
-            <p class="shelfCategoryName">Bestselling Books</p>
+            <p class="shelfCategoryName">Food and Drink</p>
             <a href="searchQuery.html"><img src="images/svgs/arrowIcon.svg" class="shelfArrow"></a>
             <img src="images/svgs/bookDepositoryIcon.svg" class="shelfIcon">
-            <div class="product">
+            <div class="product" id="fourthShelf1">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="fourthShelf2">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product">
+            <div class="product" id="fourthShelf3">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product edgeProduct">
+            <div class="product edgeProduct" id="fourthShelf4">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="fourthShelf5">
                 <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                 <p class="productAuthor">Frank Herbert</p>
                 <button type="button" onclick="" class="productPrice">20.88</button>
                 <button type="button" onclick="" class="productBasket">Add to basket</button>
             </div>
-            <div class="product extraProduct">
+            <div class="product extraProduct" id="fourthShelf6">
                 <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                 <p class="productAuthor">Colleen Hoover</p>
                 <button type="button" onclick="" class="productPrice">16.91</button>
@@ -420,6 +487,134 @@
 <script src="javascript/booksDB.js"></script>
 <script src="javascript/headerDropdowns.js"></script>
 <script>
+    /*Data assignment*/
+    function loadData() {
+        var bestsellingIdx = getBestsellingOrder();
+        for (var bestsellingID = 0; bestsellingID < 6; bestsellingID++) {
+            $("#topShelf" + (bestsellingID + 1) + " > a > img").attr("src","images/bookcovers/" + bestsellingIdx[bestsellingID] + ".jpg");
+            $("#topShelf" + (bestsellingID + 1) + " > a").attr("href","product.html?id=" + bestsellingIdx[bestsellingID]);
+            $("#topShelf" + (bestsellingID + 1) + " > .productAuthor").text(books[bestsellingIdx[bestsellingID]]["author"]);
+            $("#topShelf" + (bestsellingID + 1) + " > .productPrice").text(books[bestsellingIdx[bestsellingID]]["price"]);
+        }
+        for (var gamingID = 0; gamingID < 6; gamingID++) {
+            $("#secondShelf" + (gamingID + 1) + " > a > img").attr("src","images/bookcovers/" + gamingCollection[gamingID] + ".jpg");
+            $("#secondShelf" + (gamingID + 1) + " > a").attr("href","product.html?id=" + gamingCollection[gamingID]);
+            $("#secondShelf" + (gamingID + 1) + " > .productAuthor").text(books[gamingCollection[gamingID]]["author"]);
+            $("#secondShelf" + (gamingID + 1) + " > .productPrice").text(books[gamingCollection[gamingID]]["price"]);
+        }
+        for (var youtubeID = 0; youtubeID < 6; youtubeID++) {
+            $("#thirdShelf" + (youtubeID + 1) + " > a > img").attr("src","images/bookcovers/" + youtubeCollection[youtubeID] + ".jpg");
+            $("#thirdShelf" + (youtubeID + 1) + " > a").attr("href","product.html?id=" + youtubeCollection[youtubeID]);
+            $("#thirdShelf" + (youtubeID + 1) + " > .productAuthor").text(books[youtubeCollection[youtubeID]]["author"]);
+            $("#thirdShelf" + (youtubeID + 1) + " > .productPrice").text(books[youtubeCollection[youtubeID]]["price"]);
+        }
+        for (var foodID = 0; foodID < 6; foodID++) {
+            $("#fourthShelf" + (foodID + 1) + " > a > img").attr("src","images/bookcovers/" + foodCollection[foodID] + ".jpg");
+            $("#fourthShelf" + (foodID + 1) + " > a").attr("href","product.html?id=" + foodCollection[foodID]);
+            $("#fourthShelf" + (foodID + 1) + " > .productAuthor").text(books[foodCollection[foodID]]["author"]);
+            $("#fourthShelf" + (foodID + 1) + " > .productPrice").text(books[foodCollection[foodID]]["price"]);
+        }
+    }
+    
+    window.onload = loadData;
+
+    /*Search Bar*/
+    var query = "";
+    function updateSearchResults(){
+        $("#homeSearchInputFull").val(query);
+        $("#homeSearchInputShorter").val(query);
+        $("#homeSearchInputShortest").val(query);
+
+        if (query == "") {
+            $("#searchResults").css("display","none");
+        } else {
+            $("#searchResults").css("display","unset");
+            $("#searchResults > h1").text(query);
+            var results = findResults(query);
+            if (results.length > 0) {
+                $("#imgResult1 > h1").text(books[results[0]]["name"]);
+                $("#imgResult1 > p").text(books[results[0]]["author"]);
+                $("#imgResult1 > img").attr("src", "images/bookcovers/" + results[0] + ".jpg");
+                $("#imgResult1").css("visibility","visible");
+                updateImgResult("#imgResult1", books[results[0]]["type"], Object.keys(books[results[0]]["alternativeTypes"]));
+            } else {
+                $("#imgResult1").css("visibility","hidden");
+            }
+            if (results.length > 1) {
+                $("#imgResult2 > h1").text(books[results[1]]["name"]);
+                $("#imgResult2 > p").text(books[results[1]]["author"]);
+                $("#imgResult2 > img").attr("src", "images/bookcovers/" + results[1] + ".jpg");
+                $("#imgResult2").css("visibility","visible");
+                $("#imgDiv2").css("visibility","visible");
+                updateImgResult("#imgResult2", books[results[1]]["type"], Object.keys(books[results[1]]["alternativeTypes"]));
+            } else {
+                $("#imgResult2").css("visibility","hidden");
+                $("#imgDiv2").css("visibility","hidden");
+            }
+            if (results.length > 2) {
+                $("#imgResult3 > h1").text(books[results[2]]["name"]);
+                $("#imgResult3 > p").text(books[results[2]]["author"]);
+                $("#imgResult3 > img").attr("src", "images/bookcovers/" + results[2] + ".jpg");
+                $("#imgResult3").css("visibility","visible");
+                $("#imgDiv3").css("visibility","visible");
+                updateImgResult("#imgResult3", books[results[2]]["type"], Object.keys(books[results[2]]["alternativeTypes"]));
+            } else {
+                $("#imgResult3").css("visibility","hidden");
+                $("#imgDiv3").css("visibility","hidden");
+            }
+            if (results.length > 3) {
+                $("#imgResult4 > h1").text(books[results[3]]["name"]);
+                $("#imgResult4 > p").text(books[results[3]]["author"]);
+                $("#imgResult4 > img").attr("src", "images/bookcovers/" + results[3] + ".jpg");
+                $("#imgResult4").css("visibility","visible");
+                $("#imgDiv4").css("visibility","visible");
+                updateImgResult("#imgResult4", books[results[3]]["type"], Object.keys(books[results[3]]["alternativeTypes"]));
+            } else {
+                $("#imgResult4").css("visibility","hidden");
+                $("#imgDiv4").css("visibility","hidden");
+            }
+        }
+    }
+    
+    function updateImgResult(resultID, type, alternatives) {
+        var types = ["#searchPaperbackOption", "#searchHardcoverOption", "#searchBundleOption", "#searchAudioOption", "#searchStationaryOption"];
+        var allowedIDs = alternatives;
+        allowedIDs.push(type);
+        allowedIDs.sort();
+        types.forEach(function (type, index) {
+			$(type).css("display","none");
+			$(type).removeClass("firstTypeButton lastTypeButton selectedTypeButton onlyTypeButton");
+		});
+
+        allowedIDs.forEach(function (id, index) {
+            $(types[id]).css("display","unset");
+        })
+
+        if (allowedIDs.length > 1) {
+            $(types[allowedIDs[0]]).addClass("firstTypeButton");
+            $(types[allowedIDs[allowedIDs.length-1]]).addClass("lastTypeButton");
+        } else {
+            $(types[allowedIDs[-1]]).addClass("onlyTypeButton");
+        }
+        $(types[type]).addClass("selectedTypeButton");
+    }
+
+    $("#homeSearchInputFull").on('input propertychange', function(){
+        query = $("#homeSearchInputFull").val();
+        updateSearchResults();
+    });
+    
+    $("#homeSearchInputShorter").on('input propertychange', function(){
+        query = $("#homeSearchInputShorter").val();
+        updateSearchResults();
+    });
+    
+    $("#homeSearchInputShortest").on('input propertychange', function(){
+        query = $("#homeSearchInputShortest").val();
+        updateSearchResults();
+    });
+
+    /*Body Interactions*/
     $(".itemPopupBackdrop").on( "click", function() {
         $(".itemPopupBackdrop").css("display", "none");
         $(".itemPopup").css("display", "none");

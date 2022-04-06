@@ -311,6 +311,94 @@ header {
     font-weight:bold;
 }
 
+#searchResults {
+    background-color:#F0F0F0;
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top:120px;
+    margin-right:1%;
+    width:35%;
+    padding-left:10px;
+    padding-right:10px;
+    height:800px;
+    display:none;
+}
+
+#searchResults > h1 {
+    text-align: center;
+    color:#403042;
+}
+
+#searchResults > h2 {
+    color:#403042;
+    font-weight: normal;
+}
+
+.searchResultsButton {
+    float:right;
+    background-color:#108DD6;
+    border-color:#108DD6;
+    border-radius:0px;
+    border-style: solid;
+    border-width:5px;
+    margin-left:2px;
+    margin-top:40px;
+    cursor: pointer;
+}
+
+.firstTypeButton {
+    border-radius:10px 0px 0px 10px;
+}
+
+.selectedTypeButton {
+    background-color:#FF0072;
+    border-color:#FF0072;
+}
+
+.lastTypeButton {
+    border-radius:0px 10px 10px 0px;
+}
+
+.onlyTypeButton {
+    border-radius:10px 10px 10px 10px;
+}
+
+#searchTypes > button {
+    float:left;
+    background-color:#108DD6;
+    border-color:#108DD6;
+    width:19.7%;
+    margin-top:6px;
+}
+
+.imgResult {
+    height:120px;
+}
+
+.imgResult > h1 {
+    color:#403042;
+}
+
+.imgResult > p {
+    margin-top:5px;
+    color:#403042;
+}
+
+.imgResult > img {
+    height:120px;
+    margin-right:5px;
+    float:left;
+}
+
+.searchResultDivider {
+    background-color: #403042;
+    width:100%;
+    height:1px;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+
 .leftShelf {
     height:375px;
     padding-left:5vw;
