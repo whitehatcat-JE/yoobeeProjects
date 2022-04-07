@@ -7,7 +7,7 @@ var books = {
 		"blurb":"Before The Matrix, before Star Wars, before Ender's Game and Neuromancer, there was Dune: winner of the prestigious Hugo and Nebula awards, and widely considered one of the greatest science fiction novels ever written. Melange, or 'spice', is the most valuable - and rarest - element in the universe; a drug that does everything from increasing a person's life-span to making intersteller travel possible. And it can only be found on a single planet: the inhospitable desert world Arrakis. Whoever controls Arrakis controls the spice. And whoever controls the spice controls the universe. When the Emperor transfers stewardship of Arrakis from the noble House Harkonnen to House Atreides, the Harkonnens fight back, murdering Duke Leto Atreides. Paul, his son, and Lady Jessica, his wife, flee into the desert. On the point of death, they are rescued by a band for Fremen, the native people of Arrakis, who control Arrakis' second great resource: the giant worms that burrow beneath the burning desert sands. In order to avenge his father and retake Arrakis from the Harkonnens, Paul must earn the trust of the Fremen and lead a tiny army against the innumerable forces aligned against them. And his journey will change the universe.",
 		"originalPrice":"24.51",
 		"type":0,/*0:Paperback, 1:Hardcover, 2:Bundle, 3:Audio, 4:Stationary*/
-		"alternativeTypes":{}, /*Type:BookID*/
+		"alternativeTypes":{1:1, 2:1, 3:1, 4:1}, /*Type:BookID*/
 		"pages":"592",
 		"dimensions":"128 x 196 x 38mm | 420g",
 		"publicationDate":"23 Jul 2015",
@@ -391,7 +391,7 @@ function getBestsellingOrder() {
 	return bestsellingBooks;
 }
 
-function findResults(search) {
+function findImgResults(search) {
 	var resultIDs = [];
 	for (var bookID = 0; bookID < Object.keys(books).length; bookID++) {
 		var regEXQueries = [
@@ -401,10 +401,7 @@ function findResults(search) {
 			books[bookID]["location"],
 			books[bookID]["language"]
 		];
-
-		/*books[bookID]["categories"].forEach(function (category, index) {
-			regEXQueries.push("/" + category + "/g");
-		});*/
+		
 		var newInverseQuery = new RegExp(search, "g");
 		regEXQueries.forEach(function (regQuery, index) {
 			var newQuery = new RegExp(regQuery, "g");
@@ -414,4 +411,35 @@ function findResults(search) {
 		});
 	}
 	return resultIDs;
+}
+
+function findTextResults(search) {
+	var results = {}; /*Name:Type (0:name, 1:author, 2:isbn, 3:location, 4:language, 5:category*/
+	for (var bookID = 0; bookID < Object.keys(books).length; bookID++) {
+		var regEXQueries = [
+			books[bookID]["name"],
+			books[bookID]["author"],
+			books[bookID]["isbn"],
+			books[bookID]["location"],
+			books[bookID]["language"]
+		];
+
+		books[bookID]["categories"].forEach(function (category, index) {
+			regEXQueries.push(category);
+		});
+
+		var inverseQuery = new RegExp(search, "g");
+
+		for (var queryID = 0; queryID < regEXQueries.length; queryID++) {
+			var regQuery = new RegExp(regEXQueries[queryID], "g");
+			if ((search.match(regQuery)||[]).length + (regEXQueries[queryID].match(inverseQuery)||[]).length > 0 && !(Object.keys(results).includes(regEXQueries[queryID]))) {
+				if (queryID > 4) {
+					results[regEXQueries[queryID]] = 5;
+				} else {
+					results[regEXQueries[queryID]] = queryID;
+				}
+			}
+		}
+	}
+	return results;
 }
