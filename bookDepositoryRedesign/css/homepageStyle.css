@@ -316,12 +316,13 @@ header {
     position: absolute;
     right:0;
     top:0;
-    margin-top:100px;
+    margin-top:90px;
     margin-right:1%;
     width:35%;
+    min-width:480px;
     padding-left:10px;
     padding-right:10px;
-    height:800px;
+    height:88vh;
     display:none;
 }
 
@@ -374,7 +375,7 @@ header {
     float:left;
     background-color:#108DD6;
     border-color:#108DD6;
-    width:5vw;
+    width:80px;
     margin-top:6px;
 }
 
@@ -673,6 +674,20 @@ header {
     .product {
         width:120px;
     }
+
+    #searchResults {
+        left:0;
+        margin-top:25vh;
+        width:88.25%;
+        min-width:480px;
+        margin-left:5%;
+        height:70vh;
+        z-index:-1;
+    }
+
+    #searchResults > h1 {
+        visibility:hidden;
+    }
 }
 
 @media only screen and (max-width: 830px) {
@@ -718,12 +733,21 @@ header {
         padding-top:100px;
         height:400px;
     }
-
+    #searchResults {
+        height:400px;
+    }
     #landingImg {
         max-height:375px;
     }
 
     #exploreText {
         display:none;
+    }
+}
+
+@media only screen and (max-height:500px) and (max-width:1000px) {
+    #searchResults {
+        margin-top:120px;
+        height:300px;
     }
 }

@@ -256,7 +256,7 @@
                     <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchStationaryOption">Stationary</button>
                 </div>
             </div>
-            <p id="exploreText">Explore <br>▼</p>
+            <p id="exploreText">Explore<br>▼</p>
         </article>
         <article class="leftShelf">
             <div class="shelfFloor"></div>
@@ -494,7 +494,7 @@
 <script src="javascript/booksDB.js"></script>
 <script src="javascript/headerDropdowns.js"></script>
 <script>
-    /*Data assignment*/
+    //Data assignment
     function loadData() {
         var bestsellingIdx = getBestsellingOrder();
         for (var bestsellingID = 0; bestsellingID < 6; bestsellingID++) {
@@ -525,16 +525,22 @@
     
     window.onload = loadData;
 
-    /*Search Bar*/
+    //Search Bar
     var query = "";
     function updateSearchResults(){
         /*Ensures inputted text is transferred when page is resized*/
         $("#homeSearchInputFull").val(query);
         $("#homeSearchInputShorter").val(query);
         $("#homeSearchInputShortest").val(query);
+        $("#landingLogo").css("display", "unset");
+        $("#exploreText").css("visibility", "visible");
         if (query == "") { /*Hides search results if nothing has been entered into search bar*/
             $("#searchResults").css("display","none");
         } else {
+            if (window.matchMedia("(max-width: 1000px)").matches) {
+                $("#landingLogo").css("display", "none");
+                $("#exploreText").css("visibility", "hidden");
+            }
             $("#searchResults").css("display","unset");
             $("#searchResults > h1").text(query);
             /*Retrieves all books that match query*/
@@ -562,28 +568,28 @@
             }
 
             /*Image search results*/
-            if (results.length > 0) {
+            if (results.length > 0 && (!window.matchMedia("(max-width: 1000px)").matches || !window.matchMedia("(max-height: 565px)").matches)) {
                 updateImgResult(1, books[results[0]]["type"], Object.keys(books[results[0]]["alternativeTypes"]), results);
                 $("#imageDivider4").css("visibility","visible");
             } else {
                 $("#imageResult1").css("display","none");
                 $("#imageDivider4").css("visibility","hidden");
             }
-            if (results.length > 1) {
+            if (results.length > 1 && (!window.matchMedia("(max-height: 610px)").matches && (!window.matchMedia("(max-height: 740px)").matches || !window.matchMedia("(max-width: 1000px)").matches))) {
                 $("#imageDivider1").css("visibility","visible");
                 updateImgResult(2, books[results[1]]["type"], Object.keys(books[results[1]]["alternativeTypes"]), results);
             } else {
                 $("#imageResult2").css("display","none");
                 $("#imageDivider1").css("visibility","hidden");
             }
-            if (results.length > 2) {
+            if (results.length > 2 && (!window.matchMedia("(max-height: 740px)").matches && ((!window.matchMedia("(max-height: 920px)").matches && window.matchMedia("(max-width: 940px)").matches) || !window.matchMedia("(max-width: 1000px)").matches))) {
                 $("#imageDivider2").css("visibility","visible");
                 updateImgResult(3, books[results[2]]["type"], Object.keys(books[results[2]]["alternativeTypes"]), results);
             } else {
                 $("#imageResult3").css("display","none");
                 $("#imageDivider2").css("visibility","hidden");
             }
-            if (results.length > 3) {
+            if (results.length > 3 && !window.matchMedia("(max-height: 880px)").matches && !window.matchMedia("(max-width: 1000px)").matches) {
                 $("#imageDivider3").css("visibility","visible");
                 updateImgResult(4, books[results[3]]["type"], Object.keys(books[results[3]]["alternativeTypes"]), results);
             } else {
@@ -605,7 +611,7 @@
                 $("#searchTypes" + " > " + type).css("display","none");
                 $("#searchTypes" + " > " + type).removeClass("firstTypeButton lastTypeButton onlyTypeButton");
             });
-
+            
             typesAvailable.forEach(function (id, index) {
                 $("#searchTypes" + " > " + types[id]).css("display","unset");
             })
@@ -646,6 +652,9 @@
         $("#imageResult" + resultID + " > " + types[type]).addClass("selectedTypeButton");
     }
 
+    //Prevents search result overflow when resizing window
+    $(window).resize(updateSearchResults);
+
     $("#homeSearchInputFull").on('input propertychange', function(){
         query = $("#homeSearchInputFull").val();
         updateSearchResults();
@@ -661,7 +670,7 @@
         updateSearchResults();
     });
 
-    /*Body Interactions*/
+    //Body Interactions
     $(".itemPopupBackdrop").on( "click", function() {
         $(".itemPopupBackdrop").css("display", "none");
         $(".itemPopup").css("display", "none");
