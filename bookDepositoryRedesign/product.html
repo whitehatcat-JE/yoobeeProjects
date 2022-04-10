@@ -6,6 +6,7 @@
     <meta name="description" content="Book Depository">
     <link href="css/defaultStyle.css" rel="stylesheet">
     <link href="css/genericHeaderStyle.css" rel="stylesheet">
+    <link href="css/productStyle.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
@@ -250,6 +251,64 @@
         </div>
     </header>
     <main>
+        <article id="categories">
+            <h2>Categories:</h2>
+            <button type="button" onclick="window.location.href='searchQuery.html'" class="categoryButton">Adventure</button>
+            <button type="button" onclick="window.location.href='searchQuery.html'" class="categoryButton">Fantasy</button>
+            <button type="button" onclick="window.location.href='searchQuery.html'" class="categoryButton">Home, health & Fitness</button>
+        </article>
+        <article id="book">
+            <img src="images/bookcovers/0.jpg">
+            <div id="bookInfo">
+                <h1>Dune</h1>
+                <div id="altTypes">
+                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton" id="stationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton" id="audioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton" id="bundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton" id="hardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton" id="paperbackOption">Paperback</button>
+                </div>
+                <div id="bookInfoDivider"></div>
+                <div id="bookStarRating">
+                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/awardIcon.svg">
+                    <p>4.25 (1,002,348 ratings by Goodreads)</p>
+                </div>
+                <p id="bookMetaInfo">By (author): <span id="authorName">Frank Herbert</span> | <span id="bookLanguage">English</span></p>
+                <div id="shareLinks">
+                    <h1>Share</h1>
+                    <a href="index.html"><img src="images/svgs/awardIcon.svg"></a>
+                    <a href="index.html"></a><img src="images/svgs/awardIcon.svg"></a>
+                    <a href="index.html"></a><img src="images/svgs/awardIcon.svg"></a>
+                    <a href="index.html"></a><img src="images/svgs/awardIcon.svg"></a>
+                </div>
+                <p id="bookBlurb">
+                    Lorem ipsum dorem ist.
+                </p>
+            </div>
+            <div id="bookSectionVerticalDivider"></div>
+            <div id="purchaseInfo">
+                <div id="pricing">
+                    <h1>NZ $<span id="currentPrice">21.33</span></h1>
+                    <h2>NZ $<span id="originalPrice">24.51</span></h2>
+                    <h3>You save NZ $<span id="priceSavings">3.18</span></h3>
+                </div>
+                <div id="bookPurchaseDivider"></div>
+                <img src="images/svgs/awardIcon.svg">
+                <h1>Free delivery worldwide</h1>
+                <img src="images/svgs/awardIcon.svg">
+                <h1>Price includes GST</h1>
+                <img src="images/svgs/awardIcon.svg">
+                <h2>Available. Expected delivery to New Zealand in 23-28 business days.</h2>
+                <h2>Not ordering from New Zealand? Click <a href="index.html">here</a>.</h2>
+                <div id="bookPurchaseDivider"></div>
+                <button type="button" onclick="window.location.href='product.html'" id="purchaseButton">Add to basket</button>
+                <button type="button" onclick="window.location.href='product.html'" id="wishlistButton">Add to wishlist</button>
+            </div>
+        </article>
     </main>
     <footer>
         <ul id="footerCompressedMenu">
