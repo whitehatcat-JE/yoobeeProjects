@@ -1,3 +1,4 @@
+// Note: In the real website, this would be an SQL DB instead.
 var books = {
 	0:{
 		"name":"Dune",
