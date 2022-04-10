@@ -83,6 +83,7 @@ header {
     width:80%;
     padding-left:60px;
     height:60px;
+    left:0;
     float:left;
 }
 
@@ -161,6 +162,100 @@ header {
 #cart > img {
     margin-right:35px;
     float:right;
+}
+
+/*Search Results section of header, displayed when searching*/
+#searchResults {
+    background-color:#F0F0F0;
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left:139px;
+    margin-top:60px;
+    width:35%;
+    min-width:480px;
+    padding-left:10px;
+    padding-right:10px;
+    height:85vh;
+    z-index:1;
+    display:none;
+}
+
+#searchResults > h2 {
+    color:#403042;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#noResults {
+    display:none;
+    text-align:center;
+    font-style: italic;
+}
+
+.searchResultsButton {
+    float:right;
+    background-color:#108DD6;
+    border-color:#108DD6;
+    border-radius:0px;
+    border-style: solid;
+    border-width:5px;
+    margin-left:2px;
+    margin-top:40px;
+    cursor: pointer;
+}
+
+.firstTypeButton { border-radius:10px 0px 0px 10px; }
+
+.selectedTypeButton {
+    background-color:#FF0072;
+    border-color:#FF0072;
+}
+
+.lastTypeButton { border-radius:0px 10px 10px 0px; }
+
+.onlyTypeButton { border-radius:10px 10px 10px 10px; }
+
+#searchTypes > button {
+    float:left;
+    background-color:#108DD6;
+    border-color:#108DD6;
+    width:80px;
+    margin-top:6px;
+}
+
+/*Search bar image results*/
+
+.imageResults { cursor: pointer; }
+
+.imageResults > img { height:120px; }
+
+.imageBlurb {
+    position:absolute;
+    margin-left:90px;
+}
+
+.imageBlurb > h1 {
+    color:#403042;
+    margin-bottom:2px;
+}
+
+.imageBlurb > p { color:#403042; }
+
+.imgButtons  { margin-bottom:100px; }
+
+.imgResults > img {
+    height:120px;
+    margin-right:5px;
+    float:left;
+}
+
+.searchResultDivider {
+    background-color: #403042;
+    width:100%;
+    height:1px;
+    margin-top:3px;
+    margin-bottom:3px;
 }
 
 /*Bottom section of header*/
