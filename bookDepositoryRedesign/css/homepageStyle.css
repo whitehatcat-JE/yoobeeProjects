@@ -191,7 +191,7 @@ header {
 
 #languageHeaderIcon {
     float:left;
-    width:20px;
+    width:16px;
     margin-right:5px;
     margin-top:2px;
 }
@@ -334,6 +334,7 @@ header {
 #searchResults > h2 {
     color:#403042;
     font-weight: normal;
+    cursor: pointer;
 }
 
 #noResults {
@@ -491,7 +492,7 @@ header {
 
 .shelfArrow {
     width:5%;
-    padding-bottom:4%;
+    padding-top:5%;
 }
 
 .product {
@@ -658,6 +659,7 @@ header {
     .shelfArrow {
         margin-top:70px;
         width:50px;
+        padding-top:0%;
     }
 
     .shelfFloor {
