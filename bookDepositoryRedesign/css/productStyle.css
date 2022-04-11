@@ -43,7 +43,8 @@ main {
 
 #bookInfo > h1 { 
     color: #403042;
-    font-size:50px;
+    font-size:30px;
+    margin-bottom:3px;
     font-weight:bold;
 }
 
@@ -64,8 +65,8 @@ main {
 
 #bookInfoDivider {
     height:1px;
-    margin-left:490px;
-    width:40%;
+    margin-left:475px;
+    width:39%;
     background-color:#403042;
     margin-top:30px;
 }
@@ -99,6 +100,10 @@ main {
     text-decoration: underline;
 }
 
+#shareLinks {
+    margin-top:5px;
+}
+
 #shareLinks > h1 {
     float:left;
     font-weight:bold;
@@ -108,7 +113,7 @@ main {
 
 #shareLinks > a > img {
     width:30px;
-    margin-left:5px;
+    margin-left:11px;
     float:left;
 }
 
@@ -137,6 +142,18 @@ main {
     margin-top:200px;
 }
 
+#purchaseInfo > h2 {
+    color: #403042;
+    font-size:15px;
+    font-weight:normal;
+    margin:10px 0px 20px 180px;
+}
+
+#purchaseInfo > h2 > a {
+    color:#403042;
+    text-decoration: underline;
+}
+
 #pricing > h1 {
     margin-left:140px;
     float:left;
@@ -163,7 +180,8 @@ main {
 }
 
 #pricing > h3 {
-    float:left;
+    position:absolute;
+    margin-left:139px;
     margin-top:60px;
     font-weight:normal;
     font-style:italic;
@@ -173,6 +191,17 @@ main {
 
 #priceSavings {
     color:#4C394E;
+}
+
+.bookPurchaseDivider {
+    height:1px;
+    margin-left:140px;
+    width:60%;
+    background-color:#403042;
+}
+
+#purchaseDivider {
+    margin-top:86px;
 }
 
 .adListing {
@@ -193,7 +222,8 @@ main {
 
 .adListing > img {
     width:50px;
-    margin-left:140px;
+    margin-left:130px;
+    margin-right:25px;
 }
 
 .adListing > h2 {
@@ -201,12 +231,62 @@ main {
 }
 
 #firstAd {
-    margin-top:75px;
+    margin-top:35px;
 }
-/*
-#purchaseInfo {
-    background-color:red;
-    right:0;
-    top:0;
-    position:absolute;
-}*/
+
+#purchaseInfo > button {
+    width:60%;
+    height:70px;
+    margin-left:140px;
+    margin-top:20px;
+    border-style: solid;
+    border-radius:25px;
+    border-width:5px;
+    font-size:25px;
+    font-weight:bold;
+}
+
+#purchaseButton {
+    border-color:#108DD6;
+    background-color:#108DD6;
+}
+
+#wishlistButton {
+    border-color:#4C394E;
+    background-color:#4C394E;
+}
+
+/*Product details article*/
+#metaData {
+    margin-top:50px;
+    background-color: #F0F0F0;
+    padding:25px;
+    height:150px;
+}
+
+#metaData > h1 {
+    color:#403042;
+}
+
+#metaDataHorizontalDivider {
+    height:1px;
+    width:100%;
+    margin:5px 0px 5px 0px;
+    background-color:#403042;
+}
+
+.metaDataColumn {
+    float:left;
+    margin-right:100px;
+}
+
+.metaDataColumn > li {
+    color:#403042;
+    line-height:25px;
+    font-weight:bold;
+}
+
+.metaDataColumn > li > span {
+    font-weight:normal;
+    color:#403042;
+}

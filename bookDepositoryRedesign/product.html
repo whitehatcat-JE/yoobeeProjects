@@ -260,7 +260,7 @@
         <article id="book">
             <img src="images/bookcovers/0.jpg">
             <div id="bookInfo">
-                <h1>Dune</h1>
+                <h1 id="bookName">Dune</h1>
                 <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton" id="paperbackOption">Paperback</button>
                 <div id="altTypes">
                     <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton" id="hardcoverOption">Hardcover</button>
@@ -270,20 +270,20 @@
                 </div>
                 <div id="bookInfoDivider"></div>
                 <div id="bookStarRating">
-                    <img src="images/svgs/awardIcon.svg">
-                    <img src="images/svgs/awardIcon.svg">
-                    <img src="images/svgs/awardIcon.svg">
-                    <img src="images/svgs/awardIcon.svg">
-                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/filledStar.svg">
+                    <img src="images/svgs/filledStar.svg">
+                    <img src="images/svgs/filledStar.svg">
+                    <img src="images/svgs/filledStar.svg">
+                    <img src="images/svgs/emptyStar.svg">
                     <p>4.25 (1,002,348 ratings by Goodreads)</p>
                 </div>
                 <p id="bookMetaInfo">By (author) <span id="authorName">Frank Herbert</span> | <span id="bookLanguage">English</span></p>
                 <div id="shareLinks">
                     <h1>Share</h1>
-                    <a href="index.html"><img src="images/svgs/awardIcon.svg"></a>
-                    <a href="index.html"><img src="images/svgs/awardIcon.svg"></a>
-                    <a href="index.html"><img src="images/svgs/awardIcon.svg"></a>
-                    <a href="index.html"><img src="images/svgs/awardIcon.svg"></a>
+                    <a href="index.html"><img src="images/svgs/shareEmail.svg"></a>
+                    <a href="index.html"><img src="images/svgs/shareFacebook.svg"></a>
+                    <a href="index.html"><img src="images/svgs/shareTwitter.svg"></a>
+                    <a href="index.html"><img src="images/svgs/sharePinterest.svg"></a>
                 </div>
                 <p id="bookBlurb">
                     Before The Matrix, before Star Wars, before Ender's Game and Neuromancer, there was Dune: winner of the prestigious Hugo and Nebula awards, and widely considered one of the greatest science fiction novels ever written. Melange, or 'spice', is the most valuable - and rarest - element in the universe; a drug that does everything from increasing a person's life-span to making intersteller travel possible. And it can only be found on a single planet: the inhospitable desert world Arrakis. Whoever controls Arrakis controls the spice. And whoever controls the spice controls the universe. When the Emperor transfers stewardship of Arrakis from the noble House Harkonnen to House Atreides, the Harkonnens fight back, murdering Duke Leto Atreides. Paul, his son, and Lady Jessica, his wife, flee into the desert. On the point of death, they are rescued by a band for Fremen, the native people of Arrakis, who control Arrakis' second great resource: the giant worms that burrow beneath the burning desert sands. In order to avenge his father and retake Arrakis from the Harkonnens, Paul must earn the trust of the Fremen and lead a tiny army against the innumerable forces aligned against them. And his journey will change the universe.
@@ -296,41 +296,41 @@
                     <h2>NZ $<span id="originalPrice">24.51</span></h2>
                     <h3>You save NZ $<span id="priceSavings">3.18</span></h3>
                 </div>
-                <div id="bookPurchaseDivider"></div>
+                <div class="bookPurchaseDivider" id="purchaseDivider"></div>
                 <div class="adListing" id="firstAd">
-                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/rocketAd.svg">
                     <h1>Free delivery worldwide</h1>
                 </div>
                 <div class="adListing">
-                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/moneyAd.svg">
                     <h1>Price includes GST</h1>
                 </div>
                 <div class="adListing">
-                    <img src="images/svgs/awardIcon.svg">
+                    <img src="images/svgs/checkAd.svg">
                     <h2>Available. Expected delivery to New Zealand in 23-28 business days.</h2>
                 </div>
                 <h2>Not ordering from New Zealand? Click <a href="index.html">here</a>.</h2>
-                <div id="bookPurchaseDivider"></div>
+                <div class="bookPurchaseDivider" id="adDivider"></div>
                 <button type="button" onclick="window.location.href='product.html'" id="purchaseButton">Add to basket</button>
                 <button type="button" onclick="window.location.href='product.html'" id="wishlistButton">Add to wishlist</button>
             </div>
         </article>
         <article id="metaData">
             <h1>Product details</h1>
-            <div id="metDataHorizontalDivider"></div>
+            <div id="metaDataHorizontalDivider"></div>
             <ul class="metaDataColumn">
-                <li>Format:<span id="format">Paperback | 592 pages</span></li>
-                <li>Dimensions:<span id="dimensions">128 x 196 x 38mm | 420g</span></li>
-                <li>Publication date:<span id="pubDate">23 Jul 2015</span></li>
-                <li>Publisher:<span id="publisher">Hodder & Stoughton</span></li>
-                <li>Imprint:<span id="imprint">Hodder Paperback</span></li>
+                <li>Format: <span id="format">Paperback | 592 pages</span></li>
+                <li>Dimensions: <span id="dimensions">128 x 196 x 38mm | 420g</span></li>
+                <li>Publication date: <span id="pubDate">23 Jul 2015</span></li>
+                <li>Publisher: <span id="publisher">Hodder & Stoughton</span></li>
+                <li>Imprint: <span id="imprint">Hodder Paperback</span></li>
             </ul>
             <ul class="metaDataColumn">
-                <li>Publication City/Country:<span id="pubLoc">London, United Kingdom</span></li>
-                <li>Language:<span id="language">English</span></li>
-                <li>Illustration note:<span id="illusNote">n/a</span></li>
-                <li>ISBN13:<span id="isbn">9780340960196</span></li>
-                <li>Bestsellers rank:<span id="rank">65</span></li>
+                <li>Publication City/Country: <span id="pubLoc">London, United Kingdom</span></li>
+                <li>Language: <span id="language">English</span></li>
+                <li>Illustration note: <span id="illusNote">n/a</span></li>
+                <li>ISBN13: <span id="isbn">9780340960196</span></li>
+                <li>Bestsellers rank: <span id="rank">65</span></li>
             </ul>
         </article>
     </main>
@@ -398,3 +398,40 @@
 <script src="javascript/booksDB.js"></script>
 <script src="javascript/headerDropdowns.js"></script>
 <script src="javascript/genericSearchDataAssignment.js"></script>
+<script>
+    function loadPageInfo(){
+        var searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has('id')) {
+            var id = searchParams.get('id');
+            $("#bookName").text(books[id]["name"]);
+            $("#authorName").text(books[id]["author"]);
+            $("#bookLanguage").text(books[id]["language"]);
+            $("#bookBlurb").text(books[id]["blurb"]);
+            
+            $("#dimensions").text(books[id]["dimensions"]);
+            $("#pubDate").text(books[id]["publicationDate"]);
+            $("#publisher").text(books[id]["publisher"]);
+            $("#imprint").text(books[id]["imprint"]);
+            $("#pubLoc").text(books[id]["location"]);
+            $("#language").text(books[id]["language"]);
+            $("#illusNote").text(books[id]["illustrationNote"]);
+            $("#illusNote").text(books[id]["illustrationNote"]);
+            $("#isbn").text(books[id]["isbn"]);
+            $("#rank").text(books[id]["bestsellerRank"]);
+
+            $("#currentPrice").text(books[id]["price"]);
+            $("#originalPrice").text(books[id]["originalPrice"]);
+            if (books[id]["originalPrice"] == books[id]["price"]) {
+                $("#pricing > h2").css("visibility", "hidden");
+                $("#pricing > h3").css("visibility", "hidden");
+            } else {
+                $("#priceSavings").text((books[id]["originalPrice"] - books[id]["price"]).toFixed(2));
+            }
+            $("#book > img").attr("src", "images/bookcovers/" + id + ".jpg");
+        } else {
+            document.location.href = "index.html";
+        }
+    }
+
+    window.onload = loadPageInfo;
+</script>
