@@ -323,6 +323,7 @@ header {
 #searchResults > h1 {
     text-align: center;
     color:#403042;
+    margin-top:2px;
 }
 
 #searchResults > h2 {
