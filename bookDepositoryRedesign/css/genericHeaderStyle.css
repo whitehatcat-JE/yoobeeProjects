@@ -468,6 +468,10 @@ header {
 
     #searchInputShortest { display:unset; }
 
+    #searchResults {
+        margin-left:0px;
+    }
+
     #searchIcon { display:none; }
 
     #homeLogo { display:none; }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Home</title>
@@ -9,34 +10,58 @@
     <link href="css/productStyle.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
     <header>
         <!--Main Header-->
         <ul id="mainHeader">
-            <li class="headerLeftArticles" id="homeHeader"><a href="index.html"><img src="images/svgs/homeIcon.svg" class="headerIcons"/><p>Home</p></a></li>
-            <li class="headerLeftArticles" id="contactHeader"><a href="contactPage.html"><div class="headerDivLine"></div><img src="images/svgs/emailIcon.svg" class="headerIcons"/><p>Contact Us</p></a></li>
-            <li class="headerLeftArticles" id="helpHeader"><a href="help.html"><div class="headerDivLine"></div><img src="images/svgs/helpIcon.svg" class="headerIcons"/><p>Help</p></a></li>
-            <li class="headerRightArticles" id="loginHeader"><a href="login.html"><div class="headerDivLine"></div><img src="images/svgs/personIcon.svg" class="headerIcons"/><p>Sign in/Join</p></a></li>
-            <li class="headerRightArticles" id="wishlistHeader"><a href="wishlist.html"><div class="headerDivLine"></div><img src="images/svgs/heartIcon.svg" class="headerIcons"/><p>Wishlist</p></a></li>
-            <li class="headerRightArticles" id="orderHeader"><a href="orderStatus.html"><img src="images/svgs/compassIcon.svg" class="headerIcons"/><p>Order Status</p></a></li>
+            <li class="headerLeftArticles" id="homeHeader"><a href="index.html"><img src="images/svgs/homeIcon.svg"
+                        class="headerIcons" />
+                    <p>Home</p>
+                </a></li>
+            <li class="headerLeftArticles" id="contactHeader"><a href="contactPage.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/emailIcon.svg" class="headerIcons" />
+                    <p>Contact Us</p>
+                </a></li>
+            <li class="headerLeftArticles" id="helpHeader"><a href="help.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/helpIcon.svg" class="headerIcons" />
+                    <p>Help</p>
+                </a></li>
+            <li class="headerRightArticles" id="loginHeader"><a href="login.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/personIcon.svg" class="headerIcons" />
+                    <p>Sign in/Join</p>
+                </a></li>
+            <li class="headerRightArticles" id="wishlistHeader"><a href="wishlist.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/heartIcon.svg" class="headerIcons" />
+                    <p>Wishlist</p>
+                </a></li>
+            <li class="headerRightArticles" id="orderHeader"><a href="orderStatus.html"><img
+                        src="images/svgs/compassIcon.svg" class="headerIcons" />
+                    <p>Order Status</p>
+                </a></li>
         </ul>
         <article id="searchHeader">
-            <a href="index.html"><img src="images/svgs/bookDepository.svg" id="homeLogo"/></a>
-            <input type="text" class="searchInput" id="searchInputFull" name="searchInput" placeholder="Search for books by keyword / title / author / ISBN" maxLength="35">
-            <input type="text" class="searchInput" id="searchInputShorter" name="searchInput" placeholder="Search for books..." maxLength="35">
-            <input type="text" class="searchInput" id="searchInputShortest" name="searchInput" placeholder="Search..." maxLength="35">
+            <a href="index.html"><img src="images/svgs/bookDepository.svg" id="homeLogo" /></a>
+            <input type="text" class="searchInput" id="searchInputFull" name="searchInput"
+                placeholder="Search for books by keyword / title / author / ISBN" maxLength="35">
+            <input type="text" class="searchInput" id="searchInputShorter" name="searchInput"
+                placeholder="Search for books..." maxLength="35">
+            <input type="text" class="searchInput" id="searchInputShortest" name="searchInput" placeholder="Search..."
+                maxLength="35">
             <img src="images/svgs/searchIcon.svg" id="searchIcon">
             <div id="searchButtons">
-                <button type="button" onclick="window.location.href='searchQuery.html'" id="searchButton">Search</button>
-                <button type="button" onclick="window.location.href='index.html'" id="advancedButton">Advanced Search</button>
+                <button type="button" onclick="window.location.href='searchQuery.html'"
+                    id="searchButton">Search</button>
+                <button type="button" onclick="window.location.href='index.html'" id="advancedButton">Advanced
+                    Search</button>
             </div>
             <div id="cart">
                 <div id="cartText">NZ $492.82</div>
                 <div id="cartDivider"></div>
-                <img src="images/svgs/cartIcon.svg"/>
+                <img src="images/svgs/cartIcon.svg" />
                 <div id="cartCount">28</div>
             </div>
-            
+
             <div id="searchResults">
                 <div class="searchResultDivider"></div>
                 <h2 id="noResults">No results, please check for typos</h2>
@@ -56,11 +81,16 @@
                         <p>Frank Herbert</p>
                     </div>
                     <img src="images/bookcovers/0.jpg">
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchStationaryOption">Stationary</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchAudioOption">Audiobook</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchBundleOption">Bundle</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchHardcoverOption">Hardcover</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchPaperbackOption">Paperback</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
                 </article>
                 <div class="searchResultDivider" id="imageDivider1"></div>
                 <article class="imageResults" id="imageResult2">
@@ -69,11 +99,16 @@
                         <p>Frank Herbert</p>
                     </div>
                     <img src="images/bookcovers/0.jpg">
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchStationaryOption">Stationary</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchAudioOption">Audiobook</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchBundleOption">Bundle</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchHardcoverOption">Hardcover</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchPaperbackOption">Paperback</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
                 </article>
                 <div class="searchResultDivider" id="imageDivider2"></div>
                 <article class="imageResults" id="imageResult3">
@@ -82,11 +117,16 @@
                         <p>Frank Herbert</p>
                     </div>
                     <img src="images/bookcovers/0.jpg">
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchStationaryOption">Stationary</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchAudioOption">Audiobook</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchBundleOption">Bundle</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchHardcoverOption">Hardcover</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchPaperbackOption">Paperback</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
                 </article>
                 <div class="searchResultDivider" id="imageDivider3"></div>
                 <article class="imageResults" id="imageResult4">
@@ -95,31 +135,44 @@
                         <p>Frank Herbert</p>
                     </div>
                     <img src="images/bookcovers/0.jpg">
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchStationaryOption">Stationary</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchAudioOption">Audiobook</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchBundleOption">Bundle</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchHardcoverOption">Hardcover</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="searchResultsButton searchPaperbackOption">Paperback</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
                 </article>
                 <div class="searchResultDivider" id="imageDivider4"></div>
                 <div id="searchTypes">
-                    <button type="button" onclick="window.location.href='index.html'" class="searchResultsButton searchPaperbackOption">Paperbacks</button>
-                    <button type="button" onclick="window.location.href='index.html'" class="searchResultsButton searchHardcoverOption">Hardcovers</button>
-                    <button type="button" onclick="window.location.href='index.html'" class="searchResultsButton searchBundleOption">Bundles</button>
-                    <button type="button" onclick="window.location.href='index.html'" class="searchResultsButton searchAudioOption">Audiobooks</button>
-                    <button type="button" onclick="window.location.href='index.html'" class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperbacks</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcovers</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchBundleOption">Bundles</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchAudioOption">Audiobooks</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
                 </div>
             </div>
         </article>
         <!--Sub Header-->
         <ul id="subHeader">
             <li id="categoryMenu" class="subHeaderLeftArticles">Shop by category &nbsp&nbsp▼</li>
-            <li id="currencyMenu" class="subHeaderRightArticles"><div id="currencyDropdownText">$ NZD &nbsp&nbsp▼</div>
+            <li id="currencyMenu" class="subHeaderRightArticles">
+                <div id="currencyDropdownText">$ NZD &nbsp&nbsp▼</div>
                 <!--Currency Dropdown-->
                 <div id="currencyDropdown">
                     <ul id="currencyDropdownList">
                         <li id="currencyTitle">NZD</li>
-                        <li><div id="currencyHorizontalDivider"></div></li>
+                        <li>
+                            <div id="currencyHorizontalDivider"></div>
+                        </li>
                         <li class="currencyItem"><a href="index.html">AED</a></li>
                         <li class="currencyItem"><a href="index.html">ARS</a></li>
                         <li class="currencyItem"><a href="index.html">AUD</a></li>
@@ -137,12 +190,16 @@
                     </ul>
                 </div>
             </li>
-            <li id="languageMenu" class="subHeaderRightArticles"><img src="images/svgs/globeIcon.svg" id="languageHeaderIcon"/><div id="languageDropdownText">English &nbsp&nbsp▼</div>
+            <li id="languageMenu" class="subHeaderRightArticles"><img src="images/svgs/globeIcon.svg"
+                    id="languageHeaderIcon" />
+                <div id="languageDropdownText">English &nbsp&nbsp▼</div>
                 <!--Language Dropdown-->
                 <div id="languageDropdown">
                     <ul id="languageDropdownList">
                         <li id="languageTitle">Languages</li>
-                        <li><div id="languageHorizontalDivider"></div></li>
+                        <li>
+                            <div id="languageHorizontalDivider"></div>
+                        </li>
                         <li class="languageItem" id="selectedLanguage">English</li>
                         <li class="languageItem"><a href="index.html">Spanish (Español)</a></li>
                         <li class="languageItem"><a href="index.html">Polish (Polski)</a></li>
@@ -242,36 +299,60 @@
             <ul id="categoryAgeRange">
                 <div id="categoryHorizontalDivider"></div>
                 <li class="categoryGroup">Children's books by age range</li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 0-2</button></a></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 3-5</button></a></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 6-8</button></a></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Ages 9-11</button></a></li>
-                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'" class="smallButton">Teen and Young Adult</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 0-2</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 3-5</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 6-8</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 9-11</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Teen and Young Adult</button></a></li>
             </ul>
         </div>
     </header>
     <main>
+        <div class="itemPopupBackdrop"></div>
+        <article class="itemPopup">
+            <img src="images/svgs/minimizeIcon.svg" class="itemMinimize" />
+            <h1>Item added to cart</h1>
+            <div class="itemPopupDivider"></div>
+            <p>You have <span class="itemCountPopup">1 item</span> in your cart<br>Total cost: <span
+                    class="itemPricePopup">NZ $00.00</span></p>
+            <button type="button" onclick="" class="itemContinuePopup">Continue Shopping</button>
+            <button type="button" onclick="window.location.href='cart.html'" class="itemBasketPopup">Basket /
+                Checkout</button>
+        </article>
         <article id="categories">
             <h2>Categories:</h2>
-            <button type="button" onclick="window.location.href='searchQuery.html'" class="categoryButton">Adventure</button>
-            <button type="button" onclick="window.location.href='searchQuery.html'" class="categoryButton">Fantasy</button>
-            <button type="button" onclick="window.location.href='searchQuery.html'" class="categoryButton">Home, health & Fitness</button>
         </article>
         <article id="book">
             <img src="images/bookcovers/0.jpg">
             <div id="bookInfo">
-                <h1 id="bookName">Dune</h1>
-                <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton paperbackOption">Paperback</button>
-                <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton hardcoverOption">Hardcover</button>
-                <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton bundleOption">Bundle</button>
-                <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton audioOption">Audiobook</button>
-                <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton stationaryOption">Stationary</button>
+                <h1><span id="bookName">Dune</span><span id="inNamePriceDivider"> - </span><span
+                        id="inNamePrice">3.18</span></h1>
+                <button type="button" onclick="window.location.href='product.html'"
+                    class="bookTypeButton paperbackOption">Paperback</button>
+                <button type="button" onclick="window.location.href='product.html'"
+                    class="bookTypeButton hardcoverOption">Hardcover</button>
+                <button type="button" onclick="window.location.href='product.html'"
+                    class="bookTypeButton bundleOption">Bundle</button>
+                <button type="button" onclick="window.location.href='product.html'"
+                    class="bookTypeButton audioOption">Audiobook</button>
+                <button type="button" onclick="window.location.href='product.html'"
+                    class="bookTypeButton stationaryOption">Stationary</button>
                 <div id="altTypes">
-                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton paperbackOption">Paperback</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton hardcoverOption">Hardcover</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton bundleOption">Bundle</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton audioOption">Audiobook</button>
-                    <button type="button" onclick="window.location.href='product.html'" class="bookTypeButton stationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="bookTypeButton paperbackOption">Paperback</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="bookTypeButton hardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="bookTypeButton bundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="bookTypeButton audioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="bookTypeButton stationaryOption">Stationary</button>
                 </div>
                 <div id="bookInfoDivider"></div>
                 <div class="starRating">
@@ -282,7 +363,8 @@
                     <img src="images/svgs/emptyStar.svg">
                     <p>4.25 (1,002,348 ratings by Goodreads)</p>
                 </div>
-                <p id="bookMetaInfo">By (author) <span id="authorName">Frank Herbert</span> | <span id="bookLanguage">English</span></p>
+                <p id="bookMetaInfo">By (author) <span id="authorName">Frank Herbert</span> | <span
+                        id="bookLanguage">English</span></p>
                 <div id="shareLinks">
                     <h1>Share</h1>
                     <a href="index.html"><img src="images/svgs/shareEmail.svg"></a>
@@ -291,7 +373,19 @@
                     <a href="index.html"><img src="images/svgs/sharePinterest.svg"></a>
                 </div>
                 <p id="bookBlurb">
-                    Before The Matrix, before Star Wars, before Ender's Game and Neuromancer, there was Dune: winner of the prestigious Hugo and Nebula awards, and widely considered one of the greatest science fiction novels ever written. Melange, or 'spice', is the most valuable - and rarest - element in the universe; a drug that does everything from increasing a person's life-span to making intersteller travel possible. And it can only be found on a single planet: the inhospitable desert world Arrakis. Whoever controls Arrakis controls the spice. And whoever controls the spice controls the universe. When the Emperor transfers stewardship of Arrakis from the noble House Harkonnen to House Atreides, the Harkonnens fight back, murdering Duke Leto Atreides. Paul, his son, and Lady Jessica, his wife, flee into the desert. On the point of death, they are rescued by a band for Fremen, the native people of Arrakis, who control Arrakis' second great resource: the giant worms that burrow beneath the burning desert sands. In order to avenge his father and retake Arrakis from the Harkonnens, Paul must earn the trust of the Fremen and lead a tiny army against the innumerable forces aligned against them. And his journey will change the universe.
+                    Before The Matrix, before Star Wars, before Ender's Game and Neuromancer, there was Dune: winner of
+                    the prestigious Hugo and Nebula awards, and widely considered one of the greatest science fiction
+                    novels ever written. Melange, or 'spice', is the most valuable - and rarest - element in the
+                    universe; a drug that does everything from increasing a person's life-span to making intersteller
+                    travel possible. And it can only be found on a single planet: the inhospitable desert world Arrakis.
+                    Whoever controls Arrakis controls the spice. And whoever controls the spice controls the universe.
+                    When the Emperor transfers stewardship of Arrakis from the noble House Harkonnen to House Atreides,
+                    the Harkonnens fight back, murdering Duke Leto Atreides. Paul, his son, and Lady Jessica, his wife,
+                    flee into the desert. On the point of death, they are rescued by a band for Fremen, the native
+                    people of Arrakis, who control Arrakis' second great resource: the giant worms that burrow beneath
+                    the burning desert sands. In order to avenge his father and retake Arrakis from the Harkonnens, Paul
+                    must earn the trust of the Fremen and lead a tiny army against the innumerable forces aligned
+                    against them. And his journey will change the universe.
                 </p>
             </div>
             <div id="bookSectionVerticalDivider"></div>
@@ -316,8 +410,9 @@
                 </div>
                 <h2>Not ordering from New Zealand? Click <a href="index.html">here</a>.</h2>
                 <div class="bookPurchaseDivider" id="adDivider"></div>
-                <button type="button" onclick="window.location.href='product.html'" id="purchaseButton">Add to basket</button>
-                <button type="button" onclick="window.location.href='product.html'" id="wishlistButton">Add to wishlist</button>
+                <button type="button" id="purchaseButton">Add to basket</button>
+                <button type="button" onclick="window.location.href='product.html'" id="wishlistButton">Add to
+                    wishlist</button>
             </div>
         </article>
         <article id="metaData">
@@ -350,7 +445,9 @@
                 <img src="images/svgs/fillStarPlain.svg">
                 <h2 class="reviewRating">5/5</h2>
                 <h2 class="reviewName">Hagrid</h2>
-                <p class="blurb">This book was a great read! I loved the characters and the story line. It was a page turner and I couldn't put it down. I would highly recommend it to anyone looking for a good book to read.</p>
+                <p class="blurb">This book was a great read! I loved the characters and the story line. It was a page
+                    turner and I couldn't put it down. I would highly recommend it to anyone looking for a good book to
+                    read.</p>
             </div>
             <div class="review" id="review2">
                 <h3 class="showMoreButton">Show More</h3>
@@ -361,7 +458,9 @@
                 <img src="images/svgs/fillStarPlain.svg">
                 <h2 class="reviewRating">5/5</h2>
                 <h2 class="reviewName">Caleb</h2>
-                <p class="blurb">I read this book recently and I absolutely loved it. It had an interesting plot and well-developed characters. The book was well-written and kept me engaged the entire time. I would definitely recommend it to others.</p>
+                <p class="blurb">I read this book recently and I absolutely loved it. It had an interesting plot and
+                    well-developed characters. The book was well-written and kept me engaged the entire time. I would
+                    definitely recommend it to others.</p>
             </div>
             <div class="review" id="review3">
                 <h3 class="showMoreButton">Show More</h3>
@@ -372,7 +471,8 @@
                 <img src="images/svgs/emptyStarPlain.svg">
                 <h2 class="reviewRating">1/5</h2>
                 <h2 class="reviewName">Kyle Koala</h2>
-                <p class="blurb">I read this book and I hated it. The characters were flat and uninteresting, and the plot was all over the place. I couldn't get into it at all.</p>
+                <p class="blurb">I read this book and I hated it. The characters were flat and uninteresting, and the
+                    plot was all over the place. I couldn't get into it at all.</p>
             </div>
             <div class="review" id="review4">
                 <h3 class="showMoreButton">Show More</h3>
@@ -394,7 +494,9 @@
                 <img src="images/svgs/emptyStarPlain.svg">
                 <h2 class="reviewRating">4/5</h2>
                 <h2 class="reviewName">NotAUser 47</h2>
-                <p class="blurb">Suspenseful, heart-wrenching, and beautiful all at once. This book will have you on the edge of your seat the whole way through, eager to find out what happens next. I could not put it down!</p>
+                <p class="blurb">Suspenseful, heart-wrenching, and beautiful all at once. This book will have you on the
+                    edge of your seat the whole way through, eager to find out what happens next. I could not put it
+                    down!</p>
             </div>
             <div class="review" id="review6">
                 <h3 class="showMoreButton">Show More</h3>
@@ -405,7 +507,8 @@
                 <img src="images/svgs/emptyStarPlain.svg">
                 <h2 class="reviewRating">3/5</h2>
                 <h2 class="reviewName">John Smith</h2>
-                <p class="blurb">I found this book to be an interesting read. It was different from anything I've read before, and I really enjoyed it. I would definitely recommend it to others.</p>
+                <p class="blurb">I found this book to be an interesting read. It was different from anything I've read
+                    before, and I really enjoyed it. I would definitely recommend it to others.</p>
             </div>
             <div class="review" id="review7">
                 <h3 class="showMoreButton">Show More</h3>
@@ -416,7 +519,9 @@
                 <img src="images/svgs/emptyStarPlain.svg">
                 <h2 class="reviewRating">1/5</h2>
                 <h2 class="reviewName">Karen K</h2>
-                <p class="blurb">This book was so terrible, I couldn't even finish it. The characters are flat and uninteresting, the plot is nonexistent, and the writing is atrocious. I can't believe I wasted my time on this trash.</p>
+                <p class="blurb">This book was so terrible, I couldn't even finish it. The characters are flat and
+                    uninteresting, the plot is nonexistent, and the writing is atrocious. I can't believe I wasted my
+                    time on this trash.</p>
             </div>
             <div class="review" id="review8">
                 <h3 class="showMoreButton">Show More</h3>
@@ -427,7 +532,9 @@
                 <img src="images/svgs/fillStarPlain.svg">
                 <h2 class="reviewRating">5/5</h2>
                 <h2 class="reviewName">Morbius Enjoyer</h2>
-                <p class="blurb">This is the best book I have ever read in my entire life. I could not put it down for a single second. I laughed, I cried, I screamed in terror. It was incredible. I don't think I've ever been so affected by a book before.</p>
+                <p class="blurb">This is the best book I have ever read in my entire life. I could not put it down for a
+                    single second. I laughed, I cried, I screamed in terror. It was incredible. I don't think I've ever
+                    been so affected by a book before.</p>
             </div>
             <div id="reviewHorizontalDividerBottom"></div>
         </article>
@@ -439,7 +546,9 @@
                 <h1>People who brought this also brought</h1>
                 <article class="rightShelf">
                     <div class="shelfFloor"></div>
-                    <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
+                    <div class="shelfEdge">
+                        <div class="shelfEdgeInner"></div>
+                    </div>
                     <a href="searchQuery.html"><img src="images/svgs/arrowIcon.svg" class="shelfArrow"></a>
                     <div class="product" id="topShelf1">
                         <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
@@ -574,13 +683,18 @@
         </ul>
     </footer>
 </body>
+
 </html>
 
 <script src="javascript/booksDB.js"></script>
-<script src="javascript/headerDropdowns.js"></script>
+<script src="javascript/universalScript.js"></script>
 <script src="javascript/genericSearchDataAssignment.js"></script>
 <script>
-    function loadPageInfo(){
+    $("#purchaseButton").on("click", function () {
+        $(".itemPopupBackdrop").css("display", "unset");
+        $(".itemPopup").css("display", "unset");
+    });
+    function loadPageInfo() {
         var searchParams = new URLSearchParams(window.location.search);
         if (searchParams.has('id')) {
             var id = searchParams.get('id');
@@ -589,7 +703,7 @@
             $("#authorName").text(books[id]["author"]);
             $("#bookLanguage").text(books[id]["language"]);
             $("#bookBlurb").text(books[id]["blurb"]);
-            
+
             $("#dimensions").text(books[id]["dimensions"]);
             $("#pubDate").text(books[id]["publicationDate"]);
             $("#publisher").text(books[id]["publisher"]);
@@ -602,6 +716,7 @@
             $("#rank").text(books[id]["bestsellerRank"]);
 
             $("#currentPrice").text(books[id]["price"]);
+            $("#inNamePrice").text("NZ $" + books[id]["price"]);
             $("#originalPrice").text(books[id]["originalPrice"]);
             if (books[id]["originalPrice"] == books[id]["price"]) {
                 $("#pricing > h2").css("visibility", "hidden");
@@ -610,6 +725,11 @@
                 $("#priceSavings").text((books[id]["originalPrice"] - books[id]["price"]).toFixed(2));
             }
             $("#book > img").attr("src", "images/bookcovers/" + id + ".jpg");
+
+            // Category Buttons
+            books[id]["categories"].forEach(function (category) {
+                $("#categories").append("<button type=\"button\" onclick=\"window.location.href='searchQuery.html?query=" + category + "&type=5'\" class=\"categoryButton\">" + category + "</button>");
+            });
 
             // Type Buttons
             var bookTypes = [".paperbackOption", ".hardcoverOption", ".bundleOption", ".audioOption", ".stationaryOption"];
@@ -642,22 +762,22 @@
                 $(".starRating > img:nth-child(" + Math.floor(totalScore) + ")").attr("src", "images/svgs/filledStar.svg");
                 totalScore -= 1;
             }
-            
+
             // Rating breakdown
             $("#star5 > .percentBarForeground").css("width", (books[id]["stars"][0] / totalRatings * 30).toFixed(2) + "%");
-            $("#star5 > h2").text((books[id]["stars"][0] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][0] + ")");
-            
+            $("#star5 > h2").text((books[id]["stars"][0] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][0].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ")");
+
             $("#star4 > .percentBarForeground").css("width", (books[id]["stars"][1] / totalRatings * 30).toFixed(2) + "%");
-            $("#star4 > h2").text((books[id]["stars"][1] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][1] + ")");
-            
+            $("#star4 > h2").text((books[id]["stars"][1] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ")");
+
             $("#star3 > .percentBarForeground").css("width", (books[id]["stars"][2] / totalRatings * 30).toFixed(2) + "%");
-            $("#star3 > h2").text((books[id]["stars"][2] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][2] + ")");
-            
+            $("#star3 > h2").text((books[id]["stars"][2] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][2].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ")");
+
             $("#star2 > .percentBarForeground").css("width", (books[id]["stars"][3] / totalRatings * 30).toFixed(2) + "%");
-            $("#star2 > h2").text((books[id]["stars"][3] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][3] + ")");
-            
+            $("#star2 > h2").text((books[id]["stars"][3] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][3].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ")");
+
             $("#star1 > .percentBarForeground").css("width", (books[id]["stars"][4] / totalRatings * 30).toFixed(2) + "%");
-            $("#star1 > h2").text((books[id]["stars"][4] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][4] + ")");
+            $("#star1 > h2").text((books[id]["stars"][4] / totalRatings * 100).toFixed(0) + "% (" + books[id]["stars"][4].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ")");
 
             // Related Books
             var relatedBooks = books[id]["relatedBooks"];
@@ -670,7 +790,7 @@
             } else {
                 $("#topShelf1").css("display", "none");
             }
-            
+
             if (relatedBooks.length > 1) {
                 $("#topShelf2").css("display", "unset");
                 $("#topShelf2 > .productAuthor").text(books[relatedBooks[1]]["author"]);
@@ -680,7 +800,7 @@
             } else {
                 $("#topShelf2").css("display", "none");
             }
-            
+
             if (relatedBooks.length > 2) {
                 $("#topShelf3").css("display", "unset");
                 $("#topShelf3 > .productAuthor").text(books[relatedBooks[2]]["author"]);
@@ -690,7 +810,7 @@
             } else {
                 $("#topShelf3").css("display", "none");
             }
-            
+
             if (relatedBooks.length > 3) {
                 $("#topShelf4").css("display", "unset");
                 $("#topShelf4 > .productAuthor").text(books[relatedBooks[3]]["author"]);

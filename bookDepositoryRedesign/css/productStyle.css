@@ -1,11 +1,16 @@
 main {
-    margin-top:120px;
+    margin-top:160px;
 }
 
 /* Categories article */
 #categories {
     margin-left:10px;
+    top:0;
+    margin-top:112px;
+    position:absolute;
     padding-top:10px;
+    height:30px;
+    overflow:hidden;
 }
 #categories > * {
     float:left;
@@ -25,6 +30,7 @@ main {
     border-color:#108DD6;
     background-color:#108DD6;
     padding:2px;
+    cursor: pointer;
 }
 
 /* Book article */
@@ -41,7 +47,7 @@ main {
     margin-right:25px;
 }
 
-#bookInfo > h1 { 
+#bookInfo > h1 > * { 
     color: #403042;
     font-size:30px;
     margin-bottom:3px;
@@ -65,8 +71,8 @@ main {
 
 #bookInfoDivider {
     height:1px;
-    margin-left:475px;
-    width:39%;
+    margin-left:25.5vw;
+    width:31vw;
     background-color:#403042;
     margin-top:30px;
 }
@@ -128,7 +134,7 @@ main {
     position:absolute;
     top:0;
     right:0;
-    margin-right:600px;
+    margin-right:550px;
     margin-top:200px;
     background-color:#403042;
     height:710px;
@@ -155,13 +161,9 @@ main {
 }
 
 #pricing > h1 {
-    margin-left:140px;
+    margin-left:155px;
     float:left;
     font-size:50px;
-    color:#FF0072;
-}
-
-#currentPrice {
     color:#FF0072;
 }
 
@@ -175,13 +177,21 @@ main {
     color: #4C394E;
 }
 
+#currentPrice {
+    color:#FF0072;
+}
+
+#inNamePrice, #inNamePriceDivider {
+    display:none;
+}
+
 #originalPrice {
     color:#4C394E;
 }
 
 #pricing > h3 {
     position:absolute;
-    margin-left:139px;
+    margin-left:155px;
     margin-top:60px;
     font-weight:normal;
     font-style:italic;
@@ -195,7 +205,7 @@ main {
 
 .bookPurchaseDivider {
     height:1px;
-    margin-left:140px;
+    margin-left:155px;
     width:60%;
     background-color:#403042;
 }
@@ -210,7 +220,6 @@ main {
     hyphens: auto;
     white-space: normal;
     margin-top:30px;
-    margin-right:200px;
     width:500px;
     display: flex;
     align-items: left;
@@ -222,7 +231,7 @@ main {
 
 .adListing > img {
     width:50px;
-    margin-left:130px;
+    margin-left:150px;
     margin-right:25px;
 }
 
@@ -237,13 +246,14 @@ main {
 #purchaseInfo > button {
     width:60%;
     height:70px;
-    margin-left:140px;
+    margin-left:160px;
     margin-top:20px;
     border-style: solid;
     border-radius:25px;
     border-width:5px;
     font-size:25px;
     font-weight:bold;
+    cursor:pointer;
 }
 
 #purchaseButton {
@@ -402,7 +412,7 @@ main {
 
 .starPercentage {
     margin-top:25px;
-    width:43%;
+    width:46%;
 }
 
 .starPercentage > * {
@@ -417,9 +427,6 @@ main {
 
 .starPercentage > h2 {
     float:right;
-}
-
-.starPercentage > h2 {
     font-weight:normal;
 }
 
@@ -472,7 +479,7 @@ main {
     border-radius: 50%;
     position: absolute;
     margin-left:92%;
-    margin-top:17.1vw;
+    margin-top:17vw;
     background-color:#403042;
     left:0;
     position:absolute;
@@ -525,4 +532,165 @@ main {
     border-style: solid;
     border-color:#108DD6;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1550px) {
+    #book {
+        margin-top:50px;
+    }
+
+    #categories {
+        padding-top:25px;
+    }
+
+    main {
+        margin-top:180px;
+    }
+
+    #categories > h2 {
+        display: none;
+    }
+
+    .review {
+        width:11.5vw;
+    }
+
+    #review8 {
+        display:none;
+    }
+
+    .starPercentage > h2 {
+        display:none;
+    }
+
+    .productPrice { display:none;}
+
+    .productBasket {
+        border-radius:10px;
+        width:100%;
+    }
+
+    .shelfEdge {
+        margin-top:16.8vw;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .adListing, .bookPurchaseDivider, #purchaseInfo > h2, #bookSectionVerticalDivider {
+        display: none;
+    }
+
+    #bookBlurb {
+        width:100%;
+    }
+
+    #purchaseInfo{
+        left:0;
+        top:500px;
+    }
+
+    #purchaseInfo > button {
+        margin-left:10px;
+        width:40vw;
+        margin-top:160px;
+    }
+
+    #purchaseButton {
+        float:left;
+        position:absolute;
+        left:0;
+    }
+
+    #wishlistButton {
+        right:10px;
+        position:absolute;
+    }
+
+    #pricing {
+        display:none;
+    }
+
+    #inNamePrice, #inNamePriceDivider {
+        display: unset;
+    }
+
+    .review {
+        width:13vw;
+    }
+
+    #review7 {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:1250px) {
+    .review {
+        width:16vw;
+    }
+
+    #review6 {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .review {
+        width:20vw;
+    }
+
+    #review5 {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:893px) {
+    #metaData {
+        height:300px;
+    }
+
+    #ratingBreakdown, #topHeadingVerticalDivider, #bottomHeadingVerticalDivider { display:none;}
+
+    #bookRecommendations, #bookRecommendations > h1 {
+        margin-left:0px;
+    }
+
+    .shelfFloor, .shelfEdge {
+        display:none;
+    }
+
+    #endArticle {
+        height:55vw;
+        max-height:370px;
+    }
+
+    .review {
+        width:25vw;
+    }
+
+    #review4 {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    #bookBlurb {
+        height:380px;
+        overflow-y: hidden;
+    }
+
+    #bookMetaInfo {
+        margin-top:60px;
+    }
+
+    .review {
+        width:37vw;
+    }
+
+    #review3 {
+        display:none;
+    }
+
+    #altTypes {
+        display:none;
+    }
 }
