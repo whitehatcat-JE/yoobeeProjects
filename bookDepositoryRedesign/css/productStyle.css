@@ -621,6 +621,9 @@ main {
     #review7 {
         display:none;
     }
+    #endHeadingHorizontalDivider {
+        width:90vw;
+    }
 }
 
 @media only screen and (max-width:1250px) {

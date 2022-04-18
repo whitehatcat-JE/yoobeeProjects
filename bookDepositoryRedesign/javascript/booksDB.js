@@ -444,3 +444,26 @@ function findTextResults(search) {
 	}
 	return results;
 }
+
+function findQueryResults(query, type) {
+	/*Name:Type (0:name, 1:author, 2:isbn, 3:location, 4:language, 5:category*/
+	if ([0, 1, 2, 3, 4].includes(type)) {
+		return findImgResults(query);
+	} else {
+		var resultIDs = [];
+		for (var bookID = 0; bookID < Object.keys(books).length; bookID++) {
+			var categoriesToCheck = books[bookID]["categories"];
+			categoriesToCheck.forEach(function (category, index) {
+				if (query.match(RegExp(category, "g")||[]).length + category.match(RegExp(query, "g")||[]).length > 0 && !resultIDs.includes(bookID)) {
+					resultsIDs.push(bookID);
+				}
+			});
+		}
+
+		if (type == 6) {
+			resultIDs = resultIDs.concat(findImgResults(query));
+		}
+
+		return resultIDs;
+	}
+}

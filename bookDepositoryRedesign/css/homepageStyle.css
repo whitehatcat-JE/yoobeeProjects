@@ -514,6 +514,24 @@ header {
     cursor: pointer;
 }
 
+.floating {   
+    animation-name: floating; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+    margin-top: 5px; 
+    opacity: 1.0;
+} 
+  
+@keyframes floating { 
+    0% { transform: translate(0,  0px); 
+        opacity: 0.5;} 
+    50%  { transform: translate(0, 10px);
+        opacity: 1.0; } 
+    100%   { transform: translate(0, -0px); 
+        opacity: 0.5;}     
+} 
+
 @media only screen and (max-width:1750px) {
     .productPrice {
         margin-left:0%;

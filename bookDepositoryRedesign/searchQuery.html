@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Book Depository - Search Results</title>
+    <meta name="description" content="Book Depository">
+    <link href="css/defaultStyle.css" rel="stylesheet">
+    <link href="css/genericHeaderStyle.css" rel="stylesheet">
+    <link href="css/searchStyle.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="images/website/favicon.ico"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--Main Header-->
+        <ul id="mainHeader">
+            <li class="headerLeftArticles" id="homeHeader"><a href="index.html"><img src="images/svgs/homeIcon.svg"
+                        class="headerIcons" />
+                    <p>Home</p>
+                </a></li>
+            <li class="headerLeftArticles" id="contactHeader"><a href="contact.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/emailIcon.svg" class="headerIcons" />
+                    <p>Contact Us</p>
+                </a></li>
+            <li class="headerLeftArticles" id="helpHeader"><a href="help.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/helpIcon.svg" class="headerIcons" />
+                    <p>Help</p>
+                </a></li>
+            <li class="headerRightArticles" id="loginHeader"><a href="login.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/personIcon.svg" class="headerIcons" />
+                    <p>Sign in/Join</p>
+                </a></li>
+            <li class="headerRightArticles" id="wishlistHeader"><a href="wishlist.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/heartIcon.svg" class="headerIcons" />
+                    <p>Wishlist</p>
+                </a></li>
+            <li class="headerRightArticles" id="orderHeader"><a href="about.html"><img
+                        src="images/svgs/compassIcon.svg" class="headerIcons" />
+                    <p>Order Status</p>
+                </a></li>
+        </ul>
+        <article id="searchHeader">
+            <a href="index.html"><img src="images/svgs/bookDepository.svg" id="homeLogo" /></a>
+            <input type="text" class="searchInput" id="searchInputFull" name="searchInput"
+                placeholder="Search for books by keyword / title / author / ISBN" maxLength="35">
+            <input type="text" class="searchInput" id="searchInputShorter" name="searchInput"
+                placeholder="Search for books..." maxLength="35">
+            <input type="text" class="searchInput" id="searchInputShortest" name="searchInput" placeholder="Search..."
+                maxLength="35">
+            <img src="images/svgs/searchIcon.svg" id="searchIcon">
+            <div id="searchButtons">
+                <button type="button" onclick="window.location.href='searchQuery.html'"
+                    id="searchButton">Search</button>
+                <button type="button" onclick="window.location.href='index.html'" id="advancedButton">Advanced
+                    Search</button>
+            </div>
+            <div id="cart">
+                <div id="cartText">NZ $492.82</div>
+                <div id="cartDivider"></div>
+                <img src="images/svgs/cartIcon.svg" />
+                <div id="cartCount">28</div>
+            </div>
+
+            <div id="searchResults">
+                <div class="searchResultDivider"></div>
+                <h2 id="noResults">No results, please check for typos</h2>
+                <h2 id="textResult1">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider1"></div>
+                <h2 id="textResult2">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider2"></div>
+                <h2 id="textResult3">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider3"></div>
+                <h2 id="textResult4">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider4"></div>
+                <h2 id="textResult5">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider5"></div>
+                <article class="imageResults" id="imageResult1">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider1"></div>
+                <article class="imageResults" id="imageResult2">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider2"></div>
+                <article class="imageResults" id="imageResult3">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider3"></div>
+                <article class="imageResults" id="imageResult4">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider4"></div>
+                <div id="searchTypes">
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperbacks</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcovers</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchBundleOption">Bundles</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchAudioOption">Audiobooks</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                </div>
+            </div>
+        </article>
+        <!--Sub Header-->
+        <ul id="subHeader">
+            <li id="categoryMenu" class="subHeaderLeftArticles">Shop by category &nbsp&nbsp▼</li>
+            <li id="currencyMenu" class="subHeaderRightArticles">
+                <div id="currencyDropdownText">$ NZD &nbsp&nbsp▼</div>
+                <!--Currency Dropdown-->
+                <div id="currencyDropdown">
+                    <ul id="currencyDropdownList">
+                        <li id="currencyTitle">NZD</li>
+                        <li>
+                            <div id="currencyHorizontalDivider"></div>
+                        </li>
+                        <li class="currencyItem"><a href="index.html">AED</a></li>
+                        <li class="currencyItem"><a href="index.html">ARS</a></li>
+                        <li class="currencyItem"><a href="index.html">AUD</a></li>
+                        <li class="currencyItem"><a href="index.html">BGN</a></li>
+                        <li class="currencyItem"><a href="index.html">CAD</a></li>
+                        <li class="currencyItem"><a href="index.html">CHF</a></li>
+                        <li class="currencyItem"><a href="index.html">CLP</a></li>
+                        <li class="currencyItem"><a href="index.html">COP</a></li>
+                        <li class="currencyItem"><a href="index.html">CZK</a></li>
+                        <li class="currencyItem"><a href="index.html">EUR</a></li>
+                        <li class="currencyItem"><a href="index.html">GBP</a></li>
+                        <li class="currencyItem"><a href="index.html">NZD</a></li>
+                        <li class="currencyItem"><a href="index.html">SGD</a></li>
+                        <li class="currencyItem"><a href="index.html">USD</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="languageMenu" class="subHeaderRightArticles"><img src="images/svgs/globeIcon.svg"
+                    id="languageHeaderIcon" />
+                <div id="languageDropdownText">English &nbsp&nbsp▼</div>
+                <!--Language Dropdown-->
+                <div id="languageDropdown">
+                    <ul id="languageDropdownList">
+                        <li id="languageTitle">Languages</li>
+                        <li>
+                            <div id="languageHorizontalDivider"></div>
+                        </li>
+                        <li class="languageItem" id="selectedLanguage">English</li>
+                        <li class="languageItem"><a href="index.html">Spanish (Español)</a></li>
+                        <li class="languageItem"><a href="index.html">Polish (Polski)</a></li>
+                        <li class="languageItem"><a href="index.html">Japanese (日本)</a></li>
+                        <li class="languageItem"><a href="index.html">Mandarin (北方话)</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!--Category Dropdown-->
+        <div id="categoryDropdown">
+            <ul class="categoryColumn" id="nonFiction">
+                <li class="categoryGroup"><a href="index.html">Non-Fiction</a></li>
+                <li class="categoryItem"><a href="index.html">Art and Photography</a></li>
+                <li class="categoryItem"><a href="index.html">Biography</a></li>
+                <li class="categoryItem"><a href="index.html">Business, Finance, and Law</a></li>
+                <li class="categoryItem"><a href="index.html">Comedy</a></li>
+                <li class="categoryItem"><a href="index.html">Crafts and Hobbies</a></li>
+                <li class="categoryItem"><a href="index.html">Entertainment</a></li>
+                <li class="categoryItem"><a href="index.html">Poetry and Drama</a></li>
+                <li class="categoryItem"><a href="index.html">Romance</a></li>
+                <li class="categoryItem"><a href="index.html">Sport</a></li>
+            </ul>
+            <ul class="categoryColumn" id="fiction">
+                <li class="categoryItem"><a href="index.html">Travel and Holiday Guides</a></li>
+                <li class="categoryGroup"><a href="index.html">Fiction</a></li>
+                <li class="categoryItem"><a href="index.html">Children's Books</a></li>
+                <li class="categoryItem"><a href="index.html">Crime and Thriller</a></li>
+                <li class="categoryItem"><a href="index.html">Graphic Novels, Anime<br>and Manga</a></li>
+                <li class="categoryItem"><a href="index.html">Science Fiction, Fantasy<br>and Horror</a></li>
+                <li class="categoryItem"><a href="index.html">Teen and Young Adult</a></li>
+            </ul>
+            <ul class="categoryColumn" id="education">
+                <li class="categoryGroup"><a href="index.html">Education</a></li>
+                <li class="categoryItem"><a href="index.html">Computing</a></li>
+                <li class="categoryItem"><a href="index.html">Dictionaries and Languages</a></li>
+                <li class="categoryItem"><a href="index.html">History and Archeology</a></li>
+                <li class="categoryItem"><a href="index.html">Natural History</a></li>
+                <li class="categoryItem"><a href="index.html">Science and Geography</a></li>
+                <li class="categoryItem"><a href="index.html">Teaching Resources</a></li>
+                <li class="categoryItem"><a href="index.html">Technology and Engineering</a></li>
+                <li class="categoryItem"><a href="index.html">Transport</a></li>
+                <li class="categoryItem"><a href="index.html">Medical</a></li>
+            </ul>
+            <ul class="categoryColumn" id="personalDevelopment">
+                <li class="categoryGroup"><a href="index.html">Personal<br>Development</a></li>
+                <li class="categoryItem"><a href="index.html">Food and Drink</a></li>
+                <li class="categoryItem"><a href="index.html">Health</a></li>
+                <li class="categoryItem"><a href="index.html">Home and Garden</a></li>
+                <li class="categoryItem"><a href="index.html">Mind, Body, and Spirit</a></li>
+                <li class="categoryItem"><a href="index.html">Religion</a></li>
+                <li class="categoryGroup"><a href="index.html">Other</a></li>
+                <li class="categoryItem"><a href="index.html">Audio Books</a></li>
+            </ul>
+            <ul class="categoryColumn" id="other">
+                <li class="categoryItem"><a href="index.html">Reference</a></li>
+                <li class="categoryItem"><a href="index.html">Stationary</a></li>
+            </ul>
+            <ul class="categoryColumn" id="categoryLeftList">
+                <li class="categoryGroup"><a href="index.html">Non-Fiction</a></li>
+                <li class="categoryGroup"><a href="index.html">Fiction</a></li>
+                <li class="categoryGroup"><a href="index.html">Education</a></li>
+                <li class="categoryGroup"><a href="index.html">Personal Development</a></li>
+                <li class="categoryGroup"><a href="index.html">Other</a></li>
+            </ul>
+            <ul class="categoryColumn">
+                <div id="categoryVerticalDivider"></div>
+            </ul>
+            <ul class="categoryColumn" id="topAuthors">
+                <li class="categoryGroup"><a href="index.html">Top Authors</a></li>
+                <li class="categoryItem"><a href="index.html">J.K Rowling</a></li>
+                <li class="categoryItem"><a href="index.html">Ronald Dahl</a></li>
+                <li class="categoryItem"><a href="index.html">Julia Donaldson</a></li>
+                <li class="categoryItem"><a href="index.html">Stephan King</a></li>
+                <li class="categoryItem"><a href="index.html">David Walliams</a></li>
+                <li class="categoryItem"><a href="index.html">Dr. Suess</a></li>
+                <li class="categoryItem"><a href="index.html">Andy Griffiths</a></li>
+                <li class="categoryItem"><a href="index.html">James Patterson</a></li>
+                <li class="categoryItem"><a href="index.html">Enid Blyton</a></li>
+            </ul>
+            <ul class="categoryColumn" id="bestSelling">
+                <li class="categoryGroup"><a href="index.html">Bestselling Series</a></li>
+                <li class="categoryItem"><a href="index.html">Harry Potter</a></li>
+                <li class="categoryItem"><a href="index.html">Game Of Thrones</a></li>
+                <li class="categoryItem"><a href="index.html">Lego</a></li>
+                <li class="categoryGroup"><a href="index.html">Books By Language</a></li>
+                <li class="categoryItem"><a href="index.html">Books in Spanish</a></li>
+                <li class="categoryItem"><a href="index.html">Books in Polish</a></li>
+                <li class="categoryItem"><a href="index.html">Books in German</a></li>
+                <li class="categoryItem"><a href="index.html">Books in French</a></li>
+            </ul>
+            <ul class="categoryColumn" id="categoryRightList">
+                <li class="categoryGroup"><a href="index.html">Top Authors</a></li>
+                <li class="categoryGroup"><a href="index.html">Bestselling Series</a></li>
+                <li class="categoryGroup"><a href="index.html">Books By Language</a></li>
+            </ul>
+            <ul id="categoryAgeRange">
+                <div id="categoryHorizontalDivider"></div>
+                <li class="categoryGroup">Children's books by age range</li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 0-2</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 3-5</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 6-8</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 9-11</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Teen and Young Adult</button></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="itemPopupBackdrop"></div>
+        <article class="itemPopup">
+            <img src="images/svgs/minimizeIcon.svg" class="itemMinimize" />
+            <h1>Item added to cart</h1>
+            <div class="itemPopupDivider"></div>
+            <p>You have <span class="itemCountPopup">1 item</span> in your cart<br>Total cost: <span
+                    class="itemPricePopup">NZ $00.00</span></p>
+            <button type="button" onclick="" class="itemContinuePopup">Continue Shopping</button>
+            <button type="button" onclick="window.location.href='cart.html'" class="itemBasketPopup">Basket /
+                Checkout</button>
+        </article>
+        <button type="button" id="adjustmentPopoutButton"><img src="images/svgs/popoutMenu.svg"></button>
+        <article id="searchAdjustments">
+            <button type="button" id="adjustmentPopinButton"><img src="images/svgs/popoutMenu.svg"></button>
+            <h1 id="resultsTitle">Showing results for <br><span id="searchQuery">Dune</span></h1>
+            <h3>Showing <span id="startingBookNum">1</span> to <span id="endingBookNum">36</span> of <span id="totalBookCount">54</span> results</h3>
+            <div class="dropdown" id="orderBy">
+                <span>Most Popular</span>
+                <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                <div class="dropdown-content">
+                    <p>Most Popular<br>Price, Low to High<br>Price, High to Low<br>Publication Date, Old to New<br>Publication Date, New to Old</p>
+                </div>
+            </div>
+            <div id="resultPages">
+                <button type="button" id="pageA">1</button>
+                <button type="button" id="pageB">2</button>
+                <button type="button" id="pageC">3</button>
+                <button type="button" id="pageD">4</button>
+                <button type="button" id="pageE">5</button>
+                <button type="button" id="pageF">6</button>
+                <button type="button" id="pageG">»</button>
+            </div>
+            <div id="topFilterDivider"></div>
+            <h1 id="filterTitle">Filter your search</h1> 
+            <h4 id="keywordText">Keyword</h4>
+            <input type="text" id="keywordInput" name="keyword" placeholder="All" maxLength="35">
+            <h4 id="rangeText">Price range</h4>
+            <div class="dropdown" id="priceLimit">
+                <span>All</span>
+                <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                <div class="dropdown-content">
+                    <p>All<br>Under NZ $20.00<br>NZ $20.00 to NZ $40.00<br>NZ $40.00 +</p>
+                </div>
+            </div>
+            <h4 id="availabilityText">Availability</h4>
+            <div class="dropdown" id="availability">
+                <span>All</span>
+                <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                <div class="dropdown-content">
+                    <p>All<br>In Stock<br>Pre-order</p>
+                </div>
+            </div>
+            <h4 id="languageText">Language</h4>
+            <div class="dropdown" id="languages">
+                <span>All</span>
+                <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                <div class="dropdown-content">
+                    <p>All<br>English (36)</p>
+                </div>
+            </div>
+            <h4 id="formatText">Format</h4>
+            <div class="dropdown" id="formats">
+                <span>All</span>
+                <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                <div class="dropdown-content">
+                    <p>All<br>Paperback<br>Hardcover<br>Audio<br>Digital<br>Stationary<br>Baby Books<br>Maps<br>Toys</p>
+                </div>
+            </div>
+            <button type="button" id="refineResultsButton">Refine Results</button>
+            <div id="lowerFilterDivider"></div>
+            <h2 id="filterCategoryTitle">Filter by category</h2>
+            <ul id="filterCategories">
+                <li>Art & Photography <span class="categoryCount">(4574)</span></li>
+                <li>Biography <span class="categoryCount">(8350)</span></li>
+                <li>Business, Finance & Law <span class="categoryCount">(8266)</span></li>
+                <li>Children's Books <span class="categoryCount">(6299)</span></li>
+                <li>Computing <span class="categoryCount">(581)</span></li>
+                <li>Crafts & Hobbies <span class="categoryCount">(1145)</span></li>
+                <li>Crime & Thriller <span class="categoryCount">(2016)</span></li>
+                <li>Dictionaries & Languages <span class="categoryCount">(4043)</span></li>
+                <li>Entertainment <span class="categoryCount">(1332)</span></li>
+                <li>Fiction <span class="categoryCount">(12913)</span></li>
+            </h2>
+        </article>
+        <article id="queryResults">
+            <article>
+                <div class="shelfFloor"></div>
+                <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
+                <div class="product" id="topShelf1">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="topShelf2">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="topShelf3">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product edgeProduct" id="topShelf4">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="topShelf5">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="topShelf6">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+            </article>
+            <article>
+                <div class="shelfFloor"></div>
+                <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
+                <div class="product" id="secondShelf1">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="secondShelf2">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="secondShelf3">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product edgeProduct" id="secondShelf4">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="secondShelf5">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="secondShelf6">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+            </article>
+            <article>
+                <div class="shelfFloor"></div>
+                <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
+                <div class="product" id="thirdShelf1">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="thirdShelf2">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="thirdShelf3">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product edgeProduct" id="thirdShelf4">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="thirdShelf5">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="thirdShelf6">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+            </article>
+            <article>
+                <div class="shelfFloor"></div>
+                <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
+                <div class="product" id="forthShelf1">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="forthShelf2">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="forthShelf3">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product edgeProduct" id="forthShelf4">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="forthShelf5">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="forthShelf6">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+            </article>
+            <article>
+                <div class="shelfFloor"></div>
+                <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
+                <div class="product" id="fifthShelf1">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="fifthShelf2">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="fifthShelf3">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product edgeProduct" id="fifthShelf4">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="fifthShelf5">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="fifthShelf6">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+            </article>
+            <article>
+                <div class="shelfFloor"></div>
+                <div class="shelfEdge"><div class="shelfEdgeInner"></div></div>
+                <div class="product" id="sixthShelf1">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="sixthShelf2">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product" id="sixthShelf3">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product edgeProduct" id="sixthShelf4">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="sixthShelf5">
+                    <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
+                    <p class="productAuthor">Frank Herbert</p>
+                    <button type="button" onclick="" class="productPrice">20.88</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+                <div class="product extraProduct" id="sixthShelf6">
+                    <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
+                    <p class="productAuthor">Colleen Hoover</p>
+                    <button type="button" onclick="" class="productPrice">16.91</button>
+                    <button type="button" onclick="" class="productBasket">Add to basket</button>
+                </div>
+            </article>
+        </article>
+    </main>
+    <footer>
+        <ul id="footerCompressedMenu">
+            <li class="footerTitle" id="footerCompressedExplore">Explore</li>
+            <li class="footerDivider"></li>
+            <li class="footerTitle" id="footerCompressedHelp">Need help?</li>
+            <li class="footerDivider"></li>
+            <li class="footerTitle" id="footerCompressedJoin">Join us</li>
+            <li class="footerDivider"></li>
+            <li class="footerTitle" id="footerCompressedImportant">Important Stuff</li>
+            <li class="footerDivider"></li>
+        </ul>
+        <ul id="footerCompressedCategories">
+        </ul>
+        <ul>
+            <li class="footerTitle">Explore</li>
+            <li class="footerLink"><a href="about.html">About us</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Sitemap</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="searchQuery.html">Bookmarks</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="login.html">Sign in/Join</a></li>
+            <li class="footerDivider"></li>
+        </ul>
+        <ul>
+            <li class="footerTitle">Need help?</li>
+            <li class="footerLink"><a href="help.html">Help</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="contact.html">Contact us</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Where's my stuff?</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Where do you deliver?</a></li>
+            <li class="footerDivider"></li>
+        </ul>
+        <ul>
+            <li class="footerTitle">Join us</li>
+            <li class="footerLink"><a href="index.html">Affiliates</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Jobs</a></li>
+            <li class="footerDivider"></li>
+        </ul>
+        <ul>
+            <li class="footerTitle">Important Stuff</li>
+            <li class="footerLink"><a href="index.html">Cookies</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Privacy policy</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">Terms & Conditions</a></li>
+            <li class="footerDivider"></li>
+            <li class="footerLink"><a href="index.html">UK Modern Slavery Statement</a></li>
+            <li class="footerDivider"></li>
+        </ul>
+        <ul id="footerPayments">
+            <li class="footerTitle">We accept these payment methods</li>
+            <img src="images/website/paymentMethods.png">
+        </ul>
+    </footer>
+</body>
+</html>
+
+<script src="javascript/booksDB.js"></script>
+<script src="javascript/universalScript.js"></script>
+<script src="javascript/genericSearchDataAssignment.js"></script>
+<script>
+    $("#adjustmentPopoutButton").on("click", function() {
+        $("#searchAdjustments").css("display", "block");
+        $("#adjustmentPopoutButton").css("display", "none");
+    });
+
+    $("#adjustmentPopinButton").on("click", function() {
+        $("#searchAdjustments").css("display", "none");
+        $("#adjustmentPopoutButton").css("display", "unset");
+    });
+    
+    //Disables adjustment popup button if un-needed.
+    $(window).resize(function() {
+        if (window.matchMedia("(min-width: 1100px)").matches) {
+            $("#searchAdjustments").css("display", "block");
+            $("#adjustmentPopoutButton").css("display", "none");
+        } else {
+            $("#searchAdjustments").css("display", "none");
+            $("#adjustmentPopoutButton").css("display", "unset");
+        }
+    });
+</script>
