@@ -26,7 +26,7 @@ function loadPageInfo() {
     if (searchParams.has('id')) {
         var id = searchParams.get('id');
         // General Product Data
-        $("#bookName").text(books[id]["name"]);
+        updateBookTitle();
         $("#authorName").text(books[id]["author"]);
         $("#bookLanguage").text(books[id]["language"]);
         $("#bookBlurb").text(books[id]["blurb"]);
@@ -55,7 +55,7 @@ function loadPageInfo() {
 
         // Category Buttons
         books[id]["categories"].forEach(function (category) {
-            $("#categories").append("<button type=\"button\" onclick=\"window.location.href='searchQuery.html?query=" + category + "&type=5'\" class=\"categoryButton\">" + category + "</button>");
+            $("#categories").append("<button type=\"button\" onclick=\"window.location.href='searchQuery.html?query=" + category.replace(/ /g, "_").replace(/&/g, "and") + "&type=5'\" class=\"categoryButton\">" + category + "</button>");
         });
 
         // Type Buttons
@@ -154,4 +154,17 @@ function loadPageInfo() {
     }
 }
 
+function updateBookTitle() {
+    var searchParams = new URLSearchParams(window.location.search);
+    var id = searchParams.get('id');
+    if (window.matchMedia("(min-width: 1600px)").matches) {
+        $("#bookName").text(books[id]["name"].length < 48 ? books[id]["name"] : (books[id]["name"].substring(0, 45) + "..."));
+    } else if (window.matchMedia("(min-width: 1401px)").matches) {
+        $("#bookName").text(books[id]["name"].length < 34 ? books[id]["name"] : (books[id]["name"].substring(0, 31) + "..."));
+    } else {
+        $("#bookName").text(books[id]["name"]);
+    }
+}
+
 window.onload = loadPageInfo;
+$(window).resize(updateBookTitle);

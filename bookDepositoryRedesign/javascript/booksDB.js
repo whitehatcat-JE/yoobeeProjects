@@ -454,8 +454,8 @@ function findQueryResults(query, type) {
 		for (var bookID = 0; bookID < Object.keys(books).length; bookID++) {
 			var categoriesToCheck = books[bookID]["categories"];
 			categoriesToCheck.forEach(function (category, index) {
-				if (query.match(RegExp(category, "g")||[]).length + category.match(RegExp(query, "g")||[]).length > 0 && !resultIDs.includes(bookID)) {
-					resultsIDs.push(bookID);
+				if ((query.match(RegExp(category, "g"))||[]).length + (category.match(RegExp(query, "g"))||[]).length > 0 && !resultIDs.includes(bookID)) {
+					resultIDs.push(bookID);
 				}
 			});
 		}

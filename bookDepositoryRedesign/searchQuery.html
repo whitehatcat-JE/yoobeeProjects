@@ -426,13 +426,13 @@
                     <button type="button" onclick="" class="productPrice">16.91</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="topShelf5">
+                <div class="product extraProducts1" id="topShelf5">
                     <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                     <p class="productAuthor">Frank Herbert</p>
                     <button type="button" onclick="" class="productPrice">20.88</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="topShelf6">
+                <div class="product extraProducts2" id="topShelf6">
                     <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                     <p class="productAuthor">Colleen Hoover</p>
                     <button type="button" onclick="" class="productPrice">16.91</button>
@@ -466,13 +466,13 @@
                     <button type="button" onclick="" class="productPrice">16.91</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="secondShelf5">
+                <div class="product extraProducts1" id="secondShelf5">
                     <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                     <p class="productAuthor">Frank Herbert</p>
                     <button type="button" onclick="" class="productPrice">20.88</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="secondShelf6">
+                <div class="product extraProducts2" id="secondShelf6">
                     <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                     <p class="productAuthor">Colleen Hoover</p>
                     <button type="button" onclick="" class="productPrice">16.91</button>
@@ -506,13 +506,13 @@
                     <button type="button" onclick="" class="productPrice">16.91</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="thirdShelf5">
+                <div class="product extraProducts1" id="thirdShelf5">
                     <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                     <p class="productAuthor">Frank Herbert</p>
                     <button type="button" onclick="" class="productPrice">20.88</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="thirdShelf6">
+                <div class="product extraProducts2" id="thirdShelf6">
                     <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                     <p class="productAuthor">Colleen Hoover</p>
                     <button type="button" onclick="" class="productPrice">16.91</button>
@@ -546,13 +546,13 @@
                     <button type="button" onclick="" class="productPrice">16.91</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="forthShelf5">
+                <div class="product extraProducts1" id="forthShelf5">
                     <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                     <p class="productAuthor">Frank Herbert</p>
                     <button type="button" onclick="" class="productPrice">20.88</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="forthShelf6">
+                <div class="product extraProducts2" id="forthShelf6">
                     <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                     <p class="productAuthor">Colleen Hoover</p>
                     <button type="button" onclick="" class="productPrice">16.91</button>
@@ -586,13 +586,13 @@
                     <button type="button" onclick="" class="productPrice">16.91</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="fifthShelf5">
+                <div class="product extraProducts1" id="fifthShelf5">
                     <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                     <p class="productAuthor">Frank Herbert</p>
                     <button type="button" onclick="" class="productPrice">20.88</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="fifthShelf6">
+                <div class="product extraProducts2" id="fifthShelf6">
                     <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                     <p class="productAuthor">Colleen Hoover</p>
                     <button type="button" onclick="" class="productPrice">16.91</button>
@@ -626,13 +626,13 @@
                     <button type="button" onclick="" class="productPrice">16.91</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="sixthShelf5">
+                <div class="product extraProducts1" id="sixthShelf5">
                     <a href="product.html"><img src="images/bookcovers/0.jpg"></a><br>
                     <p class="productAuthor">Frank Herbert</p>
                     <button type="button" onclick="" class="productPrice">20.88</button>
                     <button type="button" onclick="" class="productBasket">Add to basket</button>
                 </div>
-                <div class="product extraProduct" id="sixthShelf6">
+                <div class="product extraProducts2" id="sixthShelf6">
                     <a href="product.html"><img src="images/bookcovers/1.jpg"></a><br>
                     <p class="productAuthor">Colleen Hoover</p>
                     <button type="button" onclick="" class="productPrice">16.91</button>
@@ -706,24 +706,90 @@
 <script src="javascript/universalScript.js"></script>
 <script src="javascript/genericSearchDataAssignment.js"></script>
 <script>
+    var shelfSlots = 6;
+    function updateResults() {
+        var searchParams = new URLSearchParams(window.location.search);
+        var results = [];
+        var type = 7;
+        var query = "All";
+        if (searchParams.has("type") && searchParams.has("query")) {
+            var type = searchParams.get("type");
+            var query = searchParams.get("query").replace(/_/g, " ").replace(/ and /g, " & ");
+            results = findQueryResults(query, type);
+        } else {
+            results = Object.keys(books);
+        }
+
+        $("#searchInputFull").val(query);
+        $("#searchInputShorter").val(query);
+        $("#searchInputShortest").val(query);
+        $("#searchQuery").text(query);
+        $("#totalBookCount").text(results.length);
+        $("#endingBookNum").text(results.length);
+
+        var shelves = ["#topShelf", "#secondShelf", "#thirdShelf", "#forthShelf", "#fifthShelf", "#sixthShelf"];
+        var itemNum = 0;
+
+        for (var shelf = 0; shelf < shelves.length; shelf++) {
+            for (var slot = 0; slot < shelfSlots; slot++) {
+                var selectedSlot = shelves[shelf] + (slot + 1);
+                if (itemNum < results.length) {
+                    $(selectedSlot).closest("article").css("display", "block");
+                    $(selectedSlot).css("visibility", "visible");
+                    $(selectedSlot + " > .productAuthor").text(books[results[itemNum]]["author"]);
+                    $(selectedSlot + " > .productPrice").text(books[results[itemNum]]["price"]);
+                    $(selectedSlot + " > a").attr("href", "product.html?id=" + results[itemNum]);
+                    $(selectedSlot + " > a > img").attr("src", "images/bookcovers/" + results[itemNum] + ".jpg");
+                } else {
+                    $(selectedSlot).css("visibility", "hidden");
+                    if (slot == 0) {
+                        $(selectedSlot).closest("article").css("display", "none");
+                    }
+                }
+                itemNum++;
+            }            
+        }
+
+
+    }
+
+    window.onload = updateResults;
+
+    //Adjustments Popout menu controls (Used when width < 1100px)
     $("#adjustmentPopoutButton").on("click", function() {
-        $("#searchAdjustments").css("display", "block");
+        $("#searchAdjustments").css("visibility", "visible");
         $("#adjustmentPopoutButton").css("display", "none");
+        $("#queryResults").css("z-index", "-1");
     });
 
     $("#adjustmentPopinButton").on("click", function() {
-        $("#searchAdjustments").css("display", "none");
+        $("#searchAdjustments").css("visibility", "hidden");
         $("#adjustmentPopoutButton").css("display", "unset");
+        $("#queryResults").css("z-index", "0");
     });
     
     //Disables adjustment popup button if un-needed.
     $(window).resize(function() {
         if (window.matchMedia("(min-width: 1100px)").matches) {
-            $("#searchAdjustments").css("display", "block");
+            $("#searchAdjustments").css("visibility", "visible");
             $("#adjustmentPopoutButton").css("display", "none");
         } else {
-            $("#searchAdjustments").css("display", "none");
+            $("#searchAdjustments").css("visibility", "hidden");
             $("#adjustmentPopoutButton").css("display", "unset");
+            $("#queryResults").css("z-index", "0");
         }
+
+        if (window.matchMedia("(min-width: 951px)").matches) {
+            shelfSlots = 6;
+        } else if (window.matchMedia("(min-width: 781px)").matches) {
+            shelfSlots = 5;
+        } else if (window.matchMedia("(min-width: 626px)").matches) {
+            shelfSlots = 4;
+        } else {
+            shelfSlots = 3;
+        }
+
+
+        updateResults();
     });
 </script>

@@ -65,7 +65,7 @@ function updateSearchResults() {
             if (textResults.length > textResultID) {
                 $("#textResult" + (textResultID + 1)).text(textResults[textResultID]);
                 $("#textResult" + (textResultID + 1)).css("display", "unset");
-                $("#textResult" + (textResultID + 1)).attr("onclick", "window.location.href='searchQuery.html?query=" + textResults[textResultID] + "&type=" + textResultDicts[textResults[textResultID]] + "'");
+                $("#textResult" + (textResultID + 1)).attr("onclick", "window.location.href='searchQuery.html?query=" + textResults[textResultID].replace(/ /g, "_").replace(/&/g, "and") + "&type=" + textResultDicts[textResults[textResultID]] + "'");
                 $("#textDivider" + (textResultID + 1)).css("visibility", "visible");
             } else {
                 $("#textResult" + (textResultID + 1)).css("display", "none");
