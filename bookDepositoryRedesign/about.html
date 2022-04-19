@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Book Depository - Login</title>
+    <title>Book Depository - About</title>
     <meta name="description" content="Book Depository">
     <link href="css/defaultStyle.css" rel="stylesheet">
     <link href="css/genericHeaderStyle.css" rel="stylesheet">
+    <link href="css/genericInfoStyle.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="images/website/favicon.ico"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -313,16 +314,16 @@
         </div>
     </header>
     <main>
-        <div class="itemPopupBackdrop"></div>
-        <article class="itemPopup">
-            <img src="images/svgs/minimizeIcon.svg" class="itemMinimize" />
-            <h1>Item added to cart</h1>
-            <div class="itemPopupDivider"></div>
-            <p>You have <span class="itemCountPopup">1 item</span> in your cart<br>Total cost: <span
-                    class="itemPricePopup">NZ $00.00</span></p>
-            <button type="button" onclick="" class="itemContinuePopup">Continue Shopping</button>
-            <button type="button" onclick="window.location.href='cart.html'" class="itemBasketPopup">Basket /
-                Checkout</button>
+        <article id="infoArticle">
+            <h1>About us</h1>
+            <div id="articleTitleDivider"></div>
+            <p>
+                Book Depository (bookdepository.com) is a leading international book retailer with a unique offer -- over 20 million books and free delivery worldwide (with no minimum spend).
+                <br><br>
+                We ship thousands of books every day from our fulfillment centres in Gloucester, United Kingdom, and Melbourne, Australia, to more than 130 countries across the world -- displaying prices in 37 different local currencies.
+                <br><br>
+                Our vision is to provide “All Books Available to All” by improving selection, access and affordability of books.
+            </p>
         </article>
     </main>
     <footer>

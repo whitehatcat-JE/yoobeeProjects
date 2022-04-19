@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Book Depository - Login</title>
+    <title>Book Depository - Contact Us</title>
     <meta name="description" content="Book Depository">
     <link href="css/defaultStyle.css" rel="stylesheet">
     <link href="css/genericHeaderStyle.css" rel="stylesheet">
+    <link href="css/genericInfoStyle.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="images/website/favicon.ico"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -61,7 +62,7 @@
                 <img src="images/svgs/cartIcon.svg" />
                 <div id="cartCount">28</div>
             </div>
-            
+
             <div id="searchResults">
                 <div class="searchResultDivider"></div>
                 <h2 id="noResults">No results, please check for typos</h2>
@@ -313,16 +314,21 @@
         </div>
     </header>
     <main>
-        <div class="itemPopupBackdrop"></div>
-        <article class="itemPopup">
-            <img src="images/svgs/minimizeIcon.svg" class="itemMinimize" />
-            <h1>Item added to cart</h1>
-            <div class="itemPopupDivider"></div>
-            <p>You have <span class="itemCountPopup">1 item</span> in your cart<br>Total cost: <span
-                    class="itemPricePopup">NZ $00.00</span></p>
-            <button type="button" onclick="" class="itemContinuePopup">Continue Shopping</button>
-            <button type="button" onclick="window.location.href='cart.html'" class="itemBasketPopup">Basket /
-                Checkout</button>
+        <article id="infoArticle">
+            <h1>Contact us</h1>
+            <div id="articleTitleDivider"></div>
+            <p>
+                Not able to find your answer in the <a href="help.html">help</a> section?
+                <br><br>
+                Email us at: <a href="mailto:help@support.bookdepository.com">help@support.bookdepository.com</a> or reach out to us on our socials:
+                <br><br>
+                <i>Instagram:</i> <a href="https://www.instagram.com/bookdepository/?hl=en">@bookdepository</a>
+                <br>
+                <i>Twitter:</i> <a href="https://twitter.com/bookdepository">@bookdepository</a>
+                <br>
+                <i>Facebook:</i> <a href="https://www.facebook.com/BookDepository">@BookDepository</a>
+
+            </p>
         </article>
     </main>
     <footer>

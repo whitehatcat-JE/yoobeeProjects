@@ -1,0 +1,25 @@
+#infoArticle {
+    margin-top:160px;
+    min-height:600px;
+    background-color:#F0F0F0;
+    padding:25px;
+}
+
+#infoArticle > * {
+    color:#403042;
+}
+
+#infoArticle > h1 {
+    font-size:50px;
+}
+
+#articleTitleDivider {
+    background-color: #403042;
+    width:100%;
+    height:1px;
+    margin:5px 0px 10px 0px;
+}
+
+#infoArticle > p > a { text-decoration: underline; }
+
+#infoArticle > p > * { color:#403042; }
