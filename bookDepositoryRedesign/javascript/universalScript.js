@@ -74,15 +74,6 @@ $(".itemContinuePopup").on("click", function () {
     $(".itemPopup").css("display", "none");
 });
 
-$(".productPrice").on("click", function () {
-    $(".itemPopupBackdrop").css("display", "unset");
-    $(".itemPopup").css("display", "unset");
-});
-
-$(".productBasket").on("click", function () {
-    $(".itemPopupBackdrop").css("display", "unset");
-    $(".itemPopup").css("display", "unset");
-});
 $("#footerCompressedExplore").on("click", function () {
     document.getElementById("footerCompressedCategories").innerHTML = `
             <li class="footerLink"><a href="index.html">About us</a></li>
@@ -130,3 +121,6 @@ $("#footerCompressedImportant").on("click", function () {
             <li class="footerDivider"></li>
         `;
 });
+
+// Cart data assignment fallback
+window.onload = updateCart();

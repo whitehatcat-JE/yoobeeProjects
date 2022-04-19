@@ -1,8 +1,3 @@
-$("#purchaseButton").on("click", function () {
-    $(".itemPopupBackdrop").css("display", "unset");
-    $(".itemPopup").css("display", "unset");
-});
-
 $("#wishlistButton").on("click", addToWishlist);
 
 function addToWishlist() {
@@ -30,6 +25,7 @@ function loadPageInfo() {
         $("#authorName").text(books[id]["author"]);
         $("#bookLanguage").text(books[id]["language"]);
         $("#bookBlurb").text(books[id]["blurb"]);
+        $("#purchaseButton").attr("onclick", "addItem(" + id + ")");
 
         $("#dimensions").text(books[id]["dimensions"]);
         $("#pubDate").text(books[id]["publicationDate"]);
@@ -114,6 +110,8 @@ function loadPageInfo() {
             $("#topShelf1 > .productPrice").text(books[relatedBooks[0]]["price"]);
             $("#topShelf1 > a").attr("href", "product.html?id=" + relatedBooks[0]);
             $("#topShelf1 > a > img").attr("src", "images/bookcovers/" + relatedBooks[0] + ".jpg");
+            $("#topShelf1 > .productPrice").attr("onclick", "addItem(" + relatedBooks[0] + ")");
+            $("#topShelf1 > .productBasket").attr("onclick", "addItem(" + relatedBooks[0] + ")");
         } else {
             $("#topShelf1").css("display", "none");
         }
@@ -124,6 +122,8 @@ function loadPageInfo() {
             $("#topShelf2 > .productPrice").text(books[relatedBooks[1]]["price"]);
             $("#topShelf2 > a").attr("href", "product.html?id=" + relatedBooks[1]);
             $("#topShelf2 > a > img").attr("src", "images/bookcovers/" + relatedBooks[1] + ".jpg");
+            $("#topShelf2 > .productPrice").attr("onclick", "addItem(" + relatedBooks[1] + ")");
+            $("#topShelf2 > .productBasket").attr("onclick", "addItem(" + relatedBooks[1] + ")");
         } else {
             $("#topShelf2").css("display", "none");
         }
@@ -134,6 +134,8 @@ function loadPageInfo() {
             $("#topShelf3 > .productPrice").text(books[relatedBooks[2]]["price"]);
             $("#topShelf3 > a").attr("href", "product.html?id=" + relatedBooks[2]);
             $("#topShelf3 > a > img").attr("src", "images/bookcovers/" + relatedBooks[2] + ".jpg");
+            $("#topShelf3 > .productPrice").attr("onclick", "addItem(" + relatedBooks[2] + ")");
+            $("#topShelf3 > .productBasket").attr("onclick", "addItem(" + relatedBooks[2] + ")");
         } else {
             $("#topShelf3").css("display", "none");
         }
@@ -144,6 +146,8 @@ function loadPageInfo() {
             $("#topShelf4 > .productPrice").text(books[relatedBooks[3]]["price"]);
             $("#topShelf4 > a").attr("href", "product.html?id=" + relatedBooks[3]);
             $("#topShelf4 > a > img").attr("src", "images/bookcovers/" + relatedBooks[3] + ".jpg");
+            $("#topShelf4 > .productPrice").attr("onclick", "addItem(" + relatedBooks[3] + ")");
+            $("#topShelf4 > .productBasket").attr("onclick", "addItem(" + relatedBooks[3] + ")");
         } else {
             $("#topShelf4").css("display", "none");
         }
@@ -152,6 +156,8 @@ function loadPageInfo() {
     } else {
         document.location.href = "index.html";
     }
+
+    updateCart();
 }
 
 function updateBookTitle() {
@@ -164,6 +170,14 @@ function updateBookTitle() {
     } else {
         $("#bookName").text(books[id]["name"]);
     }
+}
+
+function addItem(id) {
+    cartItems.push(id);
+    saveCart();
+    updateCart();
+    $(".itemPopupBackdrop").css("display", "unset");
+    $(".itemPopup").css("display", "unset");
 }
 
 window.onload = loadPageInfo;

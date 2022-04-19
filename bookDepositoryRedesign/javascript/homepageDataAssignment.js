@@ -6,25 +6,35 @@ function loadData() {
         $("#topShelf" + (bestsellingID + 1) + " > a").attr("href", "product.html?id=" + bestsellingIdx[bestsellingID]);
         $("#topShelf" + (bestsellingID + 1) + " > .productAuthor").text(books[bestsellingIdx[bestsellingID]]["author"]);
         $("#topShelf" + (bestsellingID + 1) + " > .productPrice").text(books[bestsellingIdx[bestsellingID]]["price"]);
+        $("#topShelf" + (bestsellingID + 1) + " > .productPrice").attr("onclick", "addItem(" + bestsellingIdx[bestsellingID] + ")");
+        $("#topShelf" + (bestsellingID + 1) + " > .productBasket").attr("onclick", "addItem(" + bestsellingIdx[bestsellingID] + ")");
     }
     for (var gamingID = 0; gamingID < 6; gamingID++) {
         $("#secondShelf" + (gamingID + 1) + " > a > img").attr("src", "images/bookcovers/" + gamingCollection[gamingID] + ".jpg");
         $("#secondShelf" + (gamingID + 1) + " > a").attr("href", "product.html?id=" + gamingCollection[gamingID]);
         $("#secondShelf" + (gamingID + 1) + " > .productAuthor").text(books[gamingCollection[gamingID]]["author"]);
         $("#secondShelf" + (gamingID + 1) + " > .productPrice").text(books[gamingCollection[gamingID]]["price"]);
+        $("#secondShelf" + (gamingID + 1) + " > .productPrice").attr("onclick", "addItem(" + gamingCollection[gamingID] + ")");
+        $("#secondShelf" + (gamingID + 1) + " > .productBasket").attr("onclick", "addItem(" + gamingCollection[gamingID] + ")");
     }
     for (var youtubeID = 0; youtubeID < 6; youtubeID++) {
         $("#thirdShelf" + (youtubeID + 1) + " > a > img").attr("src", "images/bookcovers/" + youtubeCollection[youtubeID] + ".jpg");
         $("#thirdShelf" + (youtubeID + 1) + " > a").attr("href", "product.html?id=" + youtubeCollection[youtubeID]);
         $("#thirdShelf" + (youtubeID + 1) + " > .productAuthor").text(books[youtubeCollection[youtubeID]]["author"]);
         $("#thirdShelf" + (youtubeID + 1) + " > .productPrice").text(books[youtubeCollection[youtubeID]]["price"]);
+        $("#thirdShelf" + (youtubeID + 1) + " > .productPrice").attr("onclick", "addItem(" + youtubeCollection[youtubeID] + ")");
+        $("#thirdShelf" + (youtubeID + 1) + " > .productBasket").attr("onclick", "addItem(" + youtubeCollection[youtubeID] + ")");
     }
     for (var foodID = 0; foodID < 6; foodID++) {
         $("#fourthShelf" + (foodID + 1) + " > a > img").attr("src", "images/bookcovers/" + foodCollection[foodID] + ".jpg");
         $("#fourthShelf" + (foodID + 1) + " > a").attr("href", "product.html?id=" + foodCollection[foodID]);
         $("#fourthShelf" + (foodID + 1) + " > .productAuthor").text(books[foodCollection[foodID]]["author"]);
         $("#fourthShelf" + (foodID + 1) + " > .productPrice").text(books[foodCollection[foodID]]["price"]);
+        $("#fourthShelf" + (foodID + 1) + " > .productPrice").attr("onclick", "addItem(" + foodCollection[foodID] + ")");
+        $("#fourthShelf" + (foodID + 1) + " > .productBasket").attr("onclick", "addItem(" + foodCollection[foodID] + ")");
     }
+
+    updateCart(0);
 }
 
 window.onload = loadData;
@@ -212,15 +222,14 @@ $(".itemContinuePopup").on("click", function () {
     $(".itemPopup").css("display", "none");
 });
 
-$(".productPrice").on("click", function () {
+function addItem(id) {
+    cartItems.push(id);
+    saveCart();
+    updateCart(0);
     $(".itemPopupBackdrop").css("display", "unset");
     $(".itemPopup").css("display", "unset");
-});
+}
 
-$(".productBasket").on("click", function () {
-    $(".itemPopupBackdrop").css("display", "unset");
-    $(".itemPopup").css("display", "unset");
-});
 $("#footerCompressedExplore").on("click", function () {
     document.getElementById("footerCompressedCategories").innerHTML = `
             <li class="footerLink"><a href="index.html">About us</a></li>
