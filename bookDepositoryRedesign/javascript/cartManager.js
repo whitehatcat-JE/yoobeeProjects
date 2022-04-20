@@ -44,7 +44,7 @@ function updateLinks() {
         }
     });
 
-    $('button').each(function(i, obj) {
+    $('[onclick]').each(function(i, obj) {
         if ($(obj).attr("onclick") != undefined) {
             if ($(obj).attr("onclick").includes("window")) {
                 if ($(obj).attr("onclick").includes("cart=")) {

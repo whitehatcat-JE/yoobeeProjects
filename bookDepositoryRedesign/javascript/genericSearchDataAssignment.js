@@ -39,9 +39,7 @@ function updateSearchResults() {
         if (results.length > 0 && (!window.matchMedia("(max-width: 1000px)").matches || !window.matchMedia("(max-height: 565px)").matches)) {
             updateImgResult(1, books[results[0]]["type"], Object.keys(books[results[0]]["alternativeTypes"]), results);
             $("#imageDivider4").css("visibility", "visible");
-            $("#imageResult1 > img").on("click", function () {
-                document.location.href = "product.html?id=" + results[0];
-            });
+            $("#imageResult1 > img").attr("onclick", "window.location.href='product.html?id=" + results[0] + "'");
         } else {
             $("#imageResult1").css("display", "none");
             $("#imageDivider4").css("visibility", "hidden");
@@ -49,9 +47,7 @@ function updateSearchResults() {
         if (results.length > 1 && (!window.matchMedia("(max-height: 610px)").matches && (!window.matchMedia("(max-height: 740px)").matches || !window.matchMedia("(max-width: 1000px)").matches))) {
             $("#imageDivider1").css("visibility", "visible");
             updateImgResult(2, books[results[1]]["type"], Object.keys(books[results[1]]["alternativeTypes"]), results);
-            $("#imageResult2 > img").on("click", function () {
-                document.location.href = "product.html?id=" + results[1];
-            });
+            $("#imageResult2 > img").attr("onclick", "window.location.href='product.html?id=" + results[1] + "'");
         } else {
             $("#imageResult2").css("display", "none");
             $("#imageDivider1").css("visibility", "hidden");
@@ -59,9 +55,7 @@ function updateSearchResults() {
         if (results.length > 2 && (!window.matchMedia("(max-height: 740px)").matches && ((!window.matchMedia("(max-height: 920px)").matches && window.matchMedia("(max-width: 940px)").matches) || !window.matchMedia("(max-width: 1000px)").matches))) {
             $("#imageDivider2").css("visibility", "visible");
             updateImgResult(3, books[results[2]]["type"], Object.keys(books[results[2]]["alternativeTypes"]), results);
-            $("#imageResult3 > img").on("click", function () {
-                document.location.href = "product.html?id=" + results[2];
-            });
+            $("#imageResult3 > img").attr("onclick", "window.location.href='product.html?id=" + results[2] + "'");
         } else {
             $("#imageResult3").css("display", "none");
             $("#imageDivider2").css("visibility", "hidden");
@@ -69,9 +63,7 @@ function updateSearchResults() {
         if (results.length > 3 && !window.matchMedia("(max-height: 880px)").matches && !window.matchMedia("(max-width: 1000px)").matches) {
             $("#imageDivider3").css("visibility", "visible");
             updateImgResult(4, books[results[3]]["type"], Object.keys(books[results[3]]["alternativeTypes"]), results);
-            $("#imageResult4 > img").on("click", function () {
-                document.location.href = "product.html?id=" + results[3];
-            });
+            $("#imageResult4 > img").attr("onclick", "window.location.href='product.html?id=" + results[3] + "'");
         } else {
             $("#imageResult4").css("display", "none");
             $("#imageDivider3").css("visibility", "hidden");
@@ -102,6 +94,7 @@ function updateSearchResults() {
         } else {
             $("#searchTypes" + " > " + types[typesAvailable[typesAvailable.length - 1]]).addClass("onlyTypeButton");
         }
+        updateLinks();
     }
 }
 

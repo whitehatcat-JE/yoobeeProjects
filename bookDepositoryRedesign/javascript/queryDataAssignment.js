@@ -85,6 +85,7 @@ $(window).resize(function() {
 
 
     updateResults();
+    updateLinks();
 });
 
 
