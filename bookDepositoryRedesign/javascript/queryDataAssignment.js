@@ -92,6 +92,4 @@ function addItem(id) {
     cartItems.push(id);
     saveCart();
     updateCart();
-    $(".itemPopupBackdrop").css("display", "unset");
-    $(".itemPopup").css("display", "unset");
 }

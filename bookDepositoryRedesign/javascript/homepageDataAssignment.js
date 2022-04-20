@@ -226,8 +226,6 @@ function addItem(id) {
     cartItems.push(id);
     saveCart();
     updateCart(0);
-    $(".itemPopupBackdrop").css("display", "unset");
-    $(".itemPopup").css("display", "unset");
 }
 
 $("#footerCompressedExplore").on("click", function () {

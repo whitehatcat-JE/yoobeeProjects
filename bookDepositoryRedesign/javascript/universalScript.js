@@ -76,50 +76,54 @@ $(".itemContinuePopup").on("click", function () {
 
 $("#footerCompressedExplore").on("click", function () {
     document.getElementById("footerCompressedCategories").innerHTML = `
-            <li class="footerLink"><a href="index.html">About us</a></li>
+            <li class="footerLink"><a href="about.html">About us</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Sitemap</a></li>
+            <li class="footerLink"><a href="about.html">Sitemap</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Bookmarks</a></li>
+            <li class="footerLink"><a href="about.html">Bookmarks</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Sign in/Join</a></li>
+            <li class="footerLink"><a href="login.html">Sign in/Join</a></li>
             <li class="footerDivider"></li>
         `;
+    updateLinks();
 });
 
 $("#footerCompressedHelp").on("click", function () {
     document.getElementById("footerCompressedCategories").innerHTML = `
-            <li class="footerLink"><a href="index.html">Help</a></li>
+            <li class="footerLink"><a href="help.html">Help</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Contact us</a></li>
+            <li class="footerLink"><a href="contact.html">Contact us</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Where's my stuff?</a></li>
+            <li class="footerLink"><a href="about.html">Where's my stuff?</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Where do you deliver?</a></li>
+            <li class="footerLink"><a href="about.html">Where do you deliver?</a></li>
             <li class="footerDivider"></li>
         `;
+    updateLinks();
 });
 
 $("#footerCompressedJoin").on("click", function () {
     document.getElementById("footerCompressedCategories").innerHTML = `
-            <li class="footerLink"><a href="index.html">Affiliates</a></li>
+            <li class="footerLink"><a href="about.html">Affiliates</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Jobs</a></li>
+            <li class="footerLink"><a href="about.html">Jobs</a></li>
             <li class="footerDivider"></li>
         `;
+    updateLinks();
 });
 
 $("#footerCompressedImportant").on("click", function () {
     document.getElementById("footerCompressedCategories").innerHTML = `
-            <li class="footerLink"><a href="index.html">Cookies</a></li>
+            <li class="footerLink"><a href="about.html">Cookies</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Privacy policy</a></li>
+            <li class="footerLink"><a href="about.html">Privacy policy</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">Terms & Conditions</a></li>
+            <li class="footerLink"><a href="about.html">Terms & Conditions</a></li>
             <li class="footerDivider"></li>
-            <li class="footerLink"><a href="index.html">UK Modern Slavery Statement</a></li>
+            <li class="footerLink"><a href="about.html">UK Modern Slavery Statement</a></li>
             <li class="footerDivider"></li>
         `;
+    updateLinks();
 });
 
 // Cart data assignment fallback

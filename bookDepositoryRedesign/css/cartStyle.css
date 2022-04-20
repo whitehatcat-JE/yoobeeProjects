@@ -342,13 +342,13 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width:1460px) {
+@media only screen and (max-width:1550px) {
     #orText {
         display:none;
     }
 }
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width:1450px) {
     #checkoutTotal {
         height:170px;
     }
@@ -387,9 +387,13 @@
     #checkoutFinal > .paypalButton, #secondOrText {
         margin-right:0px;
     }
+    
+    #checkoutTotal > img {
+        display:none;
+    }
 }
 
-@media only screen and (max-width:1177px) {
+@media only screen and (max-width:1250px) {
     #checkoutTotal > img {
         display:none;
     }

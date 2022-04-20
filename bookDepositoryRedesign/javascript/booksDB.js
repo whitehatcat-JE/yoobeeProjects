@@ -8,7 +8,7 @@ var books = {
 		"blurb":"Before The Matrix, before Star Wars, before Ender's Game and Neuromancer, there was Dune: winner of the prestigious Hugo and Nebula awards, and widely considered one of the greatest science fiction novels ever written. Melange, or 'spice', is the most valuable - and rarest - element in the universe; a drug that does everything from increasing a person's life-span to making intersteller travel possible. And it can only be found on a single planet: the inhospitable desert world Arrakis. Whoever controls Arrakis controls the spice. And whoever controls the spice controls the universe. When the Emperor transfers stewardship of Arrakis from the noble House Harkonnen to House Atreides, the Harkonnens fight back, murdering Duke Leto Atreides. Paul, his son, and Lady Jessica, his wife, flee into the desert. On the point of death, they are rescued by a band for Fremen, the native people of Arrakis, who control Arrakis' second great resource: the giant worms that burrow beneath the burning desert sands. In order to avenge his father and retake Arrakis from the Harkonnens, Paul must earn the trust of the Fremen and lead a tiny army against the innumerable forces aligned against them. And his journey will change the universe.",
 		"originalPrice":"24.51",
 		"type":0,/*0:Paperback, 1:Hardcover, 2:Bundle, 3:Audio, 4:Stationary*/
-		"alternativeTypes":{1:1, 2:1, 3:1, 4:1}, /*Type:BookID*/
+		"alternativeTypes":{}, /*Type:BookID*/
 		"pages":"592",
 		"dimensions":"128 x 196 x 38mm | 420g",
 		"publicationDate":"23 Jul 2015",
@@ -80,7 +80,7 @@ var books = {
 		"publicationDate":"29 Oct 2020",
 		"publisher":"Viz Media, Subs. of Shogakukan Inc",
 		"imprint":"n/a",
-		"location":"San Francisco, United States",
+		"location":"San Francisco, U.S.A",
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781974709939",
@@ -102,12 +102,12 @@ var books = {
 		"publicationDate":"24 Dec 2020",
 		"publisher":"Viz Media, Subs. of Shogakukan Inc",
 		"imprint":"n/a",
-		"location":"San Francisco, United States",
+		"location":"San Francisco, U.S.A",
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781974709946",
 		"bestsellerRank":"10",
-		"relatedBooks":[3, 5],
+		"relatedBooks":[3, 5, 6, 7],
 		"categories":["Graphic Novels, Anime & Manga"]
 	},
 	5:{
@@ -124,12 +124,12 @@ var books = {
 		"publicationDate":"01 Apr 2021",
 		"publisher":"Viz Media, Subs. of Shogakukan Inc",
 		"imprint":"n/a",
-		"location":"San Francisco, United States",
+		"location":"San Francisco, U.S.A",
 		"language":"English",
 		"illustrationNote":"n/a",
 		"isbn":"9781974709953",
 		"bestsellerRank":"9",
-		"relatedBooks":[3, 4],
+		"relatedBooks":[3, 4, 6, 7],
 		"categories":["Graphic Novels, Anime & Manga"]
 	},
 	6:{
@@ -152,13 +152,13 @@ var books = {
 		"isbn":"9781847941831",
 		"bestsellerRank":"6",
 		"relatedBooks":[0, 1, 2, 7, 8],
-		"categories":["Social, Group Or Collective Psychology", "Cognition & Cognitive Psychology", "Finace & Accounting", "Dating, Relationships, Living Together & Marriage", "Personal Development", "Advice On Careers & Achieving Success", "Popular Psychology", "Assertiveness, Motivation & Self-esteem"]
+		"categories":["Social, Group Or Collective Psychology", "Cognition & Cognitive Psychology", "Finance & Accounting", "Dating, Relationships, Living Together & Marriage", "Personal Development", "Advice On Careers & Achieving Success", "Popular Psychology", "Assertiveness, Motivation & Self-esteem"]
 	},
 	7:{
 		"name":"Atomic Habits",
 		"author":"James Clear",
 		"price":"41.89",
-		"stars":[192480, 115236, 35288, 6316, 3239],
+		"stars":[19248, 11536, 35288, 63106, 32390],
 		"blurb":"Transform your life with tiny changes in behaviour, starting now. People think that when you want to change your life, you need to think big. But world-renowned habits expert James Clear has discovered another way. He knows that real change comes from the compound effect of hundreds of small decisions: doing two push-ups a day, waking up five minutes early, or holding a single short phone call. He calls them atomic habits. In this ground-breaking book, Clears reveals exactly how these minuscule changes can grow into such life-altering outcomes. He uncovers a handful of simple life hacks (the forgotten art of Habit Stacking, the unexpected power of the Two Minute Rule, or the trick to entering the Goldilocks Zone), and delves into cutting-edge psychology and neuroscience to explain why they matter. Along the way, he tells inspiring stories of Olympic gold medalists, leading CEOs, and distinguished scientists who have used the science of tiny habits to stay productive, motivated, and happy. These small changes will have a revolutionary effect on your career, your relationships, and your life.",
 		"originalPrice":"52.32",
 		"type":1,
@@ -174,7 +174,7 @@ var books = {
 		"isbn":"9781847941831",
 		"bestsellerRank":"8",
 		"relatedBooks":[0, 1, 2, 6, 8],
-		"categories":["Social, Group Or Collective Psychology", "Cognition & Cognitive Psychology", "Finace & Accounting", "Dating, Relationships, Living Together & Marriage", "Personal Development", "Advice On Careers & Achieving Success", "Popular Psychology", "Assertiveness, Motivation & Self-esteem"]
+		"categories":["Social, Group Or Collective Psychology", "Cognition & Cognitive Psychology", "Finance & Accounting", "Dating, Relationships, Living Together & Marriage", "Personal Development", "Advice On Careers & Achieving Success", "Popular Psychology", "Assertiveness, Motivation & Self-esteem"]
 	},
 	8:{
 		"name":"The Psychology of Money",
