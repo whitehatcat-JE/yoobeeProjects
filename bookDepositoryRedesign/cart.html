@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Book Depository - Login</title>
+    <title>Book Depository - Cart</title>
     <meta name="description" content="Book Depository">
     <link href="css/defaultStyle.css" rel="stylesheet">
     <link href="css/genericHeaderStyle.css" rel="stylesheet">
+    <link href="css/cartStyle.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="images/website/favicon.ico"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -314,16 +315,110 @@
     </header>
     <main>
         <div class="itemPopupBackdrop"></div>
-        <article class="itemPopup">
-            <img src="images/svgs/minimizeIcon.svg" class="itemMinimize" />
-            <h1>Item added to cart</h1>
-            <div class="itemPopupDivider"></div>
-            <p>You have <span class="itemCountPopup">1 item</span> in your cart<br>Total cost: <span
-                    class="itemPricePopup">NZ $00.00</span></p>
-            <button type="button" onclick="" class="itemContinuePopup">Continue Shopping</button>
-            <button type="button" onclick="window.location.href='cart.html'" class="itemBasketPopup">Basket /
-                Checkout</button>
+        <h1 id="basketTitle">Your basket</h1>
+        <article id="checkoutTotal">
+            <img src="images/svgs/darkCartIcon.svg">
+            <h1>You have <span id="totalCount">1 item</span> for a total of <span class="cartPrice">NZ $25.00</span> in your basket.</h1>
+            <button type="button" onclick="window.location.href='payment.html'" class="checkoutButton"><span>Checkout</span></button>
+            <p id="orText">- Or -</p>
+            <button class="paypalButton" type="button" onclick="window.location.href='payment.html'"><span>Check out with</span> <img src="images/svgs/paypal.svg"></button>
+            <div id="checkoutDivider"></div>
+            <p>In placing your order, you are confirming that you have read and agree to our <a href="help.html">Terms and Conditions</a>. Please also see
+                our <a href="help.html">Privacy Policy</a> and our <a href="help.html">Cookies Policy</a></p>
         </article>
+        <article id="checkoutBreakdown">
+            <h1>Shopping basket details</h1>
+            <div id="breakdownDivider"></div>
+            <div class="basketItem">
+                <img src="images/bookcovers/0.jpg" class="bookcover">
+                <h2 class="bookTitle">Dune</h2>
+                <img src="images/svgs/emptyStar.svg" class="stars star1">
+                <img src="images/svgs/emptyStar.svg" class="stars star2">
+                <img src="images/svgs/emptyStar.svg" class="stars star3">
+                <img src="images/svgs/emptyStar.svg" class="stars star4">
+                <img src="images/svgs/emptyStar.svg" class="stars star5">
+                <p class="bookInfo"><span class="authorName">Frank Herbert</span> | <span class="language">English</span> <span class="type">Paperback</span></p>
+                <h2><span class="bookPrice">NZ $25.00</span><span class="originalPrice">NZ $27.41</span></h2>
+                <p class="percentOff">9% off</p>
+                <h3>Available. Expected delivery to New Zealand in 23-28 business days.</h3>
+                <div class="dropdown">
+                    <span>4</span>
+                    <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                    <div class="dropdown-content">
+                       <p>1<br>2<br>3<br>4<br></p>
+                    </div>
+                </div>
+                <p class="bookPrice">NZ $25.00</p>
+                <p class="quantityText">Quantity</p>
+                <button type="button" class="removeButton">Remove</h2>
+            </div>
+            <div class="basketItem">
+                <img src="images/bookcovers/0.jpg" class="bookcover">
+                <h2 class="bookTitle">Dune</h2>
+                <img src="images/svgs/emptyStar.svg" class="stars star1">
+                <img src="images/svgs/emptyStar.svg" class="stars star2">
+                <img src="images/svgs/emptyStar.svg" class="stars star3">
+                <img src="images/svgs/emptyStar.svg" class="stars star4">
+                <img src="images/svgs/emptyStar.svg" class="stars star5">
+                <p class="bookInfo"><span class="authorName">Frank Herbert</span> | <span class="language">English</span> <span class="type">Paperback</span></p>
+                <h2><span class="bookPrice">NZ $25.00</span><span class="originalPrice">NZ $27.41</span></h2>
+                <p class="percentOff">9% off</p>
+                <h3>Available. Expected delivery to New Zealand in 23-28 business days.</h3>
+                <div class="dropdown">
+                    <span>4</span>
+                    <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                    <div class="dropdown-content">
+                       <p>1<br>2<br>3<br>4<br></p>
+                    </div>
+                </div>
+                <p class="bookPrice">NZ $25.00</p>
+                <p class="quantityText">Quantity</p>
+                <button type="button" class="removeButton">Remove</h2>
+            </div>
+            <div class="basketItem">
+                <img src="images/bookcovers/0.jpg" class="bookcover">
+                <h2 class="bookTitle">Dune</h2>
+                <img src="images/svgs/emptyStar.svg" class="stars star1">
+                <img src="images/svgs/emptyStar.svg" class="stars star2">
+                <img src="images/svgs/emptyStar.svg" class="stars star3">
+                <img src="images/svgs/emptyStar.svg" class="stars star4">
+                <img src="images/svgs/emptyStar.svg" class="stars star5">
+                <p class="bookInfo"><span class="authorName">Frank Herbert</span> | <span class="language">English</span> <span class="type">Paperback</span></p>
+                <h2><span class="bookPrice">NZ $25.00</span><span class="originalPrice">NZ $27.41</span></h2>
+                <p class="percentOff">9% off</p>
+                <h3>Available. Expected delivery to New Zealand in 23-28 business days.</h3>
+                <div class="dropdown">
+                    <span>4</span>
+                    <button type="button"><span class="dropdownClosed">▼</span><span class="dropdownOpen">▲</span></button>
+                    <div class="dropdown-content">
+                       <p>1<br>2<br>3<br>4<br></p>
+                    </div>
+                </div>
+                <p class="bookPrice">NZ $25.00</p>
+                <p class="quantityText">Quantity</p>
+                <button type="button" class="removeButton">Remove</h2>
+            </div>
+        </article>
+        <article id="checkoutFinal">
+            <h1 id="delivery">Delivery cost <p>FREE</p></h1>
+            <h1 id="totalCost">Total <p class="cartPrice">NZ $25.00</p></h1>
+            <h1 id="coupon">Add coupon 
+                <span>
+                    <input type="text" id="couponInput" name="couponInput" maxLength="6">
+                    <button type="button" id="couponButton">Apply</button>
+                </span>
+            </h1>
+            <div id="finalDivider"></div>
+            <img src="images/svgs/visaLogo.svg">
+            <img src="images/svgs/mastercardLogo.svg">
+            <img src="images/svgs/americanExpressLogo.svg">
+            <img src="images/svgs/mastroLogo.svg">
+            <img src="images/svgs/electronLogo.svg">
+            <button type="button" onclick="window.location.href='payment.html'" class="checkoutButton"><span>Checkout</span></button>
+            <p id="secondOrText">- Or -</p>
+            <button class="paypalButton" type="button" onclick="window.location.href='payment.html'"><span>Check out with</span> <img src="images/svgs/paypal.svg"></button>
+        </article>
+        <button id="continueShoppingButton" type="button" onclick="window.location.href='index.html'">Continue shopping</button>
     </main>
     <footer>
         <ul id="footerCompressedMenu">
