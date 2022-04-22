@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Book Depository - Wishlist</title>
+    <meta name="description" content="Book Depository">
+    <link href="css/defaultStyle.css" rel="stylesheet">
+    <link href="css/genericHeaderStyle.css" rel="stylesheet">
+    <link href="css/genericInfoStyle.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="images/website/favicon.ico"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--Main Header-->
+        <ul id="mainHeader">
+            <li class="headerLeftArticles" id="homeHeader"><a href="index.html"><img src="images/svgs/homeIcon.svg"
+                        class="headerIcons" />
+                    <p>Home</p>
+                </a></li>
+            <li class="headerLeftArticles" id="contactHeader"><a href="contact.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/emailIcon.svg" class="headerIcons" />
+                    <p>Contact Us</p>
+                </a></li>
+            <li class="headerLeftArticles" id="helpHeader"><a href="help.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/helpIcon.svg" class="headerIcons" />
+                    <p>Help</p>
+                </a></li>
+            <li class="headerRightArticles" id="loginHeader"><a href="login.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/personIcon.svg" class="headerIcons" />
+                    <p>Sign in/Join</p>
+                </a></li>
+            <li class="headerRightArticles" id="wishlistHeader"><a href="wishlist.html">
+                    <div class="headerDivLine"></div><img src="images/svgs/heartIcon.svg" class="headerIcons" />
+                    <p>Wishlist</p>
+                </a></li>
+            <li class="headerRightArticles" id="orderHeader"><a href="about.html"><img
+                        src="images/svgs/compassIcon.svg" class="headerIcons" />
+                    <p>Order Status</p>
+                </a></li>
+        </ul>
+        <article id="searchHeader">
+            <a href="index.html"><img src="images/svgs/bookDepository.svg" id="homeLogo" /></a>
+            <input type="text" class="searchInput" id="searchInputFull" name="searchInput"
+                placeholder="Search for books by keyword / title / author / ISBN" maxLength="35">
+            <input type="text" class="searchInput" id="searchInputShorter" name="searchInput"
+                placeholder="Search for books..." maxLength="35">
+            <input type="text" class="searchInput" id="searchInputShortest" name="searchInput" placeholder="Search..."
+                maxLength="35">
+            <img src="images/svgs/searchIcon.svg" id="searchIcon">
+            <div id="searchButtons">
+                <button type="button" onclick="window.location.href='searchQuery.html'"
+                    id="searchButton">Search</button>
+                <button type="button" onclick="window.location.href='index.html'" id="advancedButton">Advanced
+                    Search</button>
+            </div>
+            <div id="cart">
+                <div id="cartText">NZ $492.82</div>
+                <div id="cartDivider"></div>
+                <img src="images/svgs/cartIcon.svg" />
+                <div id="cartCount">28</div>
+            </div>
+
+            <div id="searchResults">
+                <div class="searchResultDivider"></div>
+                <h2 id="noResults">No results, please check for typos</h2>
+                <h2 id="textResult1">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider1"></div>
+                <h2 id="textResult2">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider2"></div>
+                <h2 id="textResult3">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider3"></div>
+                <h2 id="textResult4">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider4"></div>
+                <h2 id="textResult5">SEARCH QUERY</h2>
+                <div class="searchResultDivider" id="textDivider5"></div>
+                <article class="imageResults" id="imageResult1">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider1"></div>
+                <article class="imageResults" id="imageResult2">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider2"></div>
+                <article class="imageResults" id="imageResult3">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider3"></div>
+                <article class="imageResults" id="imageResult4">
+                    <div class="imageBlurb">
+                        <h1>Dune</h1>
+                        <p>Frank Herbert</p>
+                    </div>
+                    <img src="images/bookcovers/0.jpg">
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchAudioOption">Audiobook</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchBundleOption">Bundle</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcover</button>
+                    <button type="button" onclick="window.location.href='product.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperback</button>
+                </article>
+                <div class="searchResultDivider" id="imageDivider4"></div>
+                <div id="searchTypes">
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchPaperbackOption">Paperbacks</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchHardcoverOption">Hardcovers</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchBundleOption">Bundles</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchAudioOption">Audiobooks</button>
+                    <button type="button" onclick="window.location.href='index.html'"
+                        class="searchResultsButton searchStationaryOption">Stationary</button>
+                </div>
+            </div>
+        </article>
+        <!--Sub Header-->
+        <ul id="subHeader">
+            <li id="categoryMenu" class="subHeaderLeftArticles">Shop by category &nbsp;&nbsp;▼</li>
+            <li id="currencyMenu" class="subHeaderRightArticles">
+                <div id="currencyDropdownText">$ NZD &nbsp;&nbsp;▼</div>
+                <!--Currency Dropdown-->
+                <div id="currencyDropdown">
+                    <ul id="currencyDropdownList">
+                        <li id="currencyTitle">NZD</li>
+                        <li>
+                            <div id="currencyHorizontalDivider"></div>
+                        </li>
+                        <li class="currencyItem"><a href="index.html">AED</a></li>
+                        <li class="currencyItem"><a href="index.html">ARS</a></li>
+                        <li class="currencyItem"><a href="index.html">AUD</a></li>
+                        <li class="currencyItem"><a href="index.html">BGN</a></li>
+                        <li class="currencyItem"><a href="index.html">CAD</a></li>
+                        <li class="currencyItem"><a href="index.html">CHF</a></li>
+                        <li class="currencyItem"><a href="index.html">CLP</a></li>
+                        <li class="currencyItem"><a href="index.html">COP</a></li>
+                        <li class="currencyItem"><a href="index.html">CZK</a></li>
+                        <li class="currencyItem"><a href="index.html">EUR</a></li>
+                        <li class="currencyItem"><a href="index.html">GBP</a></li>
+                        <li class="currencyItem"><a href="index.html">NZD</a></li>
+                        <li class="currencyItem"><a href="index.html">SGD</a></li>
+                        <li class="currencyItem"><a href="index.html">USD</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="languageMenu" class="subHeaderRightArticles"><img src="images/svgs/globeIcon.svg"
+                    id="languageHeaderIcon" />
+                <div id="languageDropdownText">English &nbsp;&nbsp;▼</div>
+                <!--Language Dropdown-->
+                <div id="languageDropdown">
+                    <ul id="languageDropdownList">
+                        <li id="languageTitle">Languages</li>
+                        <li>
+                            <div id="languageHorizontalDivider"></div>
+                        </li>
+                        <li class="languageItem" id="selectedLanguage">English</li>
+                        <li class="languageItem"><a href="index.html">Spanish (Español)</a></li>
+                        <li class="languageItem"><a href="index.html">Polish (Polski)</a></li>
+                        <li class="languageItem"><a href="index.html">Japanese (日本)</a></li>
+                        <li class="languageItem"><a href="index.html">Mandarin (北方话)</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <!--Category Dropdown-->
+        <div id="categoryDropdown">
+            <ul class="categoryColumn" id="nonFiction">
+                <li class="categoryGroup"><a href="index.html">Non-Fiction</a></li>
+                <li class="categoryItem"><a href="index.html">Art and Photography</a></li>
+                <li class="categoryItem"><a href="index.html">Biography</a></li>
+                <li class="categoryItem"><a href="index.html">Business, Finance, and Law</a></li>
+                <li class="categoryItem"><a href="index.html">Comedy</a></li>
+                <li class="categoryItem"><a href="index.html">Crafts and Hobbies</a></li>
+                <li class="categoryItem"><a href="index.html">Entertainment</a></li>
+                <li class="categoryItem"><a href="index.html">Poetry and Drama</a></li>
+                <li class="categoryItem"><a href="index.html">Romance</a></li>
+                <li class="categoryItem"><a href="index.html">Sport</a></li>
+            </ul>
+            <ul class="categoryColumn" id="fiction">
+                <li class="categoryItem"><a href="index.html">Travel and Holiday Guides</a></li>
+                <li class="categoryGroup"><a href="index.html">Fiction</a></li>
+                <li class="categoryItem"><a href="index.html">Children's Books</a></li>
+                <li class="categoryItem"><a href="index.html">Crime and Thriller</a></li>
+                <li class="categoryItem"><a href="index.html">Graphic Novels, Anime<br>and Manga</a></li>
+                <li class="categoryItem"><a href="index.html">Science Fiction, Fantasy<br>and Horror</a></li>
+                <li class="categoryItem"><a href="index.html">Teen and Young Adult</a></li>
+            </ul>
+            <ul class="categoryColumn" id="education">
+                <li class="categoryGroup"><a href="index.html">Education</a></li>
+                <li class="categoryItem"><a href="index.html">Computing</a></li>
+                <li class="categoryItem"><a href="index.html">Dictionaries and Languages</a></li>
+                <li class="categoryItem"><a href="index.html">History and Archeology</a></li>
+                <li class="categoryItem"><a href="index.html">Natural History</a></li>
+                <li class="categoryItem"><a href="index.html">Science and Geography</a></li>
+                <li class="categoryItem"><a href="index.html">Teaching Resources</a></li>
+                <li class="categoryItem"><a href="index.html">Technology and Engineering</a></li>
+                <li class="categoryItem"><a href="index.html">Transport</a></li>
+                <li class="categoryItem"><a href="index.html">Medical</a></li>
+            </ul>
+            <ul class="categoryColumn" id="personalDevelopment">
+                <li class="categoryGroup"><a href="index.html">Personal<br>Development</a></li>
+                <li class="categoryItem"><a href="index.html">Food and Drink</a></li>
+                <li class="categoryItem"><a href="index.html">Health</a></li>
+                <li class="categoryItem"><a href="index.html">Home and Garden</a></li>
+                <li class="categoryItem"><a href="index.html">Mind, Body, and Spirit</a></li>
+                <li class="categoryItem"><a href="index.html">Religion</a></li>
+                <li class="categoryGroup"><a href="index.html">Other</a></li>
+                <li class="categoryItem"><a href="index.html">Audio Books</a></li>
+            </ul>
+            <ul class="categoryColumn" id="other">
+                <li class="categoryItem"><a href="index.html">Reference</a></li>
+                <li class="categoryItem"><a href="index.html">Stationary</a></li>
+            </ul>
+            <ul class="categoryColumn" id="categoryLeftList">
+                <li class="categoryGroup"><a href="index.html">Non-Fiction</a></li>
+                <li class="categoryGroup"><a href="index.html">Fiction</a></li>
+                <li class="categoryGroup"><a href="index.html">Education</a></li>
+                <li class="categoryGroup"><a href="index.html">Personal Development</a></li>
+                <li class="categoryGroup"><a href="index.html">Other</a></li>
+            </ul>
+            <ul class="categoryColumn">
+                <div id="categoryVerticalDivider"></div>
+            </ul>
+            <ul class="categoryColumn" id="topAuthors">
+                <li class="categoryGroup"><a href="index.html">Top Authors</a></li>
+                <li class="categoryItem"><a href="index.html">J.K Rowling</a></li>
+                <li class="categoryItem"><a href="index.html">Ronald Dahl</a></li>
+                <li class="categoryItem"><a href="index.html">Julia Donaldson</a></li>
+                <li class="categoryItem"><a href="index.html">Stephan King</a></li>
+                <li class="categoryItem"><a href="index.html">David Walliams</a></li>
+                <li class="categoryItem"><a href="index.html">Dr. Suess</a></li>
+                <li class="categoryItem"><a href="index.html">Andy Griffiths</a></li>
+                <li class="categoryItem"><a href="index.html">James Patterson</a></li>
+                <li class="categoryItem"><a href="index.html">Enid Blyton</a></li>
+            </ul>
+            <ul class="categoryColumn" id="bestSelling">
+                <li class="categoryGroup"><a href="index.html">Bestselling Series</a></li>
+                <li class="categoryItem"><a href="index.html">Harry Potter</a></li>
+                <li class="categoryItem"><a href="index.html">Game Of Thrones</a></li>
+                <li class="categoryItem"><a href="index.html">Lego</a></li>
+                <li class="categoryGroup"><a href="index.html">Books By Language</a></li>
+                <li class="categoryItem"><a href="index.html">Books in Spanish</a></li>
+                <li class="categoryItem"><a href="index.html">Books in Polish</a></li>
+                <li class="categoryItem"><a href="index.html">Books in German</a></li>
+                <li class="categoryItem"><a href="index.html">Books in French</a></li>
+            </ul>
+            <ul class="categoryColumn" id="categoryRightList">
+                <li class="categoryGroup"><a href="index.html">Top Authors</a></li>
+                <li class="categoryGroup"><a href="index.html">Bestselling Series</a></li>
+                <li class="categoryGroup"><a href="index.html">Books By Language</a></li>
+            </ul>
+            <ul id="categoryAgeRange">
+                <div id="categoryHorizontalDivider"></div>
+                <li class="categoryGroup">Children's books by age range</li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 0-2</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 3-5</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 6-8</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Ages 9-11</button></a></li>
+                <li><a href="index.html"><button type="button" onclick="window.location.href='index.html'"
+                            class="smallButton">Teen and Young Adult</button></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <article id="infoArticle">
+            <h1>Wishlist</h1>
+            <div id="articleTitleDivider"></div>
+            <p>
+                Unfortunantly, this page is still under construction. Please click <a href="index.html">here</a> to go back home.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <ul id="footerCompressedMenu">
+            <li class="footerTitle" id="footerCompressedExplore">Explore</li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerTitle" id="footerCompressedHelp">Need help?</li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerTitle" id="footerCompressedJoin">Join us</li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerTitle" id="footerCompressedImportant">Important Stuff</li>
+            <li><div class="footerDivider"></div></li>
+        </ul>
+        <ul id="footerCompressedCategories">
+        </ul>
+        <ul>
+            <li class="footerTitle">Explore</li>
+            <li class="footerLink"><a href="about.html">About us</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="index.html">Sitemap</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="searchQuery.html">Bookmarks</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="login.html">Sign in/Join</a></li>
+            <li><div class="footerDivider"></div></li>
+        </ul>
+        <ul>
+            <li class="footerTitle">Need help?</li>
+            <li class="footerLink"><a href="help.html">Help</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="contact.html">Contact us</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="index.html">Where's my stuff?</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="index.html">Where do you deliver?</a></li>
+            <li><div class="footerDivider"></div></li>
+        </ul>
+        <ul>
+            <li class="footerTitle">Join us</li>
+            <li class="footerLink"><a href="index.html">Affiliates</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="index.html">Jobs</a></li>
+            <li><div class="footerDivider"></div></li>
+        </ul>
+        <ul>
+            <li class="footerTitle">Important Stuff</li>
+            <li class="footerLink"><a href="index.html">Cookies</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="index.html">Privacy policy</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="index.html">Terms & Conditions</a></li>
+            <li><div class="footerDivider"></div></li>
+            <li class="footerLink"><a href="index.html">UK Modern Slavery Statement</a></li>
+            <li><div class="footerDivider"></div></li>
+        </ul>
+        <ul id="footerPayments">
+            <li class="footerTitle">We accept these payment methods</li>
+            <img src="images/website/paymentMethods.png">
+        </ul>
+    </footer>
+
+    <script src="javascript/booksDB.js"></script>
+    <script src="javascript/cartManager.js"></script>
+    <script src="javascript/universalScript.js"></script>
+    <script src="javascript/genericSearchDataAssignment.js"></script>
+</body>
+</html>

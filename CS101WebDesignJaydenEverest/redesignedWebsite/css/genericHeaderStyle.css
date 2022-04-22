@@ -1,0 +1,498 @@
+header {
+    user-select: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #F0F0F0;
+    z-index:2;
+}
+
+/*Top section of header*/
+#mainHeader {
+    background-color: #4C394E;
+    text-align: center;
+    padding: 0.1%;
+    padding-bottom:1.5%;
+}
+
+#mainHeader > li > a > p {
+    float: left;
+    font-size:100%;
+}
+
+.headerIcons {
+    padding-left:10%;
+    padding-right:5%;
+    width:1.1vw;
+    float: left;
+}
+
+#homeHeader {min-width:5vw;}
+
+#homeHeader > a > p {margin-top:1px;}
+
+#contactHeader {min-width:8vw;}
+
+#helpHeader {min-width:8vw;}
+
+#orderHeader {min-width:9vw;}
+
+#wishlistHeader {min-width:7vw;}
+
+#loginHeader {min-width:9vw;}
+
+.headerLeftArticles {
+    float:left;
+    margin-top:0.2%;
+}
+
+.headerRightArticles {
+    float:right;
+    margin-top:0.2%;
+}
+
+.headerDivLine{
+    width: 2px;
+    height: 20px;
+    background-color: #403042;
+    float:left;
+    margin-left:5%;
+}
+
+/*Search bar section of header*/
+#searchHeader {
+    background-color: #403042;
+    height:60px;
+    width:100%;
+    position:absolute;
+}
+
+#homeLogo {
+    height:40px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    float:left;
+}
+
+.searchInput {
+    background-color: #F0F0F0;
+    color:#403042;
+    font-size:25px;
+    border-width:0px;
+    width:80%;
+    padding-left:60px;
+    height:60px;
+    left:0;
+    float:left;
+}
+
+#searchInputShorter {display:none;}
+
+#searchInputShortest {
+    display:none;
+    width:100%;
+    padding-left:12px;
+}
+
+.searchInput:focus {
+    outline: none !important;
+}
+
+#searchIcon {
+    position: absolute;
+    left:140px;
+    margin-top:5px;
+    width:50px;
+}
+
+#searchButtons {
+    float:right;
+    position:absolute;
+    right:0;
+    margin-right:130px;
+}
+
+#searchButtons > button {
+    border-width:0px;
+    width:100%;
+    font-style:bold;
+    cursor: pointer;
+}
+
+#searchButton {
+    height:40px;
+    background-color:#FF0072;
+    font-size:25px;
+}
+
+#advancedButton {
+    height:20px;
+    font-size:15px;
+    background-color:#403042;
+}
+
+#cart {
+    background-color: #108DD6;
+    right:0;
+    top:0;
+    width:130px;
+    height:60px;
+    padding-top:5px;
+    position:absolute;
+}
+
+#cartText { text-align:center; }
+
+#cartDivider {
+    background-color: #F0F0F0;
+    width:80%;
+    margin-left:10%;
+    height:1px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+#cartCount {
+    margin-top:2px;
+    margin-right:10px;
+    text-align: right;
+    float:right;
+}
+#cart > img {
+    margin-right:35px;
+    float:right;
+}
+
+/*Search Results section of header, displayed when searching*/
+#searchResults {
+    background-color:#F0F0F0;
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left:139px;
+    margin-top:60px;
+    width:35%;
+    min-width:480px;
+    padding-left:10px;
+    padding-right:10px;
+    height:85vh;
+    z-index:1;
+    display:none;
+}
+
+#searchResults > h2 {
+    color:#403042;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#noResults {
+    display:none;
+    text-align:center;
+    font-style: italic;
+}
+
+.searchResultsButton {
+    float:right;
+    background-color:#108DD6;
+    border-color:#108DD6;
+    border-radius:0px;
+    border-style: solid;
+    border-width:5px;
+    margin-left:2px;
+    margin-top:40px;
+    cursor: pointer;
+}
+
+.firstTypeButton { border-radius:10px 0px 0px 10px; }
+
+.selectedTypeButton {
+    background-color:#FF0072;
+    border-color:#FF0072;
+}
+
+.lastTypeButton { border-radius:0px 10px 10px 0px; }
+
+.onlyTypeButton { border-radius:10px 10px 10px 10px; }
+
+#searchTypes > button {
+    float:left;
+    background-color:#108DD6;
+    border-color:#108DD6;
+    width:80px;
+    margin-top:6px;
+}
+
+/*Search bar image results*/
+
+.imageResults { cursor: pointer; }
+
+.imageResults > img { height:120px; }
+
+.imageBlurb {
+    position:absolute;
+    margin-left:90px;
+}
+
+.imageBlurb > h1 {
+    color:#403042;
+    margin-bottom:2px;
+}
+
+.imageBlurb > p { color:#403042; }
+
+.imgButtons  { margin-bottom:100px; }
+
+.imgResults > img {
+    height:120px;
+    margin-right:5px;
+    float:left;
+}
+
+.searchResultDivider {
+    background-color: #403042;
+    width:100%;
+    height:1px;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+
+/*Bottom section of header*/
+#subHeader {
+    background-color: #4C394E;
+    list-style-type: none;
+    width:100%;
+    margin-top:60px;
+    font-size:15px;
+    position:absolute;
+}
+
+#subHeader > li {
+    padding-top:0.25%;
+    padding-bottom:0.25%;
+}
+
+#categoryMenu {cursor: pointer;}
+
+.subHeaderLeftArticles {
+    float:left;
+    padding-right:2%;
+    padding-left:0.5%;
+}
+
+.subHeaderRightArticles {
+    float:right;
+    padding-right:0.5%;
+    padding-left:1%;
+}
+
+#categoryDropdown {
+    display:none;
+    width:920px;
+    margin-top:60px;
+}
+
+.categoryColumn {
+    background-color: #4C394E;
+    padding-top:32px;
+    padding-left:10px;
+    height:182px;
+    float:left;
+}
+
+.categoryGroup {
+    font-size:15px;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-weight:bold;
+}
+
+.categoryItem {
+    font-size:12px;
+    padding-bottom:2px;
+}
+
+#categoryVerticalDivider{
+    width: 2px;
+    height: 80%;
+    background-color: #403042;
+    padding-top:32px;
+    margin-left:5%;
+}
+
+#categoryHorizontalDivider{
+    width: 99%;
+    height: 2px;
+    background-color: #403042;
+}
+
+#categoryAgeRange {
+    padding-top:220px;
+    padding-left:10px;
+    padding-bottom:35px;
+    width:920px;
+    background-color: #4C394E;
+}
+
+.smallButton {
+    background-color: #108DD6;
+    border-width: 5px;
+    border-color: #108DD6;
+    border-radius: 10px;
+	border-style: solid;
+    float:left;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+#categoryRightList { display:none; }
+
+#categoryLeftList { display:none; }
+
+#languageMenu { cursor: pointer; }
+
+#languageDropdown {
+    background-color: #4C394E;
+    float:right;
+    position:absolute;
+    width:130px;
+    padding-left:10px;
+    margin-top:20px;
+    display:none;
+}
+
+#languageTitle {
+    font-size:15px;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-weight:bold;
+}
+
+#languageDropdownText { float:left;}
+
+#languageHeaderIcon {
+    float:left;
+    width:16px;
+    margin-right:5px;
+    margin-top:2px;
+}
+
+.languageItem {
+    font-size:12px;
+    padding-bottom:2px;
+}
+
+#selectedLanguage{color: #108DD6;}
+
+#languageHorizontalDivider{
+    width: 90%;
+    height: 2px;
+    background-color: #403042;
+    margin-bottom:5px;
+}
+
+#currencyMenu {cursor: pointer;}
+
+#currencyDropdown {
+    background-color: #4C394E;
+    float:right;
+    position:absolute;
+    width:60px;
+    padding-left:10px;
+    display:none;
+}
+
+#currencyTitle {
+    font-size:15px;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-weight:bold;
+    color:#108DD6;
+}
+
+.currencyItem {
+    font-size:12px;
+    padding-bottom:2px;
+}
+
+#selectedCurrency {color: #108DD6;}
+
+#currencyHorizontalDivider {
+    width: 90%;
+    height: 2px;
+    background-color: #403042;
+    margin-bottom:5px;
+}
+
+@media only screen and (max-width: 1548px) {
+    #headerLogo { width:100px;}
+
+    .headerIcons {
+        width:25px;
+        padding-left:10px;
+    }
+
+    .headerLeftArticles { margin-top:5px; }
+
+    .headerRightArticles { margin-top:2px; }
+
+    #mainHeader {
+        padding: 5px;
+        padding-bottom:40px;
+    }
+
+    #mainHeader > li > a > p{ display: none; }
+    
+    #mainHeader > li{ min-width:50px; }
+
+    #footerPayments { display:none; }
+    
+    #searchInputFull { display:none; }
+
+    #searchInputShorter { display:unset; }
+}
+
+@media only screen and (max-width: 1100px) {
+    .headerCategories { display: none; }
+
+    #topAuthors { display:none; }
+
+    #bestSelling { display:none; }
+
+    #categoryRightList { display:unset; }
+
+    #categoryAgeRange { width:820px; }
+    
+    #searchInputShorter { display:none; }
+
+    #searchInputShortest { display:unset; }
+
+    #searchResults {
+        margin-left:0px;
+    }
+
+    #searchIcon { display:none; }
+
+    #homeLogo { display:none; }
+}
+
+@media only screen and (max-width: 830px) {
+    #nonFiction { display:none; }
+
+    #fiction { display:none; }
+
+    #education { display:none; }
+
+    #personalDevelopment { display:none; }
+
+    #other { display:none; }
+
+    #categoryLeftList { display:unset; }
+
+    #categoryAgeRange { width:450px; }
+
+    #languageHeaderIcon { display:none; }
+
+    #searchButtons { display:none; }
+}
