@@ -355,10 +355,10 @@ var books = {
 	16:{
 		"name":"Sword Art Online Platinum Collector's Edition",
 		"author":"Reki Kawahara",
-		"price":"358.17",
+		"price":"98.17",
 		"stars":[6, 0, 0, 1, 0],
 		"blurb":"Spanning twenty volumes of Sword Art Online, this special boxed set includes exclusive prints and poster featuring gorgeous art by abec! With two beautiful collector's editions volumes, this boxed set is an absolute must-have for fans of the series!",
-		"originalPrice":"358.17",
+		"originalPrice":"98.17",
 		"type":2,
 		"alternativeTypes":{0:9},
 		"pages":"1664",
